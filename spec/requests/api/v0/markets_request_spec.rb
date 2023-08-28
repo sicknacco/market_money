@@ -75,28 +75,25 @@ RSpec.describe "Market API", type: :request do
         expect(response).to be_successful
         expect(response.status).to eq(200)
 
-        market = JSON.parse(response.body, symbolize_names: true)
+        market_data = JSON.parse(response.body, symbolize_names: true)
 
-        market[:data].each do |market|
-          expect(market).to have_key(:id)
-          expect(market[:id]).to eq(market.id.to_s)
-          expect(market).to have_key(:type)
-          expect(market[:type]).to eq('market')
-          expect(market).to have_key(:attributes)
-          
-          expect(market[:attributes]).to be_a(Hash)
-          expect(market[:attributes][:name]).to eq(market.name)
-          expect(market[:attributes][:street]).to eq(market.street)
-          expect(market[:attributes][:city]).to eq(market.city)
-          expect(market[:attributes][:county]).to eq(market.county)
-          expect(market[:attributes][:state]).to eq(market.state)
-          expect(market[:attributes][:zip]).to eq(market.zip)
-          expect(market[:attributes][:lat]).to eq(market.lat)
-          expect(market[:attributes][:lon]).to eq(market.lon)
+        expect(market_data.count).to eq(1)
+        expect(market_data[:data][:id]).to eq(market.id.to_s)
+        expect(market_data[:data][:type]).to eq('market')
+        expect(market_data[:data]).to have_key(:attributes)
 
-          expect(market[:attributes]).to have_key(:vendor_count)
-          expect(market[:attributes][:vendor_count]).to eq(3)
-        end
+        expect(market_data[:data][:attributes]).to be_a(Hash)
+        expect(market_data[:data][:attributes][:name]).to eq(market.name)
+        expect(market_data[:data][:attributes][:street]).to eq(market.street)
+        expect(market_data[:data][:attributes][:city]).to eq(market.city)
+        expect(market_data[:data][:attributes][:county]).to eq(market.county)
+        expect(market_data[:data][:attributes][:state]).to eq(market.state)
+        expect(market_data[:data][:attributes][:zip]).to eq(market.zip)
+        expect(market_data[:data][:attributes][:lat]).to eq(market.lat)
+        expect(market_data[:data][:attributes][:lon]).to eq(market.lon)
+
+        expect(market_data[:data][:attributes]).to have_key(:vendor_count)
+        expect(market_data[:data][:attributes][:vendor_count]).to eq(3)
       end
     end
   end
