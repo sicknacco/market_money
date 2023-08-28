@@ -21,6 +21,8 @@ RSpec.describe "Vendor API", type: :request do
       
       vendors_data = JSON.parse(response.body, symbolize_names: true)
 
+      expect(vendors_data[:data].count).to eq(3)
+      
       vendors_data[:data].each do |vendor|
         expect(vendor).to have_key(:id)
         expect(vendor[:id]).to be_a(String)
