@@ -11,4 +11,8 @@ class Market < ApplicationRecord
             :lat,
             :lon,
             presence: true
+
+  def vendor_count
+    vendors.count
+  end
 end
