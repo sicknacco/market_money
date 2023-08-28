@@ -5,7 +5,12 @@ RSpec.describe "Market API", type: :request do
     it "returns all markets" do
       create_list(:market, 10)
 
-      get '/api/v0/markets'
+      headers = {
+        "CONTENT_TYPE" => "application/json",
+        "ACCEPT" => "application/json"
+      }
+
+      get '/api/v0/markets', headers: headers
 
       expect(response).to be_successful
       expect(response.status).to eq(200)
@@ -47,7 +52,12 @@ RSpec.describe "Market API", type: :request do
       MarketVendor.create!(market_id: market1.id, vendor_id: vendors[1].id)
       MarketVendor.create!(market_id: market2.id, vendor_id: vendors[2].id)
 
-      get '/api/v0/markets'
+      headers = {
+        "CONTENT_TYPE" => "application/json",
+        "ACCEPT" => "application/json"
+      }
+
+      get '/api/v0/markets', headers: headers
 
       expect(response).to be_successful
       expect(response.status).to eq(200)
@@ -70,7 +80,12 @@ RSpec.describe "Market API", type: :request do
         MarketVendor.create!(market_id: market.id, vendor_id: vendors[1].id)
         MarketVendor.create!(market_id: market.id, vendor_id: vendors[2].id)
 
-        get "/api/v0/markets/#{market.id}"
+        headers = {
+          "CONTENT_TYPE" => "application/json",
+          "ACCEPT" => "application/json"
+        }
+
+        get "/api/v0/markets/#{market.id}", headers: headers
 
         expect(response).to be_successful
         expect(response.status).to eq(200)
@@ -97,7 +112,12 @@ RSpec.describe "Market API", type: :request do
       end
 
       it 'sad path' do
-        get '/api/v0/markets/0'
+        headers = {
+          "CONTENT_TYPE" => "application/json",
+          "ACCEPT" => "application/json"
+        }
+
+        get '/api/v0/markets/0', headers: headers
 
         market = JSON.parse(response.body, symbolize_names: true)
 
