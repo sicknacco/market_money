@@ -95,6 +95,18 @@ RSpec.describe "Market API", type: :request do
         expect(market_data[:data][:attributes]).to have_key(:vendor_count)
         expect(market_data[:data][:attributes][:vendor_count]).to eq(3)
       end
+
+      it 'sad path' do
+        get '/api/v0/markets/0'
+
+        market = JSON.parse(response.body, symbolize_names: true)
+
+        expect(response).to_not be_successful
+        expect(response.status).to eq(404)
+
+        expect{Market.find(0)}.to raise_error(ActiveRecord::RecordNotFound)
+        expect(market[:errors][0][:detail]).to eq("Couldn't find Market with 'id'=0")
+      end
     end
   end
 end
