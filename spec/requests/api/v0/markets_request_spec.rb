@@ -111,7 +111,7 @@ RSpec.describe "Market API", type: :request do
         expect(market_data[:data][:attributes][:vendor_count]).to eq(3)
       end
 
-      it 'sad path' do
+      it 'sad path - no market found' do
         headers = {
           "CONTENT_TYPE" => "application/json",
           "ACCEPT" => "application/json"
