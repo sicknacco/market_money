@@ -6,8 +6,8 @@ RSpec.describe "Market API", type: :request do
       create_list(:market, 10)
 
       headers = {
-        "CONTENT_TYPE" => "application/json",
-        "ACCEPT" => "application/json"
+        CONTENT_TYPE: "application/json",
+        ACCEPT: "application/json"
       }
 
       get '/api/v0/markets', headers: headers
@@ -53,8 +53,8 @@ RSpec.describe "Market API", type: :request do
       MarketVendor.create!(market_id: market2.id, vendor_id: vendors[2].id)
 
       headers = {
-        "CONTENT_TYPE" => "application/json",
-        "ACCEPT" => "application/json"
+        CONTENT_TYPE: "application/json",
+        ACCEPT: "application/json"
       }
 
       get '/api/v0/markets', headers: headers
@@ -81,8 +81,8 @@ RSpec.describe "Market API", type: :request do
         MarketVendor.create!(market_id: market.id, vendor_id: vendors[2].id)
 
         headers = {
-          "CONTENT_TYPE" => "application/json",
-          "ACCEPT" => "application/json"
+          CONTENT_TYPE: "application/json",
+          ACCEPT: "application/json"
         }
 
         get "/api/v0/markets/#{market.id}", headers: headers
@@ -113,8 +113,8 @@ RSpec.describe "Market API", type: :request do
 
       it 'sad path - no market found' do
         headers = {
-          "CONTENT_TYPE" => "application/json",
-          "ACCEPT" => "application/json"
+          CONTENT_TYPE: "application/json",
+          ACCEPT: "application/json"
         }
 
         get '/api/v0/markets/0', headers: headers
