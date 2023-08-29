@@ -51,11 +51,11 @@ RSpec.describe "Vendor API", type: :request do
       }
 
       get '/api/v0/markets/0/vendors', headers: headers
-
-      market = JSON.parse(response.body, symbolize_names: true)
-
+      
       expect(response).to_not be_successful
       expect(response.status).to eq(404)
+
+      market = JSON.parse(response.body, symbolize_names: true)
 
       expect{Market.find(0)}.to raise_error(ActiveRecord::RecordNotFound)
       expect(market[:errors][0][:detail]).to eq("Couldn't find Market with 'id'=0")
