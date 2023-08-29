@@ -28,11 +28,12 @@ class Api::V0::VendorsController < ApplicationController
 
   def update
     vendor = Vendor.find_by(id: params[:id])
-    if vendor.present?
-      vendor.update(vendor_params)
+    if vendor.nil?
+      render json: { "errors": [{ "detail": "Couldn't find Vendor with 'id'=#{params[:id]}" }] }, status: 404
+    elsif vendor.update(vendor_params)
       render json: VendorSerializer.new(vendor), status: 200
     else
-      render json: { "errors": [{ "detail": "Couldn't find Vendor with 'id'=#{params[:id]}" }] }, status: 404
+      render json: { "errors": [{ "detail": "Validation failed: Value is missing or empty" }] }, status: 400
     end
   end
 

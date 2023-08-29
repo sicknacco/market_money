@@ -48,7 +48,7 @@ RSpec.describe "Updating a Vendor", type: :request do
     it 'sad path - missing required attributes' do
       vendor = create(:vendor)
       vendor_params = {
-        contact_name: "",
+        contact_name: nil,
         credit_accepted: false
       }
       headers = {
