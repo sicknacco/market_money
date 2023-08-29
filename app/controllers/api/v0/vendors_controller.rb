@@ -37,6 +37,15 @@ class Api::V0::VendorsController < ApplicationController
     end
   end
 
+  def destroy
+    vendor = Vendor.find_by(id: params[:id])
+    if vendor.present?
+      vendor.destroy
+    else
+      render json: { "errors": [{ "detail": "Couldn't find Vendor with 'id'=#{params[:id]}" }] }, status: 404
+    end
+  end
+
   private
   def vendor_params
     params.permit(:name, :description, :contact_name, :contact_phone, :credit_accepted)
