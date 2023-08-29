@@ -86,6 +86,25 @@ RSpec.describe "MarketVendor API", type: :request do
         expect(response.status).to eq(204)
         expect(MarketVendor.count).to eq(0)
       end
+
+      it 'sad path - market_vendor does not exist' do
+        headers = {
+          CONTENT_TYPE: "application/json",
+          ACCEPT: "application/json"
+        }
+        mv_params = { market_id: @market.id, vendor_id: @vendor.id }
+        
+        expect(MarketVendor.count).to eq(0)
+        delete '/api/v0/market_vendors', headers: headers, params: JSON.generate(mv_params)
+        
+        expect(response).to_not be_successful
+        expect(response.status).to eq(404)
+        
+        mv_error = JSON.parse(response.body, symbolize_names: true)
+        
+        expect(mv_error[:errors][0][:detail]).to eq("No MarketVendor with market_id=#{@market.id} AND vendor_id=#{@vendor.id} exists")
+        expect(MarketVendor.count).to eq(0)
+      end
     end
   end
 end

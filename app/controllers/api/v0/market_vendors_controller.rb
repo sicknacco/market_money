@@ -17,7 +17,8 @@ class Api::V0::MarketVendorsController < ApplicationController
     if mv.present?
       mv.destroy
       render json: {}, status: 204
+    else
+      render json: { "errors": [{ "detail": "No MarketVendor with market_id=#{params[:market_id]} AND vendor_id=#{params[:vendor_id]} exists" }] }, status: 404
     end
-    # require 'pry'; binding.pry
   end
 end
