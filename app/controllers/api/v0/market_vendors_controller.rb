@@ -5,8 +5,10 @@ class Api::V0::MarketVendorsController < ApplicationController
     mv = MarketVendor.new(market: market, vendor: vendor)
     if mv.save
       render json: { "message": "Successfully added #{vendor.name} to #{market.name}" }, status: 201
-    else market.nil? || vendor.nil?
+    elsif market.nil? || vendor.nil?
       render json: { "errors": [{ "detail": "Validation failed: market or vendor does not exist" }] }, status: 404
+    else
+      render json: { "errors": [{ "detail": "Validation failed: Market vendor asociation between market with market_id=#{market.id} and vendor_id=#{vendor.id} already exists" }] }, status: 422
     end
   end
 end
