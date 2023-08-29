@@ -11,4 +11,13 @@ class Api::V0::MarketVendorsController < ApplicationController
       render json: { "errors": [{ "detail": "Validation failed: Market vendor asociation between market with market_id=#{market.id} and vendor_id=#{vendor.id} already exists" }] }, status: 422
     end
   end
+
+  def destroy
+    mv = MarketVendor.find_by(market_id: params[:market_id], vendor_id: params[:vendor_id])
+    if mv.present?
+      mv.destroy
+      render json: {}, status: 204
+    end
+    # require 'pry'; binding.pry
+  end
 end
