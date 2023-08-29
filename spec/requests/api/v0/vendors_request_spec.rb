@@ -43,5 +43,22 @@ RSpec.describe "Vendor API", type: :request do
         expect(vendor[:attributes][:credit_accepted]).to be_in([true, false])
       end
     end
+
+    it 'sad path: market does not exist' do
+      headers = {
+        "CONTENT_TYPE" => "application/json",
+        "ACCEPT" => "application/json"
+      }
+
+      get '/api/v0/markets/0/vendors', headers: headers
+
+      market = JSON.parse(response.body, symbolize_names: true)
+
+      expect(response).to_not be_successful
+      expect(response.status).to eq(404)
+
+      expect{Market.find(0)}.to raise_error(ActiveRecord::RecordNotFound)
+      expect(market[:errors][0][:detail]).to eq("Couldn't find Market with 'id'=0")
+    end
   end
 end
