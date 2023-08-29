@@ -27,7 +27,7 @@ class Api::V0::VendorsController < ApplicationController
   end
 
   def update
-    vendor = Vendor.find(params[:id])
+    vendor = Vendor.find_by(id: params[:id])
     if vendor.present?
       vendor.update(vendor_params)
       render json: VendorSerializer.new(vendor), status: 200
