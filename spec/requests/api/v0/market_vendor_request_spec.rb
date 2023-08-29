@@ -69,21 +69,23 @@ RSpec.describe "MarketVendor API", type: :request do
       expect(mv_error[:errors][0][:detail]).to eq("Validation failed: Market vendor asociation between market with market_id=#{@market.id} and vendor_id=#{@vendor.id} already exists")
       expect(MarketVendor.count).to eq(1)
     end
-  end
-
-  describe 'DELETE /api/v0/market_vendors' do
-    MarketVendor.create!(market_id: @market.id, vendor_id: @vendor.id)
-      headers = {
-        CONTENT_TYPE: "application/json",
-        ACCEPT: "application/json"
-      }
-      mv_params = { market_id: @market.id, vendor_id: @vendor.id }
-      
-      expect(MarketVendor.count).to eq(1)
-      delete '/api/v0/market_vendors', headers: headers, params: JSON.generate(mv_params)
-      
-      expect(response).to be_successful
-      expect(response.status).to eq(204)
-      expect(MarketVendor.count).to eq(0)
+    
+    describe 'DELETE /api/v0/market_vendors' do
+      it 'happy path - can delete a market_vendor' do
+        market_vendor = MarketVendor.create!(market_id: @market.id, vendor_id: @vendor.id)
+        headers = {
+          CONTENT_TYPE: "application/json",
+          ACCEPT: "application/json"
+        }
+        mv_params = { market_id: @market.id, vendor_id: @vendor.id }
+        
+        expect(MarketVendor.count).to eq(1)
+        delete '/api/v0/market_vendors', headers: headers, params: JSON.generate(mv_params)
+        
+        expect(response).to be_successful
+        expect(response.status).to eq(204)
+        expect(MarketVendor.count).to eq(0)
+      end
+    end
   end
 end
