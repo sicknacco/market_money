@@ -70,4 +70,20 @@ RSpec.describe "MarketVendor API", type: :request do
       expect(MarketVendor.count).to eq(1)
     end
   end
+
+  describe 'DELETE /api/v0/market_vendors' do
+    MarketVendor.create!(market_id: @market.id, vendor_id: @vendor.id)
+      headers = {
+        CONTENT_TYPE: "application/json",
+        ACCEPT: "application/json"
+      }
+      mv_params = { market_id: @market.id, vendor_id: @vendor.id }
+      
+      expect(MarketVendor.count).to eq(1)
+      delete '/api/v0/market_vendors', headers: headers, params: JSON.generate(mv_params)
+      
+      expect(response).to be_successful
+      expect(response.status).to eq(204)
+      expect(MarketVendor.count).to eq(0)
+  end
 end
