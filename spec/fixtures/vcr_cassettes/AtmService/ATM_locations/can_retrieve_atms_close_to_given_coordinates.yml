@@ -1,0 +1,99 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tomtom.com/search/2/categorySearch/automatic_teller_machine.json?key=<key>&lat=39.7392&lon=-104.9903
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 30 Aug 2023 20:34:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Tracking-Id:
+      - 9b5f3814-a279-4759-a841-eefe69fabcaa
+      Access-Control-Expose-Headers:
+      - Tracking-ID
+      X-Apigee.target-Latency:
+      - '386'
+      X-Envoy-Upstream-Service-Time:
+      - '398'
+      Server:
+      - tomtom
+      X-Tomtom-Processed-By:
+      - westus2
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"summary":{"query":"automatic_teller_machine","queryType":"NON_NEAR","queryTime":383,"numResults":10,"offset":0,"totalResults":10,"fuzzyLevel":1,"geoBias":{"lat":39.7392,"lon":-104.9903},"geobiasCountry":"US"},"results":[{"type":"POI","id":"e-D0VHggkzWq-bmSeJrcwg","score":2.8319805759,"dist":15.019995,"info":"search:ta:840089001513355-US","poi":{"name":"Denver
+        Community Fcu","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"1437","streetName":"North Bannock
+        Street","municipalitySubdivision":"Civic Center","municipality":"Denver","countrySecondarySubdivision":"Denver","countrySubdivision":"CO","countrySubdivisionName":"Colorado","postalCode":"80202","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1437 North Bannock Street,
+        Denver, CO 80202","localName":"Denver"},"position":{"lat":39.739131,"lon":-104.990149},"viewport":{"topLeftPoint":{"lat":39.74003,"lon":-104.99132},"btmRightPoint":{"lat":39.73823,"lon":-104.98898}},"entryPoints":[{"type":"main","position":{"lat":39.73913,"lon":-104.99027}}]},{"type":"POI","id":"nokXfOCRESTToWKRuHuEqQ","score":2.8319748062,"dist":127.139552,"info":"search:ta:840089001089015-US","poi":{"name":"ATM
+        at Denver Community FCU","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"200","streetName":"West 14th Avenue","municipalitySubdivision":"Civic
+        Center","municipality":"Denver","countrySecondarySubdivision":"Denver","countrySubdivision":"CO","countrySubdivisionName":"Colorado","postalCode":"80204","extendedPostalCode":"80204-2732","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"200 West 14th Avenue, Denver,
+        CO 80204","localName":"Denver"},"position":{"lat":39.738093,"lon":-104.990672},"viewport":{"topLeftPoint":{"lat":39.73899,"lon":-104.99184},"btmRightPoint":{"lat":39.73719,"lon":-104.9895}},"entryPoints":[{"type":"main","position":{"lat":39.73846,"lon":-104.99062}},{"type":"main","position":{"lat":39.73846,"lon":-104.99067}}]},{"type":"POI","id":"xao6TgNtO_eOE6dcm_Iylw","score":2.8319713968,"dist":159.965967,"info":"search:ta:840089001074993-US","poi":{"name":"ATM
+        at Us Alliance Credit Union","categorySet":[{"id":7397}],"categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"320","streetName":"West Colfax
+        Avenue","municipalitySubdivision":"Civic Center","municipality":"Denver","countrySecondarySubdivision":"Denver","countrySubdivision":"CO","countrySubdivisionName":"Colorado","postalCode":"80204","extendedPostalCode":"80204-2693","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"320 West Colfax Avenue,
+        Denver, CO 80204","localName":"Denver"},"position":{"lat":39.739927,"lon":-104.991914},"viewport":{"topLeftPoint":{"lat":39.74083,"lon":-104.99308},"btmRightPoint":{"lat":39.73903,"lon":-104.99074}},"entryPoints":[{"type":"main","position":{"lat":39.74002,"lon":-104.99191}}]},{"type":"POI","id":"3XcfbZgxFwJlZ9rZqORuxw","score":2.8319692987,"dist":180.248452,"info":"search:ta:840089002606566-US","poi":{"name":"Prosperity
+        Bank","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"108","streetName":"West 14th Avenue","municipalitySubdivision":"Civic
+        Center","municipality":"Denver","countrySecondarySubdivision":"Denver","countrySubdivision":"CO","countrySubdivisionName":"Colorado","postalCode":"80204","extendedPostalCode":"80204-2713","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"108 West 14th Avenue, Denver,
+        CO 80204","localName":"Denver"},"position":{"lat":39.73789,"lon":-104.989058},"viewport":{"topLeftPoint":{"lat":39.73879,"lon":-104.99023},"btmRightPoint":{"lat":39.73699,"lon":-104.98789}},"entryPoints":[{"type":"main","position":{"lat":39.7378,"lon":-104.9891}}]},{"type":"POI","id":"XLAYgN0fTSsG083ZlKZ5_Q","score":2.8319674629,"dist":191.505006,"info":"search:ta:840089001501876-US","poi":{"name":"ATM
+        at Denver Community FCU","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"201","streetName":"West Colfax
+        Avenue","municipalitySubdivision":"Central Business District","municipality":"Denver","countrySecondarySubdivision":"Denver","countrySubdivision":"CO","countrySubdivisionName":"Colorado","postalCode":"80202","extendedPostalCode":"80202-5304","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"201 West Colfax Avenue,
+        Denver, CO 80202","localName":"Denver"},"position":{"lat":39.740906,"lon":-104.98999},"viewport":{"topLeftPoint":{"lat":39.74181,"lon":-104.99116},"btmRightPoint":{"lat":39.74001,"lon":-104.98882}},"entryPoints":[{"type":"main","position":{"lat":39.7405,"lon":-104.98941}}]},{"type":"POI","id":"Nm-BWYWHc5JIM4jywj6oDA","score":2.8319661516,"dist":203.146853,"info":"search:ta:840087000084777-US","poi":{"name":"ATM","categorySet":[{"id":7397}],"categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"100","streetName":"West 14th Avenue","municipalitySubdivision":"Civic
+        Center","municipality":"Denver","countrySecondarySubdivision":"Denver","countrySubdivision":"CO","countrySubdivisionName":"Colorado","postalCode":"80204","extendedPostalCode":"80204-2788","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"100 West 14th Avenue, Denver,
+        CO 80204","localName":"Denver"},"position":{"lat":39.737473,"lon":-104.989525},"viewport":{"topLeftPoint":{"lat":39.73837,"lon":-104.99069},"btmRightPoint":{"lat":39.73657,"lon":-104.98836}},"entryPoints":[{"type":"main","position":{"lat":39.7378,"lon":-104.98892}}]},{"type":"POI","id":"AHBqfUJeUOYlt2XmrN14gQ","score":2.8319653648,"dist":207.362399,"info":"search:ta:840089002530995-US","poi":{"name":"Prosperity
+        Bank","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"1331","streetName":"North Cherokee
+        Street","municipalitySubdivision":"Civic Center","municipality":"Denver","countrySecondarySubdivision":"Denver","countrySubdivision":"CO","countrySubdivisionName":"Colorado","postalCode":"80204","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"1331 North Cherokee Street,
+        Denver, CO 80204","localName":"Denver"},"position":{"lat":39.737588,"lon":-104.99152},"viewport":{"topLeftPoint":{"lat":39.73849,"lon":-104.99269},"btmRightPoint":{"lat":39.73669,"lon":-104.99035}},"entryPoints":[{"type":"main","position":{"lat":39.73759,"lon":-104.99164}}]},{"type":"POI","id":"xSIGaU2GAvgUQbObTvRc0A","score":2.8319593328,"dist":244.364582,"info":"search:ta:840089001109334-US","poi":{"name":"ATM
+        at 1st Convenience","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"327","streetName":"14th Street","municipalitySubdivision":"Central
+        Business District","municipality":"Denver","countrySecondarySubdivision":"Denver","countrySubdivision":"CO","countrySubdivisionName":"Colorado","postalCode":"80202","extendedPostalCode":"80202-5015","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"327 14th Street, Denver,
+        CO 80202","localName":"Denver"},"position":{"lat":39.741179,"lon":-104.991543},"viewport":{"topLeftPoint":{"lat":39.74208,"lon":-104.99271},"btmRightPoint":{"lat":39.74028,"lon":-104.99037}},"entryPoints":[{"type":"main","position":{"lat":39.74107,"lon":-104.99168}}]},{"type":"POI","id":"VQkyUQg4i-lD0_rMfeiECg","score":2.8319582838,"dist":251.862182,"info":"search:ta:840089001138686-US","poi":{"name":"ATM
+        at Pints Pub","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"221","streetName":"West 13th Avenue","municipalitySubdivision":"Civic
+        Center","municipality":"Denver","countrySecondarySubdivision":"Denver","countrySubdivision":"CO","countrySubdivisionName":"Colorado","postalCode":"80204","extendedPostalCode":"80204-2711","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"221 West 13th Avenue, Denver,
+        CO 80204","localName":"Denver"},"position":{"lat":39.736976,"lon":-104.990855},"viewport":{"topLeftPoint":{"lat":39.73788,"lon":-104.99202},"btmRightPoint":{"lat":39.73608,"lon":-104.98969}},"entryPoints":[{"type":"main","position":{"lat":39.73687,"lon":-104.99086}}]},{"type":"POI","id":"BEWVfKkMJTTb0aBdGtaLaQ","score":2.8319556612,"dist":265.402659,"info":"search:ta:840089001028554-US","poi":{"name":"Wells
+        Fargo","brands":[{"name":"Wells Fargo"}],"categorySet":[{"id":7397}],"categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"101","streetName":"West Colfax
+        Avenue","municipalitySubdivision":"Central Business District","municipality":"Denver","countrySecondarySubdivision":"Denver","countrySubdivision":"CO","countrySubdivisionName":"Colorado","postalCode":"80202","extendedPostalCode":"80202-5315","countryCode":"US","country":"United
+        States","countryCodeISO3":"USA","freeformAddress":"101 West Colfax Avenue,
+        Denver, CO 80202","localName":"Denver"},"position":{"lat":39.740836,"lon":-104.98804},"viewport":{"topLeftPoint":{"lat":39.74174,"lon":-104.98921},"btmRightPoint":{"lat":39.73994,"lon":-104.98687}},"entryPoints":[{"type":"main","position":{"lat":39.74053,"lon":-104.98845}},{"type":"main","position":{"lat":39.74053,"lon":-104.98845}},{"type":"main","position":{"lat":39.74051,"lon":-104.98841}}]}]}'
+  recorded_at: Wed, 30 Aug 2023 20:34:32 GMT
+recorded_with: VCR 6.2.0
