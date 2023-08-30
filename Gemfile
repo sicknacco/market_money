@@ -37,6 +37,7 @@ gem "bootsnap", require: false
 # gem "rack-cors"
 gem 'jsonapi-serializer'
 gem 'figaro'
+gem 'faraday'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -55,5 +56,7 @@ end
 group :test do
   gem 'rspec-rails'
   gem 'pry'
+  gem 'vcr'
+  gem 'webmock'
 end
 
