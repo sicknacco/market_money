@@ -2,14 +2,22 @@ require 'rails_helper'
 
 RSpec.describe 'Search Markets', type: :request do
   describe 'GET /api/v0/markets/search' do
-    it 'can search for markets by state' do
-      market1 = create(:market, name:'Cool Place' state: 'Colorado')
-      market2 = create(:market, name:'Okay Place' state: 'Colorado')
-      market3 = create(:market, name:'Lame Place' state: 'California')
+    it 'can search for markets by state, city, and name' do
+      market1 = create(:market, name:'Cool Place', city: 'Grand Junction', state: 'Colorado')
+      market2 = create(:market, name:'Okay Place', city: 'Grand Junction', state: 'Colorado')
+      market3 = create(:market, name:'Lame Place', city: 'San Diegoo', state: 'California')
 
-      q_params = { state: 'Colorado' }
+      headers = {
+        CONTENT_TYPE: "application/json",
+        ACCEPT: "application/json"
+      }
+      q_params = {
+        state: 'Colorado',
+        city: 'Grand Junction',
+        name: 'Cool Place'
+      }
 
-      get '/api/v0/markets/search', params: q_params
+      get '/api/v0/markets/search', headers: headers, params: q_params
 
       expect(response).to be_successful
       expect(response).to have_http_status(200)
@@ -24,15 +32,15 @@ RSpec.describe 'Search Markets', type: :request do
         expect(market[:type]).to eq('market')
         expect(market[:attributes]).to be_a Hash
 
-        expect(market[:attributes][:name]).to eq(market1.name).or eq(market2.name)
-        expect(market[:attributes][:street]).to eq(market1.street).or eq(market2.street)
-        expect(market[:attributes][:city]).to eq(market1.city).or eq(market2.city)
-        expect(market[:attributes][:county]).to eq(market1.county).or eq(market2.county)
-        expect(market[:attributes][:state]).to eq(market1.state).or eq(market2.state)
-        expect(market[:attributes][:zip]).to eq(market1.zip).or eq(market2.zip)
-        expect(market[:attributes][:lat]).to eq(market1.lat).or eq(market2.lat)
-        expect(market[:attributes][:lon]).to eq(market1.lon).or eq(market2.lon)
-        expect(market[:attributes][:vendor_count]).to eq(market1.vendor_count).or eq(market2.vendor_count)
+        expect(market[:attributes][:name]).to eq(market1.name)
+        expect(market[:attributes][:street]).to eq(market1.street)
+        expect(market[:attributes][:city]).to eq(market1.city)
+        expect(market[:attributes][:county]).to eq(market1.county)
+        expect(market[:attributes][:state]).to eq(market1.state)
+        expect(market[:attributes][:zip]).to eq(market1.zip)
+        expect(market[:attributes][:lat]).to eq(market1.lat)
+        expect(market[:attributes][:lon]).to eq(market1.lon)
+        expect(market[:attributes][:vendor_count]).to eq(market1.vendor_count)
       end
     end
   end
