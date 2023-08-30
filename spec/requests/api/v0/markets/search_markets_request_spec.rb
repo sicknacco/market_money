@@ -6,7 +6,7 @@ RSpec.describe 'Search Markets', type: :request do
     market2 = create(:market, name:'Okay Place', city: 'Grand Junction', state: 'Colorado')
     market3 = create(:market, name:'Lame Place', city: 'San Diegoo', state: 'California')
   end
-  describe 'GET /api/v0/markets/search' do
+  describe 'happy path - GET /api/v0/markets/search' do
     it 'can search for markets by state, city, and name' do
       headers = {
         CONTENT_TYPE: "application/json",
@@ -121,6 +121,39 @@ RSpec.describe 'Search Markets', type: :request do
       markets = JSON.parse(response.body, symbolize_names: true)
       expect(markets[:data]).to be_an Array
       expect(markets[:data].count).to eq(1)
+    end
+  end
+
+  describe 'sad path - GET /api/v0/markets/search' do
+    it 'returns an error if trying to search by city' do
+      headers = {
+        CONTENT_TYPE: "application/json",
+        ACCEPT: "application/json"
+      }
+      q_params = {
+        city: 'Grand Junction'
+      }
+
+      get '/api/v0/markets/search', headers: headers, params: q_params
+
+      expect(response).to_not be_successful
+      expect(response).to have_http_status(422)
+    end
+
+    xit 'returns an error if trying to search by city and name' do
+      headers = {
+        CONTENT_TYPE: "application/json",
+        ACCEPT: "application/json"
+      }
+      q_params = {
+        city: 'Grand Junction',
+        name: 'Cool Place'
+      }
+
+      get '/api/v0/markets/search', headers: headers, params: q_params
+
+      expect(response).to_not be_successful
+      expect(response).to have_http_status(422)
     end
   end
 end
