@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Atms API', type: :request do
   describe 'GET /api/v0/markets/:id/nearest_atms' do
-    it 'returns nearest atms' do
+    it 'returns nearest atms', :vcr do
       market = create(:market)
 
       headers = {

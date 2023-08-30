@@ -1,0 +1,282 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tomtom.com/search/2/categorySearch/automatic_teller_machine.json?key=<key>&lat=-18.39871271580492&lon=135.6702825335281
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 30 Aug 2023 22:53:03 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Tracking-Id:
+      - 846d766c-cd06-4852-bc4d-3078be5e511a
+      Access-Control-Expose-Headers:
+      - Tracking-ID
+      X-Apigee.target-Latency:
+      - '369'
+      X-Envoy-Upstream-Service-Time:
+      - '380'
+      Server:
+      - tomtom
+      X-Tomtom-Processed-By:
+      - westus2
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"summary":{"query":"automatic_teller_machine","queryType":"NON_NEAR","queryTime":366,"numResults":10,"offset":0,"totalResults":10,"fuzzyLevel":1,"geoBias":{"lat":-18.39871271580492,"lon":135.6702825335281},"geobiasCountry":"AU"},"results":[{"type":"POI","id":"nZ5q_QWDs4AY_9vB5JBAYw","score":2.3799088756,"dist":130866.548572,"info":"search:ta:036009007893760-AU","poi":{"name":"Barkly
+        Wayside Inn","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetName":"Tablelands Highway","municipality":"Tablelands","countrySecondarySubdivision":"Barkley","countrySubdivision":"Northern
+        Territory","postalCode":"0862","countryCode":"AU","country":"Australia","countryCodeISO3":"AUS","freeformAddress":"Tablelands
+        Highway, Tablelands, Northern Territory, 0862","localName":"Tablelands"},"position":{"lat":-19.544671,"lon":135.953825},"viewport":{"topLeftPoint":{"lat":-19.54377,"lon":135.95287},"btmRightPoint":{"lat":-19.54557,"lon":135.95478}},"entryPoints":[{"type":"main","position":{"lat":-19.54459,"lon":135.95377}}]},{"type":"POI","id":"DArCGnz1T21Qj_R2aM7xIg","score":2.3719597615,"dist":208119.720163,"info":"search:ta:036009001171164-AU","poi":{"name":"ANZ
+        ATM - Tennant Creek","brands":[{"name":"ANZ"}],"categorySet":[{"id":7397}],"url":"www.anz.com.au/","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"141","streetName":"Paterson Street","municipality":"Tennant
+        Creek","countrySecondarySubdivision":"Barkley","countrySubdivision":"Northern
+        Territory","postalCode":"0860","countryCode":"AU","country":"Australia","countryCodeISO3":"AUS","freeformAddress":"141
+        Paterson Street, Tennant Creek, Northern Territory, 0860","localName":"Tennant
+        Creek"},"position":{"lat":-19.64279,"lon":134.191126},"viewport":{"topLeftPoint":{"lat":-19.64189,"lon":134.19017},"btmRightPoint":{"lat":-19.64369,"lon":134.19208}},"entryPoints":[{"type":"main","position":{"lat":-19.64277,"lon":134.19093}},{"type":"main","position":{"lat":-19.64254,"lon":134.19096}}]},{"type":"POI","id":"NATESz-b-Vj8LTGfh5Li4Q","score":2.3719406165,"dist":208361.217537,"info":"search:ta:036009007187919-AU","poi":{"name":"Westpac
+        Tennant Creek","phone":"+61 2 9155 7700","brands":[{"name":"Westpac"}],"categorySet":[{"id":7397}],"url":"www.westpac.com.au","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"64","streetName":"Paterson Street","municipality":"Tennant
+        Creek","countrySecondarySubdivision":"Barkley","countrySubdivision":"Northern
+        Territory","postalCode":"0860","countryCode":"AU","country":"Australia","countryCodeISO3":"AUS","freeformAddress":"64
+        Paterson Street, Tennant Creek, Northern Territory, 0860","localName":"Tennant
+        Creek"},"position":{"lat":-19.64623,"lon":134.191275},"viewport":{"topLeftPoint":{"lat":-19.64533,"lon":134.19032},"btmRightPoint":{"lat":-19.64713,"lon":134.19223}},"entryPoints":[{"type":"main","position":{"lat":-19.64614,"lon":134.19099}},{"type":"main","position":{"lat":-19.6461,"lon":134.191}}]},{"type":"POI","id":"G0Rsgo5NX32az0sDsedhLA","score":2.3690667666,"dist":250078.272157,"info":"search:ta:036009007889879-AU","poi":{"name":"Canteen
+        Creek Community Store","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetName":"Canteen Creek Road","municipality":"Canteen
+        Creek","countrySecondarySubdivision":"Barkley","countrySubdivision":"Northern
+        Territory","postalCode":"0872","countryCode":"AU","country":"Australia","countryCodeISO3":"AUS","freeformAddress":"Canteen
+        Creek Road, Canteen Creek, Northern Territory, 0872","localName":"Canteen
+        Creek"},"position":{"lat":-20.646272,"lon":135.584741},"viewport":{"topLeftPoint":{"lat":-20.64537,"lon":135.58378},"btmRightPoint":{"lat":-20.64717,"lon":135.5857}},"entryPoints":[{"type":"main","position":{"lat":-20.64627,"lon":135.58474}}]},{"type":"POI","id":"x4kZyONrD-1jzDv0Rd58qw","score":2.3680153645,"dist":268741.591789,"info":"search:ta:036009007916911-AU","poi":{"name":"Malandari
+        #3","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetName":"Robinson Road","municipality":"Borroloola","countrySecondarySubdivision":"Roper
+        McArthur","countrySubdivision":"Northern Territory","postalCode":"0854","countryCode":"AU","country":"Australia","countryCodeISO3":"AUS","freeformAddress":"Robinson
+        Road, Borroloola, Northern Territory, 0854","localName":"Borroloola"},"position":{"lat":-16.059647,"lon":136.30713},"viewport":{"topLeftPoint":{"lat":-16.05875,"lon":136.30619},"btmRightPoint":{"lat":-16.06055,"lon":136.30807}},"entryPoints":[{"type":"main","position":{"lat":-16.05965,"lon":136.30722}}]},{"type":"POI","id":"CldNYr4T6w-W3ziAtpo0aQ","score":2.3661816395,"dist":308072.256272,"info":"search:ta:036009007207200-AU","poi":{"name":"Camooweal
+        Driveway Roadhouse","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"31","streetName":"Barkly Street","municipality":"Camooweal","countrySecondarySubdivision":"Western
+        Queensland","countrySubdivision":"Queensland","postalCode":"4828","countryCode":"AU","country":"Australia","countryCodeISO3":"AUS","freeformAddress":"31
+        Barkly Street, Camooweal, Queensland, 4828","localName":"Camooweal"},"position":{"lat":-19.922037,"lon":138.120305},"viewport":{"topLeftPoint":{"lat":-19.92114,"lon":138.11935},"btmRightPoint":{"lat":-19.92294,"lon":138.12126}},"entryPoints":[{"type":"main","position":{"lat":-19.92153,"lon":138.12033}},{"type":"main","position":{"lat":-19.92152,"lon":138.1203}}]},{"type":"POI","id":"wfQuNIEjGO0Wx2jWVBVQpg","score":2.1481518745,"dist":419026.9921,"info":"search:ta:036009007192784-AU","poi":{"name":"Gununamanda
+        Atm 2","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetName":"Lardil Street","municipality":"Wellesley
+        Islands","countrySecondarySubdivision":"Carpentaria","countrySubdivision":"Queensland","postalCode":"4892","countryCode":"AU","country":"Australia","countryCodeISO3":"AUS","freeformAddress":"Lardil
+        Street, Wellesley Islands, Queensland, 4892","localName":"Wellesley Islands"},"position":{"lat":-16.665252,"lon":139.179534},"viewport":{"topLeftPoint":{"lat":-16.66435,"lon":139.1786},"btmRightPoint":{"lat":-16.66615,"lon":139.18047}},"entryPoints":[{"type":"main","position":{"lat":-16.66517,"lon":139.17958}}]},{"type":"POI","id":"C0qyoTE0_uARdV1dH8u8wg","score":2.1480777264,"dist":423235.544941,"info":"search:ta:036009007939735-AU","poi":{"name":"Wirliyajarrayi
+        Store","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"9","streetName":"Anmatjere Street","municipality":"Wilora","countrySecondarySubdivision":"Central
+        Australia","countrySubdivision":"Northern Territory","postalCode":"0872","countryCode":"AU","country":"Australia","countryCodeISO3":"AUS","freeformAddress":"9
+        Anmatjere Street, Wilora, Northern Territory, 0872","localName":"Wilora"},"position":{"lat":-21.741577,"lon":133.732117},"viewport":{"topLeftPoint":{"lat":-21.74068,"lon":133.73115},"btmRightPoint":{"lat":-21.74248,"lon":133.73309}},"entryPoints":[{"type":"main","position":{"lat":-21.74149,"lon":133.73172}}]},{"type":"POI","id":"I_PBr0WuUDQCNRpEgtM2QA","score":2.1475424767,"dist":457641.314583,"info":"search:ta:036009007901424-AU","poi":{"name":"Numbulwar","categorySet":[{"id":7397}],"categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetName":"Numblulwar Road","municipality":"Numbulwar","countrySecondarySubdivision":"Arnhem","countrySubdivision":"Northern
+        Territory","postalCode":"0822","countryCode":"AU","country":"Australia","countryCodeISO3":"AUS","freeformAddress":"Numblulwar
+        Road, Numbulwar, Northern Territory, 0822","localName":"Numbulwar"},"position":{"lat":-14.283423,"lon":135.727943},"viewport":{"topLeftPoint":{"lat":-14.28252,"lon":135.72701},"btmRightPoint":{"lat":-14.28432,"lon":135.72887}},"entryPoints":[{"type":"main","position":{"lat":-14.28333,"lon":135.72792}}]},{"type":"POI","id":"wImWVywHgknr2uMsfLzB3Q","score":2.1473555565,"dist":471773.660079,"info":"search:ta:036009007860973-AU","poi":{"name":"Hi
+        Way Inn Motel","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"430","streetName":"Stuart Highway","municipality":"Mataranka","countrySecondarySubdivision":"Roper
+        McArthur","countrySubdivision":"Northern Territory","postalCode":"0852","countryCode":"AU","country":"Australia","countryCodeISO3":"AUS","freeformAddress":"430
+        Stuart Highway, Mataranka, Northern Territory, 0852","localName":"Mataranka"},"position":{"lat":-14.959808,"lon":133.07569},"viewport":{"topLeftPoint":{"lat":-14.95891,"lon":133.07476},"btmRightPoint":{"lat":-14.96071,"lon":133.07662}},"entryPoints":[{"type":"main","position":{"lat":-14.95982,"lon":133.0756}}]}]}'
+  recorded_at: Wed, 30 Aug 2023 22:53:03 GMT
+- request:
+    method: get
+    uri: https://api.tomtom.com/search/2/categorySearch/automatic_teller_machine.json?key=<key>&lat=-41.36756571479451&lon=20.30274310842637
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 30 Aug 2023 22:54:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Tracking-Id:
+      - 29dcf5af-59ea-4aef-adec-9f6e7d55cbae
+      Access-Control-Expose-Headers:
+      - Tracking-ID
+      X-Apigee.target-Latency:
+      - '205'
+      X-Envoy-Upstream-Service-Time:
+      - '216'
+      Server:
+      - tomtom
+      X-Tomtom-Processed-By:
+      - westus2
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"summary":{"query":"automatic_teller_machine","queryType":"NON_NEAR","queryTime":202,"numResults":10,"offset":0,"totalResults":10,"fuzzyLevel":1,"geoBias":{"lat":-41.36756571479451,"lon":20.30274310842637},"geobiasCountry":"ZA"},"results":[{"type":"POI","id":"VuRjSksl6sYkKu_19-j9TA","score":2.1457879543,"dist":730538.863265,"info":"search:ta:710009004159427-ZA","poi":{"name":"Nedbank
+        Struisbaai","brands":[{"name":"Nedbank"}],"categorySet":[{"id":7397}],"url":"www.nedbank.co.za/content/nedbank/desktop/gt/en/personal.html","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetName":"Main Road","municipality":"Argonauta","countrySecondarySubdivision":"Overberg","countrySubdivision":"Western
+        Cape","postalCode":"7285","countryCode":"ZA","country":"South Africa","countryCodeISO3":"ZAF","freeformAddress":"Main
+        Road, Argonauta, 7285","localName":"Argonauta"},"position":{"lat":-34.800624,"lon":20.052545},"viewport":{"topLeftPoint":{"lat":-34.79972,"lon":20.05145},"btmRightPoint":{"lat":-34.80152,"lon":20.05364}},"entryPoints":[{"type":"main","position":{"lat":-34.80056,"lon":20.05258}}]},{"type":"POI","id":"GdeCAuQzcA9GGkqARdFjBw","score":2.1457879543,"dist":730532.471009,"info":"search:ta:710009002131802-ZA","poi":{"name":"Cash
+        Express ATM","brands":[{"name":"ABSA"},{"name":"Cash Express ATM"}],"categorySet":[{"id":7397}],"url":"www.absa.co.za","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"25","streetName":"Main Road","municipality":"Argonauta","countrySecondarySubdivision":"Overberg","countrySubdivision":"Western
+        Cape","postalCode":"7285","countryCode":"ZA","country":"South Africa","countryCodeISO3":"ZAF","freeformAddress":"25
+        Main Road, Argonauta, 7285","localName":"Argonauta"},"position":{"lat":-34.800692,"lon":20.052087},"viewport":{"topLeftPoint":{"lat":-34.79979,"lon":20.05099},"btmRightPoint":{"lat":-34.80159,"lon":20.05318}},"entryPoints":[{"type":"main","position":{"lat":-34.80043,"lon":20.05223}}]},{"type":"POI","id":"uVFbd5-jSeJJR7ey4T7VOw","score":2.1457867622,"dist":731141.486052,"info":"search:ta:710007000085879-ZA","poi":{"name":"ABSA
+        Caltex Struisbaai, Struisbaai","brands":[{"name":"ABSA"}],"categorySet":[{"id":7397}],"url":"www.absa.co.za/personal/","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"67","streetName":"Main Road","municipality":"Argonauta","countrySecondarySubdivision":"Overberg","countrySubdivision":"Western
+        Cape","postalCode":"7285","countryCode":"ZA","country":"South Africa","countryCodeISO3":"ZAF","freeformAddress":"67
+        Main Road, Argonauta, 7285","localName":"Argonauta"},"position":{"lat":-34.795442,"lon":20.042545},"viewport":{"topLeftPoint":{"lat":-34.79454,"lon":20.04145},"btmRightPoint":{"lat":-34.79634,"lon":20.04364}},"entryPoints":[{"type":"main","position":{"lat":-34.79519,"lon":20.04284}}]},{"type":"POI","id":"o7jDfzUAkuo_Px04vqBrpQ","score":2.1457362175,"dist":754983.292104,"info":"search:ta:710009004172078-ZA","poi":{"name":"Standard
+        Bank Pjs Srette","brands":[{"name":"Standard Bank"}],"categorySet":[{"id":7397}],"url":"https://www.standardbank.co.za/","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"municipalitySubdivision":"Elim","municipality":"Cape
+        Agulhas","countrySecondarySubdivision":"Overberg","countrySubdivision":"Western
+        Cape","postalCode":"7284","countryCode":"ZA","country":"South Africa","countryCodeISO3":"ZAF","freeformAddress":"Elim,
+        Cape Agulhas, 7284","localName":"Cape Agulhas"},"position":{"lat":-34.591434,"lon":19.757177},"viewport":{"topLeftPoint":{"lat":-34.59053,"lon":19.75608},"btmRightPoint":{"lat":-34.59233,"lon":19.75827}},"entryPoints":[{"type":"main","position":{"lat":-34.59152,"lon":19.75703}}]},{"type":"POI","id":"CX7P9wdFXSDO4mD4IY7ijA","score":2.145730257,"dist":758101.271784,"info":"search:ta:710007000000640-ZA","poi":{"name":"Capitec
+        Bank Hop in Family Market","brands":[{"name":"Capitec Bank"}],"categorySet":[{"id":7397}],"url":"www.capitecbank.co.za/","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetName":"R319","municipality":"Bredasdorp","countrySecondarySubdivision":"Overberg","countrySubdivision":"Western
+        Cape","postalCode":"7280","countryCode":"ZA","country":"South Africa","countryCodeISO3":"ZAF","freeformAddress":"R319,
+        Bredasdorp, 7280","localName":"Bredasdorp"},"position":{"lat":-34.552696,"lon":20.050599},"viewport":{"topLeftPoint":{"lat":-34.5518,"lon":20.04951},"btmRightPoint":{"lat":-34.5536,"lon":20.05169}},"entryPoints":[{"type":"main","position":{"lat":-34.55272,"lon":20.05049}}]},{"type":"POI","id":"WWy2wdJTg9iKu7cGtXt08Q","score":2.1457295418,"dist":758402.470457,"info":"search:ta:710007000125362-ZA","poi":{"name":"Standard
+        Bank Autobank ATM, Gateway Centre - Gansbaai","phone":"+27 860 123 000","brands":[{"name":"Standard
+        Bank"}],"categorySet":[{"id":7397}],"url":"www.standardbank.co.za/","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"municipality":"Gansbaai","countrySecondarySubdivision":"Overberg","countrySubdivision":"Western
+        Cape","postalCode":"7220","countryCode":"ZA","country":"South Africa","countryCodeISO3":"ZAF","freeformAddress":"Gansbaai,
+        7220","localName":"Gansbaai"},"position":{"lat":-34.588406,"lon":19.350298},"viewport":{"topLeftPoint":{"lat":-34.58751,"lon":19.34921},"btmRightPoint":{"lat":-34.58931,"lon":19.35139}},"entryPoints":[{"type":"main","position":{"lat":-34.58841,"lon":19.35041}}]},{"type":"POI","id":"iuJQlBNt4uKRCOFunvR-9g","score":2.1457295418,"dist":758381.97364,"info":"search:ta:710007000148648-ZA","poi":{"name":"Nedbank
+        Gansbaai","brands":[{"name":"Nedbank"}],"categorySet":[{"id":7397}],"url":"www.nedbank.co.za/","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"30","streetName":"Main Road","municipality":"Gansbaai","countrySecondarySubdivision":"Overberg","countrySubdivision":"Western
+        Cape","postalCode":"7220","countryCode":"ZA","country":"South Africa","countryCodeISO3":"ZAF","freeformAddress":"30
+        Main Road, Gansbaai, 7220","localName":"Gansbaai"},"position":{"lat":-34.5886,"lon":19.3502},"viewport":{"topLeftPoint":{"lat":-34.5877,"lon":19.34911},"btmRightPoint":{"lat":-34.5895,"lon":19.35129}},"entryPoints":[{"type":"main","position":{"lat":-34.58864,"lon":19.35125}}]},{"type":"POI","id":"4MEkY7DtWB5LXsg7hiSXQA","score":2.1457288265,"dist":758777.332498,"info":"search:ta:710009004172777-ZA","poi":{"name":"ABSA
+        Spar Gansbaai, Gansbaai","brands":[{"name":"ABSA"}],"categorySet":[{"id":7397}],"url":"www.absa.co.za/personal/","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"municipality":"Gansbaai","countrySecondarySubdivision":"Overberg","countrySubdivision":"Western
+        Cape","postalCode":"7220","countryCode":"ZA","country":"South Africa","countryCodeISO3":"ZAF","freeformAddress":"Gansbaai,
+        7220","localName":"Gansbaai"},"position":{"lat":-34.584891,"lon":19.351739},"viewport":{"topLeftPoint":{"lat":-34.58399,"lon":19.35065},"btmRightPoint":{"lat":-34.58579,"lon":19.35283}},"entryPoints":[{"type":"main","position":{"lat":-34.58487,"lon":19.3516}}]},{"type":"POI","id":"mJ92WKOX-Wk5yerGcSJatA","score":2.1457266808,"dist":759969.633694,"info":"search:ta:710009004157910-ZA","poi":{"name":"ABSA
+        Spar Bredasdorp, BREDASDORP","brands":[{"name":"ABSA"}],"categorySet":[{"id":7397}],"url":"www.absa.co.za/personal/","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"municipality":"Bredasdorp","countrySecondarySubdivision":"Overberg","countrySubdivision":"Western
+        Cape","postalCode":"7280","countryCode":"ZA","country":"South Africa","countryCodeISO3":"ZAF","freeformAddress":"Bredasdorp,
+        7280","localName":"Bredasdorp"},"position":{"lat":-34.53601,"lon":20.045271},"viewport":{"topLeftPoint":{"lat":-34.53511,"lon":20.04418},"btmRightPoint":{"lat":-34.53691,"lon":20.04636}},"entryPoints":[{"type":"main","position":{"lat":-34.53671,"lon":20.04557}}]},{"type":"POI","id":"QzarZ4IY8b2lqwIxNwv2sw","score":2.1457266808,"dist":759959.463804,"info":"search:ta:710009002179080-ZA","poi":{"name":"Capitec
+        Bank Bredasdorp Overberg Shopping Centre","phone":"+27 860 102 043","brands":[{"name":"Capitec
+        Bank"}],"categorySet":[{"id":7397}],"url":"www.capitecbank.co.za/","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"municipality":"Bredasdorp","countrySecondarySubdivision":"Overberg","countrySubdivision":"Western
+        Cape","postalCode":"7280","countryCode":"ZA","country":"South Africa","countryCodeISO3":"ZAF","freeformAddress":"Bredasdorp,
+        7280","localName":"Bredasdorp"},"position":{"lat":-34.536099,"lon":20.045401},"viewport":{"topLeftPoint":{"lat":-34.5352,"lon":20.04431},"btmRightPoint":{"lat":-34.537,"lon":20.04649}},"entryPoints":[{"type":"main","position":{"lat":-34.53676,"lon":20.04553}}]}]}'
+  recorded_at: Wed, 30 Aug 2023 22:54:56 GMT
+- request:
+    method: get
+    uri: https://api.tomtom.com/search/2/categorySearch/automatic_teller_machine.json?key=<key>&lat=-82.72192568754834&lon=115.3927369211521
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 30 Aug 2023 22:55:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Tracking-Id:
+      - 4e856e58-9cf6-4e2f-9daa-6ebe7d1882af
+      Access-Control-Expose-Headers:
+      - Tracking-ID
+      X-Apigee.target-Latency:
+      - '198'
+      X-Envoy-Upstream-Service-Time:
+      - '208'
+      Server:
+      - tomtom
+      X-Tomtom-Processed-By:
+      - westus2
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJzdW1tYXJ5Ijp7InF1ZXJ5IjoiYXV0b21hdGljX3RlbGxlcl9tYWNoaW5lIiwicXVlcnlUeXBlIjoiTk9OX05FQVIiLCJxdWVyeVRpbWUiOjE5NCwibnVtUmVzdWx0cyI6MTAsIm9mZnNldCI6MCwidG90YWxSZXN1bHRzIjoxMCwiZnV6enlMZXZlbCI6MSwiZ2VvQmlhcyI6eyJsYXQiOi04Mi43MjE5MjU2ODc1NDgzNCwibG9uIjoxMTUuMzkyNzM2OTIxMTUyMX0sImdlb2JpYXNDb3VudHJ5IjoiQVEifSwicmVzdWx0cyI6W3sidHlwZSI6IlBPSSIsImlkIjoiVWkzM3VHRE9VcWFxY0d6RjhqY0JoUSIsInNjb3JlIjoyLjE0NTQzOTg2MzIsImRpc3QiOjE1MDE5NTA2LjY2NTI5OSwiaW5mbyI6InNlYXJjaDp0YTowMjAwMDkwMDAwMDA5NDQtQUQiLCJwb2kiOnsibmFtZSI6IkJhbmNTYWJhZGVsbCBkJ0FuZG9ycmEiLCJicmFuZHMiOlt7Im5hbWUiOiJCYW5jIFNhYmFkZWxsIGQnQW5kb3JyYSJ9XSwiY2F0ZWdvcnlTZXQiOlt7ImlkIjo3Mzk3fV0sImNhdGVnb3JpZXMiOlsiY2FzaCBkaXNwZW5zZXIiXSwiY2xhc3NpZmljYXRpb25zIjpbeyJjb2RlIjoiQ0FTSF9ESVNQRU5TRVIiLCJuYW1lcyI6W3sibmFtZUxvY2FsZSI6ImVuLVVTIiwibmFtZSI6ImNhc2ggZGlzcGVuc2VyIn1dfV19LCJhZGRyZXNzIjp7InN0cmVldE51bWJlciI6IjciLCJzdHJlZXROYW1lIjoiQXZpbmd1ZGEgZGVsIEZlbmVyIiwibXVuaWNpcGFsaXR5IjoiRXNjYWxkZXMtRW5nb3JkYW55IiwicG9zdGFsQ29kZSI6IkFENTAwIiwiY291bnRyeUNvZGUiOiJBRCIsImNvdW50cnkiOiJBbmRvcnJhIiwiY291bnRyeUNvZGVJU08zIjoiQU5EIiwiZnJlZWZvcm1BZGRyZXNzIjoiQXZpbmd1ZGEgZGVsIEZlbmVyIDcsIEVzY2FsZGVzLUVuZ29yZGFueSwgQUQ1MDAiLCJsb2NhbE5hbWUiOiJFc2NhbGRlcy1FbmdvcmRhbnkifSwicG9zaXRpb24iOnsibGF0Ijo0Mi41MDcxNSwibG9uIjoxLjUzNDI0NX0sInZpZXdwb3J0Ijp7InRvcExlZnRQb2ludCI6eyJsYXQiOjQyLjUwODA1LCJsb24iOjEuNTMzMDN9LCJidG1SaWdodFBvaW50Ijp7ImxhdCI6NDIuNTA2MjUsImxvbiI6MS41MzU0Nn19LCJlbnRyeVBvaW50cyI6W3sidHlwZSI6Im1haW4iLCJwb3NpdGlvbiI6eyJsYXQiOjQyLjUwNzE1LCJsb24iOjEuNTM0MjV9fV19LHsidHlwZSI6IlBPSSIsImlkIjoidnRBUUE3LUF3RDhnRHZXd3Z1dzhGUSIsInNjb3JlIjoyLjE0NTQzOTg2MzIsImRpc3QiOjE1MDI0OTcxLjcyODU4NywiaW5mbyI6InNlYXJjaDp0YTowMjAwMDkwMDAwMDA3NjgtQUQiLCJwb2kiOnsibmFtZSI6IkNyw6hkaXQgQW5kb3Jyw6AiLCJicmFuZHMiOlt7Im5hbWUiOiJDcsOoZGl0IEFuZG9ycsOgIn1dLCJjYXRlZ29yeVNldCI6W3siaWQiOjczOTd9XSwiY2F0ZWdvcmllcyI6WyJjYXNoIGRpc3BlbnNlciJdLCJjbGFzc2lmaWNhdGlvbnMiOlt7ImNvZGUiOiJDQVNIX0RJU1BFTlNFUiIsIm5hbWVzIjpbeyJuYW1lTG9jYWxlIjoiZW4tVVMiLCJuYW1lIjoiY2FzaCBkaXNwZW5zZXIifV19XX0sImFkZHJlc3MiOnsic3RyZWV0TmFtZSI6IkNhcnJlciBNYWpvciIsIm11bmljaXBhbGl0eSI6Ik9yZGlubyIsInBvc3RhbENvZGUiOiJBRDMwMCIsImNvdW50cnlDb2RlIjoiQUQiLCJjb3VudHJ5IjoiQW5kb3JyYSIsImNvdW50cnlDb2RlSVNPMyI6IkFORCIsImZyZWVmb3JtQWRkcmVzcyI6IkNhcnJlciBNYWpvciwgT3JkaW5vLCBBRDMwMCIsImxvY2FsTmFtZSI6Ik9yZGlubyJ9LCJwb3NpdGlvbiI6eyJsYXQiOjQyLjU1Njg3OCwibG9uIjoxLjUzMzQ1OH0sInZpZXdwb3J0Ijp7InRvcExlZnRQb2ludCI6eyJsYXQiOjQyLjU1Nzc4LCJsb24iOjEuNTMyMjR9LCJidG1SaWdodFBvaW50Ijp7ImxhdCI6NDIuNTU1OTgsImxvbiI6MS41MzQ2OH19LCJlbnRyeVBvaW50cyI6W3sidHlwZSI6Im1haW4iLCJwb3NpdGlvbiI6eyJsYXQiOjQyLjU1Njc0LCJsb24iOjEuNTMzNTR9fV19LHsidHlwZSI6IlBPSSIsImlkIjoicFpUU0p0UUxWZmRPRVpnTm43OVNBQSIsInNjb3JlIjoyLjE0NTQzOTg2MzIsImRpc3QiOjE1MDI0Mjk2Ljc5MTMwNCwiaW5mbyI6InNlYXJjaDp0YTowMjAwMDkwMDAwMjE3NDMtQUQiLCJwb2kiOnsibmFtZSI6IkNyw6hkaXQgQW5kb3Jyw6AiLCJicmFuZHMiOlt7Im5hbWUiOiJDcsOoZGl0IEFuZG9ycsOgIn1dLCJjYXRlZ29yeVNldCI6W3siaWQiOjczOTd9XSwiY2F0ZWdvcmllcyI6WyJjYXNoIGRpc3BlbnNlciJdLCJjbGFzc2lmaWNhdGlvbnMiOlt7ImNvZGUiOiJDQVNIX0RJU1BFTlNFUiIsIm5hbWVzIjpbeyJuYW1lTG9jYWxlIjoiZW4tVVMiLCJuYW1lIjoiY2FzaCBkaXNwZW5zZXIifV19XX0sImFkZHJlc3MiOnsic3RyZWV0TmFtZSI6IlVyYmFuaXR6YWNpw7MgU3VwZXIgUGFsIiwibXVuaWNpcGFsaXR5U3ViZGl2aXNpb24iOiJQYWwiLCJtdW5pY2lwYWxpdHkiOiJMYSBNYXNzYW5hIiwicG9zdGFsQ29kZSI6IkFENDAwIiwiY291bnRyeUNvZGUiOiJBRCIsImNvdW50cnkiOiJBbmRvcnJhIiwiY291bnRyeUNvZGVJU08zIjoiQU5EIiwiZnJlZWZvcm1BZGRyZXNzIjoiVXJiYW5pdHphY2nDsyBTdXBlciBQYWwsIExhIE1hc3NhbmEsIEFENDAwIiwibG9jYWxOYW1lIjoiTGEgTWFzc2FuYSJ9LCJwb3NpdGlvbiI6eyJsYXQiOjQyLjU0MzU1NiwibG9uIjoxLjQ3NDk4Nn0sInZpZXdwb3J0Ijp7InRvcExlZnRQb2ludCI6eyJsYXQiOjQyLjU0NDQ2LCJsb24iOjEuNDczNzd9LCJidG1SaWdodFBvaW50Ijp7ImxhdCI6NDIuNTQyNjYsImxvbiI6MS40NzYyMX19LCJlbnRyeVBvaW50cyI6W3sidHlwZSI6Im1haW4iLCJwb3NpdGlvbiI6eyJsYXQiOjQyLjU0MzQ3LCJsb24iOjEuNDc1MDF9fV19LHsidHlwZSI6IlBPSSIsImlkIjoiZm5KSWR6Zkx4SUdBenlWZmxLeUtmQSIsInNjb3JlIjoyLjE0NTQzOTg2MzIsImRpc3QiOjE1MDIxOTk4LjE1ODUxLCJpbmZvIjoic2VhcmNoOnRhOjAyMDAwOTAwMDAyMjI1MS1BRCIsInBvaSI6eyJuYW1lIjoiQU5EQkFOSyIsImJyYW5kcyI6W3sibmFtZSI6IkFOREJBTksifV0sImNhdGVnb3J5U2V0IjpbeyJpZCI6NzM5N31dLCJjYXRlZ29yaWVzIjpbImNhc2ggZGlzcGVuc2VyIl0sImNsYXNzaWZpY2F0aW9ucyI6W3siY29kZSI6IkNBU0hfRElTUEVOU0VSIiwibmFtZXMiOlt7Im5hbWVMb2NhbGUiOiJlbi1VUyIsIm5hbWUiOiJjYXNoIGRpc3BlbnNlciJ9XX1dfSwiYWRkcmVzcyI6eyJzdHJlZXROdW1iZXIiOiI2Iiwic3RyZWV0TmFtZSI6IkF2aW5ndWRhIGRlIEpvYW4gTWFydMOtIiwibXVuaWNpcGFsaXR5IjoiRW5jYW1wIiwicG9zdGFsQ29kZSI6IkFEMjAwIiwiY291bnRyeUNvZGUiOiJBRCIsImNvdW50cnkiOiJBbmRvcnJhIiwiY291bnRyeUNvZGVJU08zIjoiQU5EIiwiZnJlZWZvcm1BZGRyZXNzIjoiQXZpbmd1ZGEgZGUgSm9hbiBNYXJ0w60gNiwgRW5jYW1wLCBBRDIwMCIsImxvY2FsTmFtZSI6IkVuY2FtcCJ9LCJwb3NpdGlvbiI6eyJsYXQiOjQyLjUzNTY3OCwibG9uIjoxLjU4MTY1M30sInZpZXdwb3J0Ijp7InRvcExlZnRQb2ludCI6eyJsYXQiOjQyLjUzNjU4LCJsb24iOjEuNTgwNDN9LCJidG1SaWdodFBvaW50Ijp7ImxhdCI6NDIuNTM0NzgsImxvbiI6MS41ODI4N319LCJlbnRyeVBvaW50cyI6W3sidHlwZSI6Im1haW4iLCJwb3NpdGlvbiI6eyJsYXQiOjQyLjUzNTYzLCJsb24iOjEuNTgxNzV9fV19LHsidHlwZSI6IlBPSSIsImlkIjoidTVBTHdIeXZ6WmxKclN1UVoyejdXQSIsInNjb3JlIjoyLjE0NTQzOTg2MzIsImRpc3QiOjE1MDI1MTQ5LjEyOTg5NCwiaW5mbyI6InNlYXJjaDp0YTowMjAwMDkwMDAwNDk5NjYtQUQiLCJwb2kiOnsibmFtZSI6IkF2LiBTYW50IEpvYW4iLCJicmFuZHMiOlt7Im5hbWUiOiJCYW5jIFNhYmFkZWxsIGQnQW5kb3JyYSJ9XSwiY2F0ZWdvcnlTZXQiOlt7ImlkIjo3Mzk3fV0sImNhdGVnb3JpZXMiOlsiY2FzaCBkaXNwZW5zZXIiXSwiY2xhc3NpZmljYXRpb25zIjpbeyJjb2RlIjoiQ0FTSF9ESVNQRU5TRVIiLCJuYW1lcyI6W3sibmFtZUxvY2FsZSI6ImVuLVVTIiwibmFtZSI6ImNhc2ggZGlzcGVuc2VyIn1dfV19LCJhZGRyZXNzIjp7InN0cmVldE51bWJlciI6IjIiLCJzdHJlZXROYW1lIjoiQ2FycmV0ZXJhIEdlbmVyYWwgMi1UcmFtIFNhbnQgSm9hbiBkZSBDYXNlbGxlcyIsIm11bmljaXBhbGl0eSI6IkNhbmlsbG8iLCJwb3N0YWxDb2RlIjoiQUQxMDAiLCJjb3VudHJ5Q29kZSI6IkFEIiwiY291bnRyeSI6IkFuZG9ycmEiLCJjb3VudHJ5Q29kZUlTTzMiOiJBTkQiLCJmcmVlZm9ybUFkZHJlc3MiOiJDYXJyZXRlcmEgR2VuZXJhbCAyLVRyYW0gU2FudCBKb2FuIGRlIENhc2VsbGVzIDIsIENhbmlsbG8sIEFEMTAwIiwibG9jYWxOYW1lIjoiQ2FuaWxsbyJ9LCJwb3NpdGlvbiI6eyJsYXQiOjQyLjU2NjA2LCJsb24iOjEuNTk1MTQxfSwidmlld3BvcnQiOnsidG9wTGVmdFBvaW50Ijp7ImxhdCI6NDIuNTY3NTYsImxvbiI6MS41OTMxfSwiYnRtUmlnaHRQb2ludCI6eyJsYXQiOjQyLjU2NDU2LCJsb24iOjEuNTk3MTh9fSwiZW50cnlQb2ludHMiOlt7InR5cGUiOiJtYWluIiwicG9zaXRpb24iOnsibGF0Ijo0Mi41NjUzNSwibG9uIjoxLjU5MzM0fX1dfSx7InR5cGUiOiJQT0kiLCJpZCI6IjU2RjJ0dEdWZ3duVTh2OUxmR3hUY0EiLCJzY29yZSI6Mi4xNDU0Mzk4NjMyLCJkaXN0IjoxNTAxNTYwOC45NTk3ODMsImluZm8iOiJzZWFyY2g6dGE6MDIwMDA5MDAwMDIxODY1LUFEIiwicG9pIjp7Im5hbWUiOiJNT1JBQkFOQyIsImJyYW5kcyI6W3sibmFtZSI6Ik1vcmFiYW5jIn1dLCJjYXRlZ29yeVNldCI6W3siaWQiOjczOTd9XSwiY2F0ZWdvcmllcyI6WyJjYXNoIGRpc3BlbnNlciJdLCJjbGFzc2lmaWNhdGlvbnMiOlt7ImNvZGUiOiJDQVNIX0RJU1BFTlNFUiIsIm5hbWVzIjpbeyJuYW1lTG9jYWxlIjoiZW4tVVMiLCJuYW1lIjoiY2FzaCBkaXNwZW5zZXIifV19XX0sImFkZHJlc3MiOnsic3RyZWV0TnVtYmVyIjoiMiIsInN0cmVldE5hbWUiOiJDYXJyZXRlcmEgZGUgbGEgUmFiYXNzYSIsIm11bmljaXBhbGl0eSI6IlNhbnQgSnVsacOgIGRlIEzDsnJpYSIsInBvc3RhbENvZGUiOiJBRDYwMCIsImNvdW50cnlDb2RlIjoiQUQiLCJjb3VudHJ5IjoiQW5kb3JyYSIsImNvdW50cnlDb2RlSVNPMyI6IkFORCIsImZyZWVmb3JtQWRkcmVzcyI6IkNhcnJldGVyYSBkZSBsYSBSYWJhc3NhIDIsIFNhbnQgSnVsacOgIGRlIEzDsnJpYSwgQUQ2MDAiLCJsb2NhbE5hbWUiOiJTYW50IEp1bGnDoCBkZSBMw7JyaWEifSwicG9zaXRpb24iOnsibGF0Ijo0Mi40NjY0ODgsImxvbiI6MS40OTI0MTJ9LCJ2aWV3cG9ydCI6eyJ0b3BMZWZ0UG9pbnQiOnsibGF0Ijo0Mi40NjczOSwibG9uIjoxLjQ5MTE5fSwiYnRtUmlnaHRQb2ludCI6eyJsYXQiOjQyLjQ2NTU5LCJsb24iOjEuNDkzNjN9fSwiZW50cnlQb2ludHMiOlt7InR5cGUiOiJtYWluIiwicG9zaXRpb24iOnsibGF0Ijo0Mi40NjY1MSwibG9uIjoxLjQ5MjUxfX1dfSx7InR5cGUiOiJQT0kiLCJpZCI6IjkwTHlqMmVUV1lQWk0yQmQ5cWFxVWciLCJzY29yZSI6Mi4xNDU0Mzk4NjMyLCJkaXN0IjoxNTAyMzY3OS4yNDc1MDUsImluZm8iOiJzZWFyY2g6dGE6MDIwMDA5MDAwMDkzMzQwLUFEIiwicG9pIjp7Im5hbWUiOiJCYW5jU2FiYWRlbGwgZCdBbmRvcnJhIiwiYnJhbmRzIjpbeyJuYW1lIjoiQmFuYyBTYWJhZGVsbCBkJ0FuZG9ycmEifV0sImNhdGVnb3J5U2V0IjpbeyJpZCI6NzM5N31dLCJjYXRlZ29yaWVzIjpbImNhc2ggZGlzcGVuc2VyIl0sImNsYXNzaWZpY2F0aW9ucyI6W3siY29kZSI6IkNBU0hfRElTUEVOU0VSIiwibmFtZXMiOlt7Im5hbWVMb2NhbGUiOiJlbi1VUyIsIm5hbWUiOiJjYXNoIGRpc3BlbnNlciJ9XX1dfSwiYWRkcmVzcyI6eyJzdHJlZXROYW1lIjoiQXZpbmd1ZGEgZGUgU2FudCBBbnRvbmkiLCJtdW5pY2lwYWxpdHkiOiJMYSBNYXNzYW5hIiwicG9zdGFsQ29kZSI6IkFENDAwIiwiY291bnRyeUNvZGUiOiJBRCIsImNvdW50cnkiOiJBbmRvcnJhIiwiY291bnRyeUNvZGVJU08zIjoiQU5EIiwiZnJlZWZvcm1BZGRyZXNzIjoiQXZpbmd1ZGEgZGUgU2FudCBBbnRvbmksIExhIE1hc3NhbmEsIEFENDAwIiwibG9jYWxOYW1lIjoiTGEgTWFzc2FuYSJ9LCJwb3NpdGlvbiI6eyJsYXQiOjQyLjU0MzA5NCwibG9uIjoxLjUxNzE0Nn0sInZpZXdwb3J0Ijp7InRvcExlZnRQb2ludCI6eyJsYXQiOjQyLjU0Mzk5LCJsb24iOjEuNTE1OTN9LCJidG1SaWdodFBvaW50Ijp7ImxhdCI6NDIuNTQyMTksImxvbiI6MS41MTgzN319LCJlbnRyeVBvaW50cyI6W3sidHlwZSI6Im1haW4iLCJwb3NpdGlvbiI6eyJsYXQiOjQyLjU0MzAyLCJsb24iOjEuNTE3MTJ9fV19LHsidHlwZSI6IlBPSSIsImlkIjoiWGtMN1BRbEk4WGRQZDNLejhjaTdadyIsInNjb3JlIjoyLjE0NTQzOTg2MzIsImRpc3QiOjE1MDI2OTkyLjY4NzUyMywiaW5mbyI6InNlYXJjaDp0YTowMjAwMDkwMDAwMjAwNTQtQUQiLCJwb2kiOnsibmFtZSI6IkNyw6hkaXQgQW5kb3Jyw6AiLCJicmFuZHMiOlt7Im5hbWUiOiJDcsOoZGl0IEFuZG9ycsOgIn1dLCJjYXRlZ29yeVNldCI6W3siaWQiOjczOTd9XSwiY2F0ZWdvcmllcyI6WyJjYXNoIGRpc3BlbnNlciJdLCJjbGFzc2lmaWNhdGlvbnMiOlt7ImNvZGUiOiJDQVNIX0RJU1BFTlNFUiIsIm5hbWVzIjpbeyJuYW1lTG9jYWxlIjoiZW4tVVMiLCJuYW1lIjoiY2FzaCBkaXNwZW5zZXIifV19XX0sImFkZHJlc3MiOnsic3RyZWV0TmFtZSI6IkNhcnJldGVyYSBHZW5lcmFsIiwibXVuaWNpcGFsaXR5IjoiQ2FuaWxsbyIsInBvc3RhbENvZGUiOiJBRDEwMCIsImNvdW50cnlDb2RlIjoiQUQiLCJjb3VudHJ5IjoiQW5kb3JyYSIsImNvdW50cnlDb2RlSVNPMyI6IkFORCIsImZyZWVmb3JtQWRkcmVzcyI6IkNhcnJldGVyYSBHZW5lcmFsLCBDYW5pbGxvLCBBRDEwMCIsImxvY2FsTmFtZSI6IkNhbmlsbG8ifSwicG9zaXRpb24iOnsibGF0Ijo0Mi41OTIwODksImxvbiI6MS42NzAzfSwidmlld3BvcnQiOnsidG9wTGVmdFBvaW50Ijp7ImxhdCI6NDIuNTkyOTksImxvbiI6MS42NjkwOH0sImJ0bVJpZ2h0UG9pbnQiOnsibGF0Ijo0Mi41OTExOSwibG9uIjoxLjY3MTUyfX0sImVudHJ5UG9pbnRzIjpbeyJ0eXBlIjoibWFpbiIsInBvc2l0aW9uIjp7ImxhdCI6NDIuNTkyMTgsImxvbiI6MS42NzAyNn19XX0seyJ0eXBlIjoiUE9JIiwiaWQiOiJrSDdObEJVZGNySTVDY1lORm9HbTNnIiwic2NvcmUiOjIuMTQ1NDM5ODYzMiwiZGlzdCI6MTUwMjQxMjUuMDU0MjgsImluZm8iOiJzZWFyY2g6dGE6MDIwMDA5MDAwMDIwMTc4LUFEIiwicG9pIjp7Im5hbWUiOiJBTkRCQU5LIiwiYnJhbmRzIjpbeyJuYW1lIjoiQU5EQkFOSyJ9XSwiY2F0ZWdvcnlTZXQiOlt7ImlkIjo3Mzk3fV0sImNhdGVnb3JpZXMiOlsiY2FzaCBkaXNwZW5zZXIiXSwiY2xhc3NpZmljYXRpb25zIjpbeyJjb2RlIjoiQ0FTSF9ESVNQRU5TRVIiLCJuYW1lcyI6W3sibmFtZUxvY2FsZSI6ImVuLVVTIiwibmFtZSI6ImNhc2ggZGlzcGVuc2VyIn1dfV19LCJhZGRyZXNzIjp7InN0cmVldE5hbWUiOiJBdmluZ3VkYSBkZSBTYW50IEFudG9uaSIsIm11bmljaXBhbGl0eSI6IkxhIE1hc3NhbmEiLCJwb3N0YWxDb2RlIjoiQUQ0MDAiLCJjb3VudHJ5Q29kZSI6IkFEIiwiY291bnRyeSI6IkFuZG9ycmEiLCJjb3VudHJ5Q29kZUlTTzMiOiJBTkQiLCJmcmVlZm9ybUFkZHJlc3MiOiJBdmluZ3VkYSBkZSBTYW50IEFudG9uaSwgTGEgTWFzc2FuYSwgQUQ0MDAiLCJsb2NhbE5hbWUiOiJMYSBNYXNzYW5hIn0sInBvc2l0aW9uIjp7ImxhdCI6NDIuNTQ2NzM1LCJsb24iOjEuNTEzNjkyfSwidmlld3BvcnQiOnsidG9wTGVmdFBvaW50Ijp7ImxhdCI6NDIuNTQ3NjMsImxvbiI6MS41MTI0N30sImJ0bVJpZ2h0UG9pbnQiOnsibGF0Ijo0Mi41NDU4NCwibG9uIjoxLjUxNDkxfX0sImVudHJ5UG9pbnRzIjpbeyJ0eXBlIjoibWFpbiIsInBvc2l0aW9uIjp7ImxhdCI6NDIuNTQ2OTMsImxvbiI6MS41MTM3Mn19XX0seyJ0eXBlIjoiUE9JIiwiaWQiOiJBX0kwd190c2hMMTlhQWV5bFJQN2xBIiwic2NvcmUiOjIuMTQ1NDM5ODYzMiwiZGlzdCI6MTUwMTk3MjUuOTc5NTc1LCJpbmZvIjoic2VhcmNoOnRhOjAyMDAwOTAwMDAwMDk1MS1BRCIsInBvaSI6eyJuYW1lIjoiQ3LDqGRpdCBBbmRvcnLDoCIsImJyYW5kcyI6W3sibmFtZSI6IkNyw6hkaXQgQW5kb3Jyw6AifV0sImNhdGVnb3J5U2V0IjpbeyJpZCI6NzM5N31dLCJjYXRlZ29yaWVzIjpbImNhc2ggZGlzcGVuc2VyIl0sImNsYXNzaWZpY2F0aW9ucyI6W3siY29kZSI6IkNBU0hfRElTUEVOU0VSIiwibmFtZXMiOlt7Im5hbWVMb2NhbGUiOiJlbi1VUyIsIm5hbWUiOiJjYXNoIGRpc3BlbnNlciJ9XX1dfSwiYWRkcmVzcyI6eyJzdHJlZXROdW1iZXIiOiI4MCIsInN0cmVldE5hbWUiOiJBdmluZ3VkYSBNZXJpdHhlbGwiLCJtdW5pY2lwYWxpdHkiOiJBbmRvcnJhIExhIFZlbGxhIiwicG9zdGFsQ29kZSI6IkFENTAwIiwiY291bnRyeUNvZGUiOiJBRCIsImNvdW50cnkiOiJBbmRvcnJhIiwiY291bnRyeUNvZGVJU08zIjoiQU5EIiwiZnJlZWZvcm1BZGRyZXNzIjoiQXZpbmd1ZGEgTWVyaXR4ZWxsIDgwLCBBbmRvcnJhIExhIFZlbGxhLCBBRDUwMCIsImxvY2FsTmFtZSI6IkFuZG9ycmEgTGEgVmVsbGEifSwicG9zaXRpb24iOnsibGF0Ijo0Mi41MDg1NzgsImxvbiI6MS41Mjk1ODN9LCJ2aWV3cG9ydCI6eyJ0b3BMZWZ0UG9pbnQiOnsibGF0Ijo0Mi41MDk0OCwibG9uIjoxLjUyODM2fSwiYnRtUmlnaHRQb2ludCI6eyJsYXQiOjQyLjUwNzY4LCJsb24iOjEuNTMwOH19LCJlbnRyeVBvaW50cyI6W3sidHlwZSI6Im1haW4iLCJwb3NpdGlvbiI6eyJsYXQiOjQyLjUwODczLCJsb24iOjEuNTI5NDJ9fV19XX0=
+  recorded_at: Wed, 30 Aug 2023 22:55:12 GMT
+- request:
+    method: get
+    uri: https://api.tomtom.com/search/2/categorySearch/automatic_teller_machine.json?key=<key>&lat=-21.666736612791297&lon=-58.24025917722277
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 30 Aug 2023 22:55:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Tracking-Id:
+      - 000740ff-104f-446c-8bcc-1f1833be3c74
+      Access-Control-Expose-Headers:
+      - Tracking-ID
+      X-Apigee.target-Latency:
+      - '210'
+      X-Envoy-Upstream-Service-Time:
+      - '223'
+      Server:
+      - tomtom
+      X-Tomtom-Processed-By:
+      - westus2
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJzdW1tYXJ5Ijp7InF1ZXJ5IjoiYXV0b21hdGljX3RlbGxlcl9tYWNoaW5lIiwicXVlcnlUeXBlIjoiTk9OX05FQVIiLCJxdWVyeVRpbWUiOjIwNiwibnVtUmVzdWx0cyI6MTAsIm9mZnNldCI6MCwidG90YWxSZXN1bHRzIjoxMCwiZnV6enlMZXZlbCI6MSwiZ2VvQmlhcyI6eyJsYXQiOi0yMS42NjY3MzY2MTI3OTEyOTcsImxvbiI6LTU4LjI0MDI1OTE3NzIyMjc3fSwiZ2VvYmlhc0NvdW50cnkiOiJQWSJ9LCJyZXN1bHRzIjpbeyJ0eXBlIjoiUE9JIiwiaWQiOiJDNWVndWdKR3dQYmZRQ3JFR3RxQm5RIiwic2NvcmUiOjIuNTMzOTE4NDM1NywiZGlzdCI6MzY0MjEuNzQwNjU2LCJpbmZvIjoic2VhcmNoOnRhOjA3NjAwOTAyMDM1NDEzMC1CUiIsInBvaSI6eyJuYW1lIjoiQ2VudHJvIiwiY2F0ZWdvcnlTZXQiOlt7ImlkIjo3Mzk3fV0sImNhdGVnb3JpZXMiOlsiY2FzaCBkaXNwZW5zZXIiXSwiY2xhc3NpZmljYXRpb25zIjpbeyJjb2RlIjoiQ0FTSF9ESVNQRU5TRVIiLCJuYW1lcyI6W3sibmFtZUxvY2FsZSI6ImVuLVVTIiwibmFtZSI6ImNhc2ggZGlzcGVuc2VyIn1dfV19LCJhZGRyZXNzIjp7InN0cmVldE51bWJlciI6IjM0Iiwic3RyZWV0TmFtZSI6IlJ1YSBQcmluY2VzYSBJc2FiZWwiLCJtdW5pY2lwYWxpdHkiOiJQb3J0byBNdXJ0aW5obyIsImNvdW50cnlTdWJkaXZpc2lvbiI6Ik1hdG8gR3Jvc3NvIGRvIFN1bCIsInBvc3RhbENvZGUiOiI3OTI4MCIsImV4dGVuZGVkUG9zdGFsQ29kZSI6Ijc5MjgwLTAwMCIsImNvdW50cnlDb2RlIjoiQlIiLCJjb3VudHJ5IjoiQnJhc2lsIiwiY291bnRyeUNvZGVJU08zIjoiQlJBIiwiZnJlZWZvcm1BZGRyZXNzIjoiUnVhIFByaW5jZXNhIElzYWJlbCwgMzQsIDc5MjgwLTAwMCwgUG9ydG8gTXVydGluaG8iLCJsb2NhbE5hbWUiOiJQb3J0byBNdXJ0aW5obyJ9LCJwb3NpdGlvbiI6eyJsYXQiOi0yMS42OTkzOSwibG9uIjotNTcuODg5NTI1fSwidmlld3BvcnQiOnsidG9wTGVmdFBvaW50Ijp7ImxhdCI6LTIxLjY5ODQ5LCJsb24iOi01Ny44OTA0OX0sImJ0bVJpZ2h0UG9pbnQiOnsibGF0IjotMjEuNzAwMjksImxvbiI6LTU3Ljg4ODU2fX0sImVudHJ5UG9pbnRzIjpbeyJ0eXBlIjoibWFpbiIsInBvc2l0aW9uIjp7ImxhdCI6LTIxLjY5OTQzLCJsb24iOi01Ny44ODk0NH19XX0seyJ0eXBlIjoiUE9JIiwiaWQiOiJVYXc0T0JLSEN4NTBIS2E2SUpEalRBIiwic2NvcmUiOjIuNTI5NzQ0MDM2MiwiZGlzdCI6MzY4NjIuMjA5MzIzLCJpbmZvIjoic2VhcmNoOnRhOjA3NjAwOTAyMDc2MDg5MC1CUiIsInBvaSI6eyJuYW1lIjoiUG9ydG8gTXVydGluaG8iLCJjYXRlZ29yeVNldCI6W3siaWQiOjczOTd9XSwiY2F0ZWdvcmllcyI6WyJjYXNoIGRpc3BlbnNlciJdLCJjbGFzc2lmaWNhdGlvbnMiOlt7ImNvZGUiOiJDQVNIX0RJU1BFTlNFUiIsIm5hbWVzIjpbeyJuYW1lTG9jYWxlIjoiZW4tVVMiLCJuYW1lIjoiY2FzaCBkaXNwZW5zZXIifV19XX0sImFkZHJlc3MiOnsic3RyZWV0TnVtYmVyIjoiMTA0Iiwic3RyZWV0TmFtZSI6IkF2ZW5pZGEgUmlvIEJyYW5jbyIsIm11bmljaXBhbGl0eSI6IlBvcnRvIE11cnRpbmhvIiwiY291bnRyeVN1YmRpdmlzaW9uIjoiTWF0byBHcm9zc28gZG8gU3VsIiwicG9zdGFsQ29kZSI6Ijc5MjgwIiwiZXh0ZW5kZWRQb3N0YWxDb2RlIjoiNzkyODAtMDAwIiwiY291bnRyeUNvZGUiOiJCUiIsImNvdW50cnkiOiJCcmFzaWwiLCJjb3VudHJ5Q29kZUlTTzMiOiJCUkEiLCJmcmVlZm9ybUFkZHJlc3MiOiJBdmVuaWRhIFJpbyBCcmFuY28sIDEwNCwgNzkyODAtMDAwLCBQb3J0byBNdXJ0aW5obyIsImxvY2FsTmFtZSI6IlBvcnRvIE11cnRpbmhvIn0sInBvc2l0aW9uIjp7ImxhdCI6LTIxLjcwMDg4NywibG9uIjotNTcuODg1NDAzfSwidmlld3BvcnQiOnsidG9wTGVmdFBvaW50Ijp7ImxhdCI6LTIxLjY5OTk5LCJsb24iOi01Ny44ODYzN30sImJ0bVJpZ2h0UG9pbnQiOnsibGF0IjotMjEuNzAxNzksImxvbiI6LTU3Ljg4NDQ0fX0sImVudHJ5UG9pbnRzIjpbeyJ0eXBlIjoibWFpbiIsInBvc2l0aW9uIjp7ImxhdCI6LTIxLjcwMDk3LCJsb24iOi01Ny44ODU0NX19XX0seyJ0eXBlIjoiUE9JIiwiaWQiOiIzd25mS2ZNNzVTa1FZY2ZvVERQSzFRIiwic2NvcmUiOjIuNTIzMjcwOTIzOSwiZGlzdCI6Mzc1NTYuMzg5OTQxLCJpbmZvIjoic2VhcmNoOnRhOjA3NjAwOTAxOTU1MTU3MC1CUiIsInBvaSI6eyJuYW1lIjoiQ2FpeGEgRWxldHLDtG5pY28gLSBCYW5jbyBkbyBCcmFzaWwiLCJjYXRlZ29yeVNldCI6W3siaWQiOjczOTd9XSwiY2F0ZWdvcmllcyI6WyJjYXNoIGRpc3BlbnNlciJdLCJjbGFzc2lmaWNhdGlvbnMiOlt7ImNvZGUiOiJDQVNIX0RJU1BFTlNFUiIsIm5hbWVzIjpbeyJuYW1lTG9jYWxlIjoiZW4tVVMiLCJuYW1lIjoiY2FzaCBkaXNwZW5zZXIifV19XX0sImFkZHJlc3MiOnsic3RyZWV0TnVtYmVyIjoiMzQiLCJzdHJlZXROYW1lIjoiQXZlbmlkYSBMYXJhamVpcmFzIiwibXVuaWNpcGFsaXR5IjoiUG9ydG8gTXVydGluaG8iLCJjb3VudHJ5U3ViZGl2aXNpb24iOiJNYXRvIEdyb3NzbyBkbyBTdWwiLCJwb3N0YWxDb2RlIjoiNzkyODAiLCJleHRlbmRlZFBvc3RhbENvZGUiOiI3OTI4MC0wMDAiLCJjb3VudHJ5Q29kZSI6IkJSIiwiY291bnRyeSI6IkJyYXNpbCIsImNvdW50cnlDb2RlSVNPMyI6IkJSQSIsImZyZWVmb3JtQWRkcmVzcyI6IkF2ZW5pZGEgTGFyYWplaXJhcywgMzQsIDc5MjgwLTAwMCwgUG9ydG8gTXVydGluaG8iLCJsb2NhbE5hbWUiOiJQb3J0byBNdXJ0aW5obyJ9LCJwb3NpdGlvbiI6eyJsYXQiOi0yMS43MDE1NjEsImxvbiI6LTU3Ljg3ODcyM30sInZpZXdwb3J0Ijp7InRvcExlZnRQb2ludCI6eyJsYXQiOi0yMS43MDA2NiwibG9uIjotNTcuODc5Njl9LCJidG1SaWdodFBvaW50Ijp7ImxhdCI6LTIxLjcwMjQ2LCJsb24iOi01Ny44Nzc3Nn19LCJlbnRyeVBvaW50cyI6W3sidHlwZSI6Im1haW4iLCJwb3NpdGlvbiI6eyJsYXQiOi0yMS43MDE1NiwibG9uIjotNTcuODc4NzJ9fV19LHsidHlwZSI6IlBPSSIsImlkIjoiaU85dmUtbHJ5Z1FicFA1YUI1TVNwQSIsInNjb3JlIjoyLjUyMzI3MDkyMzksImRpc3QiOjM3NTU2LjM4OTk0MSwiaW5mbyI6InNlYXJjaDp0YTowNzYwMDkwMjA1NDQ5NTMtQlIiLCJwb2kiOnsibmFtZSI6IkNhaXhhIEVsZXRyw7RuaWNvIC0gQ2FpeGEgRWNvbsO0bWljYSBGZWRlcmFsIiwiY2F0ZWdvcnlTZXQiOlt7ImlkIjo3Mzk3fV0sImNhdGVnb3JpZXMiOlsiY2FzaCBkaXNwZW5zZXIiXSwiY2xhc3NpZmljYXRpb25zIjpbeyJjb2RlIjoiQ0FTSF9ESVNQRU5TRVIiLCJuYW1lcyI6W3sibmFtZUxvY2FsZSI6ImVuLVVTIiwibmFtZSI6ImNhc2ggZGlzcGVuc2VyIn1dfV19LCJhZGRyZXNzIjp7InN0cmVldE51bWJlciI6IjE4MSIsInN0cmVldE5hbWUiOiJBdmVuaWRhIExhcmFqZWlyYXMiLCJtdW5pY2lwYWxpdHkiOiJQb3J0byBNdXJ0aW5obyIsImNvdW50cnlTdWJkaXZpc2lvbiI6Ik1hdG8gR3Jvc3NvIGRvIFN1bCIsInBvc3RhbENvZGUiOiI3OTI4MCIsImV4dGVuZGVkUG9zdGFsQ29kZSI6Ijc5MjgwLTAwMCIsImNvdW50cnlDb2RlIjoiQlIiLCJjb3VudHJ5IjoiQnJhc2lsIiwiY291bnRyeUNvZGVJU08zIjoiQlJBIiwiZnJlZWZvcm1BZGRyZXNzIjoiQXZlbmlkYSBMYXJhamVpcmFzLCAxODEsIDc5MjgwLTAwMCwgUG9ydG8gTXVydGluaG8iLCJsb2NhbE5hbWUiOiJQb3J0byBNdXJ0aW5obyJ9LCJwb3NpdGlvbiI6eyJsYXQiOi0yMS43MDE1NjEsImxvbiI6LTU3Ljg3ODcyM30sInZpZXdwb3J0Ijp7InRvcExlZnRQb2ludCI6eyJsYXQiOi0yMS43MDA2NiwibG9uIjotNTcuODc5Njl9LCJidG1SaWdodFBvaW50Ijp7ImxhdCI6LTIxLjcwMjQ2LCJsb24iOi01Ny44Nzc3Nn19LCJlbnRyeVBvaW50cyI6W3sidHlwZSI6Im1haW4iLCJwb3NpdGlvbiI6eyJsYXQiOi0yMS43MDE1NiwibG9uIjotNTcuODc4NzJ9fV19LHsidHlwZSI6IlBPSSIsImlkIjoiYkpiVVFJYWctS1FfUFVhcU8zd2RKZyIsInNjb3JlIjoyLjM4Nzk3MTU0ODMsImRpc3QiOjc5MzA1LjQwMjg1MywiaW5mbyI6InNlYXJjaDp0YTo2MDAwMDkwMDAyNjg1MzUtUFkiLCJwb2kiOnsibmFtZSI6IkJuZiBGdWVydGUgT2xpbXBvIiwiY2F0ZWdvcnlTZXQiOlt7ImlkIjo3Mzk3fV0sImNhdGVnb3JpZXMiOlsiY2FzaCBkaXNwZW5zZXIiXSwiY2xhc3NpZmljYXRpb25zIjpbeyJjb2RlIjoiQ0FTSF9ESVNQRU5TRVIiLCJuYW1lcyI6W3sibmFtZUxvY2FsZSI6ImVuLVVTIiwibmFtZSI6ImNhc2ggZGlzcGVuc2VyIn1dfV19LCJhZGRyZXNzIjp7Im11bmljaXBhbGl0eSI6IkZ1ZXJ0ZSBPbGltcG8iLCJjb3VudHJ5U3ViZGl2aXNpb24iOiJBbHRvIFBhcmFndWF5IiwicG9zdGFsQ29kZSI6IjE3MDEwMSIsImNvdW50cnlDb2RlIjoiUFkiLCJjb3VudHJ5IjoiUGFyYWd1YXkiLCJjb3VudHJ5Q29kZUlTTzMiOiJQUlkiLCJmcmVlZm9ybUFkZHJlc3MiOiJGdWVydGUgT2xpbXBvLCBBbHRvIFBhcmFndWF5LCAxNzAxMDEiLCJsb2NhbE5hbWUiOiJGdWVydGUgT2xpbXBvIn0sInBvc2l0aW9uIjp7ImxhdCI6LTIxLjA0MTgwMiwibG9uIjotNTcuODcxMjI5fSwidmlld3BvcnQiOnsidG9wTGVmdFBvaW50Ijp7ImxhdCI6LTIxLjA0MDksImxvbiI6LTU3Ljg3MjE5fSwiYnRtUmlnaHRQb2ludCI6eyJsYXQiOi0yMS4wNDI3LCJsb24iOi01Ny44NzAyN319LCJlbnRyeVBvaW50cyI6W3sidHlwZSI6Im1haW4iLCJwb3NpdGlvbiI6eyJsYXQiOi0yMS4wNDE3OSwibG9uIjotNTcuODcxMzN9fV19LHsidHlwZSI6IlBPSSIsImlkIjoiREh0RGlTaGlRRGhUcVVsUDUxcTJIZyIsInNjb3JlIjoyLjM3OTg5NTc2MjUsImRpc3QiOjEzMDk2Ni41MTUwNDcsImluZm8iOiJzZWFyY2g6dGE6MDc2MDA5MDE5ODQ0NTA5LUJSIiwicG9pIjp7Im5hbWUiOiJDYWl4YSBFbGV0csO0bmljbyAtIEJhbmNvIEJyYWRlc2NvIiwiY2F0ZWdvcnlTZXQiOlt7ImlkIjo3Mzk3fV0sImNhdGVnb3JpZXMiOlsiY2FzaCBkaXNwZW5zZXIiXSwiY2xhc3NpZmljYXRpb25zIjpbeyJjb2RlIjoiQ0FTSF9ESVNQRU5TRVIiLCJuYW1lcyI6W3sibmFtZUxvY2FsZSI6ImVuLVVTIiwibmFtZSI6ImNhc2ggZGlzcGVuc2VyIn1dfV19LCJhZGRyZXNzIjp7InN0cmVldE51bWJlciI6IjU3OSIsInN0cmVldE5hbWUiOiJBdmVuaWRhIEJyYXNpbCIsIm11bmljaXBhbGl0eSI6IkNhcmFjb2wiLCJjb3VudHJ5U3ViZGl2aXNpb24iOiJNYXRvIEdyb3NzbyBkbyBTdWwiLCJwb3N0YWxDb2RlIjoiNzkyNzAiLCJleHRlbmRlZFBvc3RhbENvZGUiOiI3OTI3MC0wMDAiLCJjb3VudHJ5Q29kZSI6IkJSIiwiY291bnRyeSI6IkJyYXNpbCIsImNvdW50cnlDb2RlSVNPMyI6IkJSQSIsImZyZWVmb3JtQWRkcmVzcyI6IkF2ZW5pZGEgQnJhc2lsLCA1NzksIDc5MjcwLTAwMCwgQ2FyYWNvbCIsImxvY2FsTmFtZSI6IkNhcmFjb2wifSwicG9zaXRpb24iOnsibGF0IjotMjIuMDE1MDM5LCJsb24iOi01Ny4wMjgxMTZ9LCJ2aWV3cG9ydCI6eyJ0b3BMZWZ0UG9pbnQiOnsibGF0IjotMjIuMDE0MTQsImxvbiI6LTU3LjAyOTA5fSwiYnRtUmlnaHRQb2ludCI6eyJsYXQiOi0yMi4wMTU5NCwibG9uIjotNTcuMDI3MTV9fSwiZW50cnlQb2ludHMiOlt7InR5cGUiOiJtYWluIiwicG9zaXRpb24iOnsibGF0IjotMjIuMDE1MTMsImxvbiI6LTU3LjAyODEyfX1dfSx7InR5cGUiOiJQT0kiLCJpZCI6IkFOZUdXbFg2a181VE5tb2FabkprUmciLCJzY29yZSI6Mi4zNzk4OTU1MDAzLCJkaXN0IjoxMzA5NjkuNjU1MjYxLCJpbmZvIjoic2VhcmNoOnRhOjA3NjAwOTAxOTQ2ODU2Ny1CUiIsInBvaSI6eyJuYW1lIjoiUGEgLSBDYXJhY29sIiwiY2F0ZWdvcnlTZXQiOlt7ImlkIjo3Mzk3fV0sImNhdGVnb3JpZXMiOlsiY2FzaCBkaXNwZW5zZXIiXSwiY2xhc3NpZmljYXRpb25zIjpbeyJjb2RlIjoiQ0FTSF9ESVNQRU5TRVIiLCJuYW1lcyI6W3sibmFtZUxvY2FsZSI6ImVuLVVTIiwibmFtZSI6ImNhc2ggZGlzcGVuc2VyIn1dfV19LCJhZGRyZXNzIjp7InN0cmVldE51bWJlciI6IjU3OSIsInN0cmVldE5hbWUiOiJBdmVuaWRhIEJyYXNpbCIsIm11bmljaXBhbGl0eSI6IkNhcmFjb2wiLCJjb3VudHJ5U3ViZGl2aXNpb24iOiJNYXRvIEdyb3NzbyBkbyBTdWwiLCJwb3N0YWxDb2RlIjoiNzkyNzAiLCJleHRlbmRlZFBvc3RhbENvZGUiOiI3OTI3MC0wMDAiLCJjb3VudHJ5Q29kZSI6IkJSIiwiY291bnRyeSI6IkJyYXNpbCIsImNvdW50cnlDb2RlSVNPMyI6IkJSQSIsImZyZWVmb3JtQWRkcmVzcyI6IkF2ZW5pZGEgQnJhc2lsLCA1NzksIDc5MjcwLTAwMCwgQ2FyYWNvbCIsImxvY2FsTmFtZSI6IkNhcmFjb2wifSwicG9zaXRpb24iOnsibGF0IjotMjIuMDE1MDQsImxvbiI6LTU3LjAyODA4NX0sInZpZXdwb3J0Ijp7InRvcExlZnRQb2ludCI6eyJsYXQiOi0yMi4wMTQxNCwibG9uIjotNTcuMDI5MDZ9LCJidG1SaWdodFBvaW50Ijp7ImxhdCI6LTIyLjAxNTk0LCJsb24iOi01Ny4wMjcxMX19LCJlbnRyeVBvaW50cyI6W3sidHlwZSI6Im1haW4iLCJwb3NpdGlvbiI6eyJsYXQiOi0yMi4wMTUxMywibG9uIjotNTcuMDI4MTJ9fV19LHsidHlwZSI6IlBPSSIsImlkIjoiczRxbTg5T2lSX3BoZmQwRWZPM2VkUSIsInNjb3JlIjoyLjM3NDE3NTYsImRpc3QiOjE4MjM1NC4yMjE2MSwiaW5mbyI6InNlYXJjaDp0YTo2MDAwMDkwMDAyMTg4NjQtUFkiLCJwb2kiOnsibmFtZSI6Ikluc3RpdHVjaW9uIiwiY2F0ZWdvcnlTZXQiOlt7ImlkIjo3Mzk3fV0sImNhdGVnb3JpZXMiOlsiY2FzaCBkaXNwZW5zZXIiXSwiY2xhc3NpZmljYXRpb25zIjpbeyJjb2RlIjoiQ0FTSF9ESVNQRU5TRVIiLCJuYW1lcyI6W3sibmFtZUxvY2FsZSI6ImVuLVVTIiwibmFtZSI6ImNhc2ggZGlzcGVuc2VyIn1dfV19LCJhZGRyZXNzIjp7InN0cmVldE5hbWUiOiJBdmVuaWRhIENlbnRyYWwiLCJtdW5pY2lwYWxpdHkiOiJMb21hIFBsYXRhIiwiY291bnRyeVN1YmRpdmlzaW9uIjoiQm9xdWVyw7NuIiwicG9zdGFsQ29kZSI6IjE2MDUwMSIsImNvdW50cnlDb2RlIjoiUFkiLCJjb3VudHJ5IjoiUGFyYWd1YXkiLCJjb3VudHJ5Q29kZUlTTzMiOiJQUlkiLCJmcmVlZm9ybUFkZHJlc3MiOiJBdmVuaWRhIENlbnRyYWwgTG9tYSBQbGF0YSwgQm9xdWVyw7NuLCAxNjA1MDEiLCJsb2NhbE5hbWUiOiJMb21hIFBsYXRhIn0sInBvc2l0aW9uIjp7ImxhdCI6LTIyLjM3MTc1OCwibG9uIjotNTkuODM3NDV9LCJ2aWV3cG9ydCI6eyJ0b3BMZWZ0UG9pbnQiOnsibGF0IjotMjIuMzcwODYsImxvbiI6LTU5LjgzODQyfSwiYnRtUmlnaHRQb2ludCI6eyJsYXQiOi0yMi4zNzI2NiwibG9uIjotNTkuODM2NDh9fSwiZW50cnlQb2ludHMiOlt7InR5cGUiOiJtYWluIiwicG9zaXRpb24iOnsibGF0IjotMjIuMzcxNzUsImxvbiI6LTU5LjgzNzM1fX1dfSx7InR5cGUiOiJQT0kiLCJpZCI6IjV2T18wc1JZNU54M3J1YzBwcTVvd3ciLCJzY29yZSI6Mi4zNzQxNzU2LCJkaXN0IjoxODIzNTQuMDg0Mjg2LCJpbmZvIjoic2VhcmNoOnRhOjYwMDAwOTAwMDI1NjU5Ni1QWSIsInBvaSI6eyJuYW1lIjoiQm5mIExvbWEgUGxhdGEgMSIsImNhdGVnb3J5U2V0IjpbeyJpZCI6NzM5N31dLCJjYXRlZ29yaWVzIjpbImNhc2ggZGlzcGVuc2VyIl0sImNsYXNzaWZpY2F0aW9ucyI6W3siY29kZSI6IkNBU0hfRElTUEVOU0VSIiwibmFtZXMiOlt7Im5hbWVMb2NhbGUiOiJlbi1VUyIsIm5hbWUiOiJjYXNoIGRpc3BlbnNlciJ9XX1dfSwiYWRkcmVzcyI6eyJzdHJlZXROYW1lIjoiQXZlbmlkYSBDZW50cmFsIiwibXVuaWNpcGFsaXR5IjoiTG9tYSBQbGF0YSIsImNvdW50cnlTdWJkaXZpc2lvbiI6IkJvcXVlcsOzbiIsInBvc3RhbENvZGUiOiIxNjA1MDEiLCJjb3VudHJ5Q29kZSI6IlBZIiwiY291bnRyeSI6IlBhcmFndWF5IiwiY291bnRyeUNvZGVJU08zIjoiUFJZIiwiZnJlZWZvcm1BZGRyZXNzIjoiQXZlbmlkYSBDZW50cmFsIExvbWEgUGxhdGEsIEJvcXVlcsOzbiwgMTYwNTAxIiwibG9jYWxOYW1lIjoiTG9tYSBQbGF0YSJ9LCJwb3NpdGlvbiI6eyJsYXQiOi0yMi4zNzE3NTcsImxvbiI6LTU5LjgzNzQ0OX0sInZpZXdwb3J0Ijp7InRvcExlZnRQb2ludCI6eyJsYXQiOi0yMi4zNzA4NiwibG9uIjotNTkuODM4NDJ9LCJidG1SaWdodFBvaW50Ijp7ImxhdCI6LTIyLjM3MjY2LCJsb24iOi01OS44MzY0OH19LCJlbnRyeVBvaW50cyI6W3sidHlwZSI6Im1haW4iLCJwb3NpdGlvbiI6eyJsYXQiOi0yMi4zNzE3NSwibG9uIjotNTkuODM3MzV9fV19LHsidHlwZSI6IlBPSSIsImlkIjoibGhzeXd5YUV0WE9tTXNoWTJieDVTZyIsInNjb3JlIjoyLjM3NDE2OTgzMDMsImRpc3QiOjE4MjQxNy40NTQyNTMsImluZm8iOiJzZWFyY2g6dGE6MDc2MDA5MDIwNDY2MTA3LUJSIiwicG9pIjp7Im5hbWUiOiJDYWl4YSBFbGV0csO0bmljbyAtIEJhbmNvIEJyYWRlc2NvIiwiY2F0ZWdvcnlTZXQiOlt7ImlkIjo3Mzk3fV0sImNhdGVnb3JpZXMiOlsiY2FzaCBkaXNwZW5zZXIiXSwiY2xhc3NpZmljYXRpb25zIjpbeyJjb2RlIjoiQ0FTSF9ESVNQRU5TRVIiLCJuYW1lcyI6W3sibmFtZUxvY2FsZSI6ImVuLVVTIiwibmFtZSI6ImNhc2ggZGlzcGVuc2VyIn1dfV19LCJhZGRyZXNzIjp7InN0cmVldE51bWJlciI6IjYxNyIsInN0cmVldE5hbWUiOiJSdWEgQWxjZWLDrWFkZXMgQm9iYWRpbGhhIGRhIEN1bmhhIiwibXVuaWNpcGFsaXR5U3ViZGl2aXNpb24iOiJDZW50cm8iLCJtdW5pY2lwYWxpdHkiOiJCZWxhIFZpc3RhIiwiY291bnRyeVN1YmRpdmlzaW9uIjoiTWF0byBHcm9zc28gZG8gU3VsIiwicG9zdGFsQ29kZSI6Ijc5MjYwIiwiZXh0ZW5kZWRQb3N0YWxDb2RlIjoiNzkyNjAtMDAwIiwiY291bnRyeUNvZGUiOiJCUiIsImNvdW50cnkiOiJCcmFzaWwiLCJjb3VudHJ5Q29kZUlTTzMiOiJCUkEiLCJmcmVlZm9ybUFkZHJlc3MiOiJSdWEgQWxjZWLDrWFkZXMgQm9iYWRpbGhhIGRhIEN1bmhhLCA2MTcsIDc5MjYwLTAwMCwgQmVsYSBWaXN0YSIsImxvY2FsTmFtZSI6IkJlbGEgVmlzdGEifSwicG9zaXRpb24iOnsibGF0IjotMjIuMTA0OTU0LCJsb24iOi01Ni41MzY1NTF9LCJ2aWV3cG9ydCI6eyJ0b3BMZWZ0UG9pbnQiOnsibGF0IjotMjIuMTA0MDUsImxvbiI6LTU2LjUzNzUyfSwiYnRtUmlnaHRQb2ludCI6eyJsYXQiOi0yMi4xMDU4NSwibG9uIjotNTYuNTM1NTh9fSwiZW50cnlQb2ludHMiOlt7InR5cGUiOiJtYWluIiwicG9zaXRpb24iOnsibGF0IjotMjIuMTA0OTEsImxvbiI6LTU2LjUzNjY0fX1dfV19
+  recorded_at: Wed, 30 Aug 2023 22:55:27 GMT
+recorded_with: VCR 6.2.0

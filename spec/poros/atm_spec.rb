@@ -5,10 +5,9 @@ RSpec.describe Atm do
     it 'exists' do
       atm_params = {
         name: 'ATM',
-        address: '4530 32nd Ave',
-        lat: 39.769547,
-        lon: -104.958599,
-        distance: 12.3
+        address: {freeformAddress:'4530 32nd Ave'},
+        position: {lat: 39.769547, lon: -104.958599},
+        dist: 12.3
       }
       
       atm = Atm.new(atm_params)
