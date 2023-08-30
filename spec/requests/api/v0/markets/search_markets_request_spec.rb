@@ -24,11 +24,11 @@ RSpec.describe 'Search Markets', type: :request do
 
       markets = JSON.parse(response.body, symbolize_names: true)
 
-      expect(markets[:data].count).to eq(2)
+      expect(markets[:data].count).to eq(1)
       expect(markets[:data]).to be_an Array
 
       markets[:data].each do |market|
-        expect(market[:id]).to eq(market1.id.to_s).or eq(market2.id.to_s)
+        expect(market[:id]).to eq(market1.id.to_s)
         expect(market[:type]).to eq('market')
         expect(market[:attributes]).to be_a Hash
 
