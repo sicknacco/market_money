@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.tomtom.com/search/2/categorySearch/automatic_teller_machine.json?key=<key>&lat=58.8608057300261&lon=-73.79893649274292
+    uri: https://api.tomtom.com/search/2/categorySearch/automatic_teller_machine.json?key=<key>&lat=-56.62748523676484&lon=65.67205696719822
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 30 Aug 2023 22:58:58 GMT
+      - Wed, 30 Aug 2023 22:27:52 GMT
       Content-Type:
       - application/json; charset=utf-8
       Vary:
@@ -27,13 +27,13 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Tracking-Id:
-      - 8c4eb6c2-a46e-461a-8c6c-3cb649dad5b4
+      - e8a9cccb-697d-42b5-a767-888e15e99129
       Access-Control-Expose-Headers:
       - Tracking-ID
       X-Apigee.target-Latency:
-      - '407'
+      - '198'
       X-Envoy-Upstream-Service-Time:
-      - '416'
+      - '213'
       Server:
       - tomtom
       X-Tomtom-Processed-By:
@@ -43,6 +43,306 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        eyJzdW1tYXJ5Ijp7InF1ZXJ5IjoiYXV0b21hdGljX3RlbGxlcl9tYWNoaW5lIiwicXVlcnlUeXBlIjoiTk9OX05FQVIiLCJxdWVyeVRpbWUiOjQwMywibnVtUmVzdWx0cyI6MTAsIm9mZnNldCI6MCwidG90YWxSZXN1bHRzIjoxMCwiZnV6enlMZXZlbCI6MSwiZ2VvQmlhcyI6eyJsYXQiOjU4Ljg2MDgwNTczMDAyNjEsImxvbiI6LTczLjc5ODkzNjQ5Mjc0MjkyfSwiZ2VvYmlhc0NvdW50cnkiOiJDQSJ9LCJyZXN1bHRzIjpbeyJ0eXBlIjoiUE9JIiwiaWQiOiJDU2cwQmFHWWRITVoybjJlWk9pNXNBIiwic2NvcmUiOjIuMTQ3NTg4OTY4MywiZGlzdCI6NDU0MzMyLjc1MDU5OSwiaW5mbyI6InNlYXJjaDp0YToxMjQyNDkwMDgyNTY3ODUtQ0EiLCJwb2kiOnsibmFtZSI6IlRucyBzbWFydCBOZXR3b3JrIEluYy4iLCJjYXRlZ29yeVNldCI6W3siaWQiOjczOTd9XSwiY2F0ZWdvcmllcyI6WyJjYXNoIGRpc3BlbnNlciJdLCJjbGFzc2lmaWNhdGlvbnMiOlt7ImNvZGUiOiJDQVNIX0RJU1BFTlNFUiIsIm5hbWVzIjpbeyJuYW1lTG9jYWxlIjoiZW4tVVMiLCJuYW1lIjoiY2FzaCBkaXNwZW5zZXIifV19XX0sImFkZHJlc3MiOnsic3RyZWV0TmFtZSI6IlJ1ZSBQcmluY2lwYWxlIiwibXVuaWNpcGFsaXR5IjoiSXZ1aml2aWsiLCJjb3VudHJ5U3ViZGl2aXNpb24iOiJRQyIsImNvdW50cnlTdWJkaXZpc2lvbk5hbWUiOiJRdcOpYmVjIiwicG9zdGFsQ29kZSI6IkowTSIsImNvdW50cnlDb2RlIjoiQ0EiLCJjb3VudHJ5IjoiQ2FuYWRhIiwiY291bnRyeUNvZGVJU08zIjoiQ0FOIiwiZnJlZWZvcm1BZGRyZXNzIjoiUnVlIFByaW5jaXBhbGUsIEl2dWppdmlrIFFDIEowTSIsImxvY2FsTmFtZSI6Ikl2dWppdmlrIn0sInBvc2l0aW9uIjp7ImxhdCI6NjIuNDE0MzEzLCJsb24iOi03Ny45MTk1MzN9LCJ2aWV3cG9ydCI6eyJ0b3BMZWZ0UG9pbnQiOnsibGF0Ijo2Mi40MTUyMSwibG9uIjotNzcuOTIxNDh9LCJidG1SaWdodFBvaW50Ijp7ImxhdCI6NjIuNDEzNDEsImxvbiI6LTc3LjkxNzU5fX0sImVudHJ5UG9pbnRzIjpbeyJ0eXBlIjoibWFpbiIsInBvc2l0aW9uIjp7ImxhdCI6NjIuNDE0MzEsImxvbiI6LTc3LjkxOTUzfX1dfSx7InR5cGUiOiJQT0kiLCJpZCI6IjQ4SktXbUU1aUF4a1hxVTVjdEwwckEiLCJzY29yZSI6Mi4xNDYyMDk0Nzg0LCJkaXN0Ijo2MTAxNjIuNTA5Mjc2LCJpbmZvIjoic2VhcmNoOnRhOjEyNDI0OTAwODI0OTc5My1DQSIsInBvaSI6eyJuYW1lIjoiVG5zIHNtYXJ0IE5ldHdvcmsgSW5jLiIsImNhdGVnb3J5U2V0IjpbeyJpZCI6NzM5N31dLCJjYXRlZ29yaWVzIjpbImNhc2ggZGlzcGVuc2VyIl0sImNsYXNzaWZpY2F0aW9ucyI6W3siY29kZSI6IkNBU0hfRElTUEVOU0VSIiwibmFtZXMiOlt7Im5hbWVMb2NhbGUiOiJlbi1VUyIsIm5hbWUiOiJjYXNoIGRpc3BlbnNlciJ9XX1dfSwiYWRkcmVzcyI6eyJzdHJlZXROdW1iZXIiOiIyMiIsInN0cmVldE5hbWUiOiJSdWUgSWJlcnZpbGxlIiwibXVuaWNpcGFsaXR5IjoiUmFkaXNzb24iLCJjb3VudHJ5U3ViZGl2aXNpb24iOiJRQyIsImNvdW50cnlTdWJkaXZpc2lvbk5hbWUiOiJRdcOpYmVjIiwicG9zdGFsQ29kZSI6IkowTSIsImNvdW50cnlDb2RlIjoiQ0EiLCJjb3VudHJ5IjoiQ2FuYWRhIiwiY291bnRyeUNvZGVJU08zIjoiQ0FOIiwiZnJlZWZvcm1BZGRyZXNzIjoiMjIgUnVlIEliZXJ2aWxsZSwgUmFkaXNzb24gUUMgSjBNIiwibG9jYWxOYW1lIjoiUmFkaXNzb24ifSwicG9zaXRpb24iOnsibGF0Ijo1My43OTY5MTEsImxvbiI6LTc3LjYyMTQ2NH0sInZpZXdwb3J0Ijp7InRvcExlZnRQb2ludCI6eyJsYXQiOjUzLjc5NzgxLCJsb24iOi03Ny42MjI5OX0sImJ0bVJpZ2h0UG9pbnQiOnsibGF0Ijo1My43OTYwMSwibG9uIjotNzcuNjE5OTR9fSwiZW50cnlQb2ludHMiOlt7InR5cGUiOiJtYWluIiwicG9zaXRpb24iOnsibGF0Ijo1My43OTY4NSwibG9uIjotNzcuNjIxNTh9fV19LHsidHlwZSI6IlBPSSIsImlkIjoiQlRqaXFQU09aU2JkWWNOME5EYm8xUSIsInNjb3JlIjoyLjE0NjIwOTAwMTUsImRpc3QiOjYxMDI2My41MzQyMjcsImluZm8iOiJzZWFyY2g6dGE6MTI0MjQ5MDA4NDk4NDc5LUNBIiwicG9pIjp7Im5hbWUiOiJUbnMgc21hcnQgTmV0d29yayBJbmMuIiwiY2F0ZWdvcnlTZXQiOlt7ImlkIjo3Mzk3fV0sImNhdGVnb3JpZXMiOlsiY2FzaCBkaXNwZW5zZXIiXSwiY2xhc3NpZmljYXRpb25zIjpbeyJjb2RlIjoiQ0FTSF9ESVNQRU5TRVIiLCJuYW1lcyI6W3sibmFtZUxvY2FsZSI6ImVuLVVTIiwibmFtZSI6ImNhc2ggZGlzcGVuc2VyIn1dfV19LCJhZGRyZXNzIjp7InN0cmVldE51bWJlciI6IjYxIiwic3RyZWV0TmFtZSI6IkF2ZW51ZSBkZXMgR3Jvc2VpbGxlcnMiLCJtdW5pY2lwYWxpdHkiOiJSYWRpc3NvbiIsImNvdW50cnlTdWJkaXZpc2lvbiI6IlFDIiwiY291bnRyeVN1YmRpdmlzaW9uTmFtZSI6IlF1w6liZWMiLCJwb3N0YWxDb2RlIjoiSjBNIiwiY291bnRyeUNvZGUiOiJDQSIsImNvdW50cnkiOiJDYW5hZGEiLCJjb3VudHJ5Q29kZUlTTzMiOiJDQU4iLCJmcmVlZm9ybUFkZHJlc3MiOiI2MSBBdmVudWUgZGVzIEdyb3NlaWxsZXJzLCBSYWRpc3NvbiBRQyBKME0iLCJsb2NhbE5hbWUiOiJSYWRpc3NvbiJ9LCJwb3NpdGlvbiI6eyJsYXQiOjUzLjc5MzY1MiwibG9uIjotNzcuNjExNDM5fSwidmlld3BvcnQiOnsidG9wTGVmdFBvaW50Ijp7ImxhdCI6NTMuNzk0NTUsImxvbiI6LTc3LjYxMjk2fSwiYnRtUmlnaHRQb2ludCI6eyJsYXQiOjUzLjc5Mjc1LCJsb24iOi03Ny42MDk5Mn19LCJlbnRyeVBvaW50cyI6W3sidHlwZSI6Im1haW4iLCJwb3NpdGlvbiI6eyJsYXQiOjUzLjc5MzcyLCJsb24iOi03Ny42MTE1NH19XX0seyJ0eXBlIjoiUE9JIiwiaWQiOiJHUDQtblNfUE9rNVRmbnlFRExaazRBIiwic2NvcmUiOjIuMTQ2MjA5MDAxNSwiZGlzdCI6NjEwMjYyLjk4MzczNSwiaW5mbyI6InNlYXJjaDp0YToxMjQyNDkwMDgyNDQzMjgtQ0EiLCJwb2kiOnsibmFtZSI6IkZlZGVyYXRpb24gRGVzIENhaXNzZXMgRGUiLCJjYXRlZ29yeVNldCI6W3siaWQiOjczOTd9XSwiY2F0ZWdvcmllcyI6WyJjYXNoIGRpc3BlbnNlciJdLCJjbGFzc2lmaWNhdGlvbnMiOlt7ImNvZGUiOiJDQVNIX0RJU1BFTlNFUiIsIm5hbWVzIjpbeyJuYW1lTG9jYWxlIjoiZW4tVVMiLCJuYW1lIjoiY2FzaCBkaXNwZW5zZXIifV19XX0sImFkZHJlc3MiOnsic3RyZWV0TnVtYmVyIjoiNjYiLCJzdHJlZXROYW1lIjoiQXZlbnVlIGRlcyBHcm9zZWlsbGVycyIsIm11bmljaXBhbGl0eSI6IlJhZGlzc29uIiwiY291bnRyeVN1YmRpdmlzaW9uIjoiUUMiLCJjb3VudHJ5U3ViZGl2aXNpb25OYW1lIjoiUXXDqWJlYyIsInBvc3RhbENvZGUiOiJKME0iLCJjb3VudHJ5Q29kZSI6IkNBIiwiY291bnRyeSI6IkNhbmFkYSIsImNvdW50cnlDb2RlSVNPMyI6IkNBTiIsImZyZWVmb3JtQWRkcmVzcyI6IjY2IEF2ZW51ZSBkZXMgR3Jvc2VpbGxlcnMsIFJhZGlzc29uIFFDIEowTSIsImxvY2FsTmFtZSI6IlJhZGlzc29uIn0sInBvc2l0aW9uIjp7ImxhdCI6NTMuNzkzNzUyLCJsb24iOi03Ny42MTE4NTF9LCJ2aWV3cG9ydCI6eyJ0b3BMZWZ0UG9pbnQiOnsibGF0Ijo1My43OTQ2NSwibG9uIjotNzcuNjEzMzd9LCJidG1SaWdodFBvaW50Ijp7ImxhdCI6NTMuNzkyODUsImxvbiI6LTc3LjYxMDMzfX0sImVudHJ5UG9pbnRzIjpbeyJ0eXBlIjoibWFpbiIsInBvc2l0aW9uIjp7ImxhdCI6NTMuNzkzNjUsImxvbiI6LTc3LjYxMTczfX1dfSx7InR5cGUiOiJQT0kiLCJpZCI6IlRRc28tQ0lPbjZGbVcxSzJzdWcxeUEiLCJzY29yZSI6Mi4xNDYyMDIzMjU4LCJkaXN0Ijo2MTE1OTMuNjIzNTE5LCJpbmZvIjoic2VhcmNoOnRhOjEyNDYyOTAwMDAyNTQwMC1DQSIsInBvaSI6eyJuYW1lIjoiVG5zIHNtYXJ0IE5ldHdvcmsgSW5jLiIsImNhdGVnb3J5U2V0IjpbeyJpZCI6NzM5N31dLCJjYXRlZ29yaWVzIjpbImNhc2ggZGlzcGVuc2VyIl0sImNsYXNzaWZpY2F0aW9ucyI6W3siY29kZSI6IkNBU0hfRElTUEVOU0VSIiwibmFtZXMiOlt7Im5hbWVMb2NhbGUiOiJlbi1VUyIsIm5hbWUiOiJjYXNoIGRpc3BlbnNlciJ9XX1dfSwiYWRkcmVzcyI6eyJzdHJlZXROdW1iZXIiOiI3NDMiLCJzdHJlZXROYW1lIjoiQmVuIEVsbCBEcml2ZSIsIm11bmljaXBhbGl0eSI6IklxYWx1aXQiLCJjb3VudHJ5U3ViZGl2aXNpb24iOiJOVSIsImNvdW50cnlTdWJkaXZpc2lvbk5hbWUiOiJOdW5hdnV0IiwicG9zdGFsQ29kZSI6IlgwQSIsImNvdW50cnlDb2RlIjoiQ0EiLCJjb3VudHJ5IjoiQ2FuYWRhIiwiY291bnRyeUNvZGVJU08zIjoiQ0FOIiwiZnJlZWZvcm1BZGRyZXNzIjoiNzQzIEJlbiBFbGwgRHJpdmUsIElxYWx1aXQgTlUgWDBBIiwibG9jYWxOYW1lIjoiSXFhbHVpdCJ9LCJwb3NpdGlvbiI6eyJsYXQiOjYzLjc0Njk1OCwibG9uIjotNjguNTIwNDN9LCJ2aWV3cG9ydCI6eyJ0b3BMZWZ0UG9pbnQiOnsibGF0Ijo2My43NDc4NiwibG9uIjotNjguNTIyNDZ9LCJidG1SaWdodFBvaW50Ijp7ImxhdCI6NjMuNzQ2MDYsImxvbiI6LTY4LjUxODR9fSwiZW50cnlQb2ludHMiOlt7InR5cGUiOiJtYWluIiwicG9zaXRpb24iOnsibGF0Ijo2My43NDY3NywibG9uIjotNjguNTIwMzF9fV19LHsidHlwZSI6IlBPSSIsImlkIjoielJyUEtNYTNrQlY5bkl5VWMwbURJUSIsInNjb3JlIjoyLjE0NjIwMjMyNTgsImRpc3QiOjYxMTU5NS4wNzI5MTYsImluZm8iOiJzZWFyY2g6dGE6MTI0NjI5MDAwMDI1MzYxLUNBIiwicG9pIjp7Im5hbWUiOiJUbnMgc21hcnQgTmV0d29yayBJbmMuIiwiY2F0ZWdvcnlTZXQiOlt7ImlkIjo3Mzk3fV0sImNhdGVnb3JpZXMiOlsiY2FzaCBkaXNwZW5zZXIiXSwiY2xhc3NpZmljYXRpb25zIjpbeyJjb2RlIjoiQ0FTSF9ESVNQRU5TRVIiLCJuYW1lcyI6W3sibmFtZUxvY2FsZSI6ImVuLVVTIiwibmFtZSI6ImNhc2ggZGlzcGVuc2VyIn1dfV19LCJhZGRyZXNzIjp7InN0cmVldE51bWJlciI6IjEwNTYiLCJzdHJlZXROYW1lIjoiTWl2dmlrIFN0cmVldCIsIm11bmljaXBhbGl0eSI6IklxYWx1aXQiLCJjb3VudHJ5U3ViZGl2aXNpb24iOiJOVSIsImNvdW50cnlTdWJkaXZpc2lvbk5hbWUiOiJOdW5hdnV0IiwicG9zdGFsQ29kZSI6IlgwQSIsImNvdW50cnlDb2RlIjoiQ0EiLCJjb3VudHJ5IjoiQ2FuYWRhIiwiY291bnRyeUNvZGVJU08zIjoiQ0FOIiwiZnJlZWZvcm1BZGRyZXNzIjoiMTA1NiBNaXZ2aWsgU3RyZWV0LCBJcWFsdWl0IE5VIFgwQSIsImxvY2FsTmFtZSI6IklxYWx1aXQifSwicG9zaXRpb24iOnsibGF0Ijo2My43NDg3NzUsImxvbiI6LTY4LjUyNzU2NH0sInZpZXdwb3J0Ijp7InRvcExlZnRQb2ludCI6eyJsYXQiOjYzLjc0OTY3LCJsb24iOi02OC41Mjk2fSwiYnRtUmlnaHRQb2ludCI6eyJsYXQiOjYzLjc0Nzg4LCJsb24iOi02OC41MjU1M319LCJlbnRyeVBvaW50cyI6W3sidHlwZSI6Im1haW4iLCJwb3NpdGlvbiI6eyJsYXQiOjYzLjc0ODg3LCJsb24iOi02OC41Mjc1NH19XX0seyJ0eXBlIjoiUE9JIiwiaWQiOiI2ckJGakhUQW5jV0lueTlZUkgtWldRIiwic2NvcmUiOjIuMTQ2MjAxODQ5LCJkaXN0Ijo2MTE3MDIuODg5ODM5LCJpbmZvIjoic2VhcmNoOnRhOjEyNDYyOTAwMDAyNDMyMS1DQSIsInBvaSI6eyJuYW1lIjoiQ2liYyIsImNhdGVnb3J5U2V0IjpbeyJpZCI6NzM5N31dLCJjYXRlZ29yaWVzIjpbImNhc2ggZGlzcGVuc2VyIl0sImNsYXNzaWZpY2F0aW9ucyI6W3siY29kZSI6IkNBU0hfRElTUEVOU0VSIiwibmFtZXMiOlt7Im5hbWVMb2NhbGUiOiJlbi1VUyIsIm5hbWUiOiJjYXNoIGRpc3BlbnNlciJ9XX1dfSwiYWRkcmVzcyI6eyJzdHJlZXROdW1iZXIiOiI2MTEiLCJzdHJlZXROYW1lIjoiUXVlZW4gRWxpemFiZXRoIFdheSIsIm11bmljaXBhbGl0eSI6IklxYWx1aXQiLCJjb3VudHJ5U3ViZGl2aXNpb24iOiJOVSIsImNvdW50cnlTdWJkaXZpc2lvbk5hbWUiOiJOdW5hdnV0IiwicG9zdGFsQ29kZSI6IlgwQSIsImNvdW50cnlDb2RlIjoiQ0EiLCJjb3VudHJ5IjoiQ2FuYWRhIiwiY291bnRyeUNvZGVJU08zIjoiQ0FOIiwiZnJlZWZvcm1BZGRyZXNzIjoiNjExIFF1ZWVuIEVsaXphYmV0aCBXYXksIElxYWx1aXQgTlUgWDBBIiwibG9jYWxOYW1lIjoiSXFhbHVpdCJ9LCJwb3NpdGlvbiI6eyJsYXQiOjYzLjc0Nzk0OSwibG9uIjotNjguNTE5ODcyfSwidmlld3BvcnQiOnsidG9wTGVmdFBvaW50Ijp7ImxhdCI6NjMuNzQ4ODUsImxvbiI6LTY4LjUyMTkxfSwiYnRtUmlnaHRQb2ludCI6eyJsYXQiOjYzLjc0NzA1LCJsb24iOi02OC41MTc4NH19LCJlbnRyeVBvaW50cyI6W3sidHlwZSI6Im1haW4iLCJwb3NpdGlvbiI6eyJsYXQiOjYzLjc0Nzg3LCJsb24iOi02OC41MjA0fX1dfSx7InR5cGUiOiJQT0kiLCJpZCI6IncwWmJVWk1JSTRFbXhmUVZ6UkhnaXciLCJzY29yZSI6Mi4xNDYyMDE4NDksImRpc3QiOjYxMTY3MS4yMzM4MjcsImluZm8iOiJzZWFyY2g6dGE6MTI0NjI5MDAwMDI1MDQ5LUNBIiwicG9pIjp7Im5hbWUiOiJUbnMgc21hcnQgTmV0d29yayBJbmMuIiwiY2F0ZWdvcnlTZXQiOlt7ImlkIjo3Mzk3fV0sImNhdGVnb3JpZXMiOlsiY2FzaCBkaXNwZW5zZXIiXSwiY2xhc3NpZmljYXRpb25zIjpbeyJjb2RlIjoiQ0FTSF9ESVNQRU5TRVIiLCJuYW1lcyI6W3sibmFtZUxvY2FsZSI6ImVuLVVTIiwibmFtZSI6ImNhc2ggZGlzcGVuc2VyIn1dfV19LCJhZGRyZXNzIjp7InN0cmVldE51bWJlciI6IjgwNyIsInN0cmVldE5hbWUiOiJBdmlxIFN0cmVldCIsIm11bmljaXBhbGl0eSI6IklxYWx1aXQiLCJjb3VudHJ5U3ViZGl2aXNpb24iOiJOVSIsImNvdW50cnlTdWJkaXZpc2lvbk5hbWUiOiJOdW5hdnV0IiwicG9zdGFsQ29kZSI6IlgwQSIsImNvdW50cnlDb2RlIjoiQ0EiLCJjb3VudHJ5IjoiQ2FuYWRhIiwiY291bnRyeUNvZGVJU08zIjoiQ0FOIiwiZnJlZWZvcm1BZGRyZXNzIjoiODA3IEF2aXEgU3RyZWV0LCBJcWFsdWl0IE5VIFgwQSIsImxvY2FsTmFtZSI6IklxYWx1aXQifSwicG9zaXRpb24iOnsibGF0Ijo2My43NDg1MzcsImxvbiI6LTY4LjUyMzQ5N30sInZpZXdwb3J0Ijp7InRvcExlZnRQb2ludCI6eyJsYXQiOjYzLjc0OTQ0LCJsb24iOi02OC41MjU1M30sImJ0bVJpZ2h0UG9pbnQiOnsibGF0Ijo2My43NDc2NCwibG9uIjotNjguNTIxNDZ9fSwiZW50cnlQb2ludHMiOlt7InR5cGUiOiJtYWluIiwicG9zaXRpb24iOnsibGF0Ijo2My43NDg2MywibG9uIjotNjguNTIzNTJ9fV19LHsidHlwZSI6IlBPSSIsImlkIjoidS1jamQwMng0YVdVcmFzZ0UtZURZdyIsInNjb3JlIjoyLjE0NjIwMTg0OSwiZGlzdCI6NjExNjk0LjgzMDYwMywiaW5mbyI6InNlYXJjaDp0YToxMjQ2MjkwMDAwMjQxNjItQ0EiLCJwb2kiOnsibmFtZSI6IlRucyBzbWFydCBOZXR3b3JrIEluYy4iLCJjYXRlZ29yeVNldCI6W3siaWQiOjczOTd9XSwiY2F0ZWdvcmllcyI6WyJjYXNoIGRpc3BlbnNlciJdLCJjbGFzc2lmaWNhdGlvbnMiOlt7ImNvZGUiOiJDQVNIX0RJU1BFTlNFUiIsIm5hbWVzIjpbeyJuYW1lTG9jYWxlIjoiZW4tVVMiLCJuYW1lIjoiY2FzaCBkaXNwZW5zZXIifV19XX0sImFkZHJlc3MiOnsic3RyZWV0TnVtYmVyIjoiOTM3Iiwic3RyZWV0TmFtZSI6Ik1pdnZpayBTdHJlZXQiLCJtdW5pY2lwYWxpdHkiOiJJcWFsdWl0IiwiY291bnRyeVN1YmRpdmlzaW9uIjoiTlUiLCJjb3VudHJ5U3ViZGl2aXNpb25OYW1lIjoiTnVuYXZ1dCIsInBvc3RhbENvZGUiOiJYMEEiLCJjb3VudHJ5Q29kZSI6IkNBIiwiY291bnRyeSI6IkNhbmFkYSIsImNvdW50cnlDb2RlSVNPMyI6IkNBTiIsImZyZWVmb3JtQWRkcmVzcyI6IjkzNyBNaXZ2aWsgU3RyZWV0LCBJcWFsdWl0IE5VIFgwQSIsImxvY2FsTmFtZSI6IklxYWx1aXQifSwicG9zaXRpb24iOnsibGF0Ijo2My43NDg5MzgsImxvbiI6LTY4LjUyNDExOH0sInZpZXdwb3J0Ijp7InRvcExlZnRQb2ludCI6eyJsYXQiOjYzLjc0OTg0LCJsb24iOi02OC41MjYxNX0sImJ0bVJpZ2h0UG9pbnQiOnsibGF0Ijo2My43NDgwNCwibG9uIjotNjguNTIyMDh9fSwiZW50cnlQb2ludHMiOlt7InR5cGUiOiJtYWluIiwicG9zaXRpb24iOnsibGF0Ijo2My43NDkxNSwibG9uIjotNjguNTI0MjV9fV19LHsidHlwZSI6IlBPSSIsImlkIjoiNHN2TmdtRFJ3T0wyNU9BV19RSDFHdyIsInNjb3JlIjoyLjE0NjIwMTYxMDYsImRpc3QiOjYxMTczOS4yNDg4NywiaW5mbyI6InNlYXJjaDp0YToxMjQ2MjkwMDAwMjQwNTUtQ0EiLCJwb2kiOnsibmFtZSI6IlRucyBzbWFydCBOZXR3b3JrIEluYy4iLCJjYXRlZ29yeVNldCI6W3siaWQiOjczOTd9XSwiY2F0ZWdvcmllcyI6WyJjYXNoIGRpc3BlbnNlciJdLCJjbGFzc2lmaWNhdGlvbnMiOlt7ImNvZGUiOiJDQVNIX0RJU1BFTlNFUiIsIm5hbWVzIjpbeyJuYW1lTG9jYWxlIjoiZW4tVVMiLCJuYW1lIjoiY2FzaCBkaXNwZW5zZXIifV19XX0sImFkZHJlc3MiOnsic3RyZWV0TnVtYmVyIjoiMjMwIiwic3RyZWV0TmFtZSI6IlF1ZWVuIEVsaXphYmV0aCBXYXkiLCJtdW5pY2lwYWxpdHkiOiJJcWFsdWl0IiwiY291bnRyeVN1YmRpdmlzaW9uIjoiTlUiLCJjb3VudHJ5U3ViZGl2aXNpb25OYW1lIjoiTnVuYXZ1dCIsInBvc3RhbENvZGUiOiJYMEEiLCJjb3VudHJ5Q29kZSI6IkNBIiwiY291bnRyeSI6IkNhbmFkYSIsImNvdW50cnlDb2RlSVNPMyI6IkNBTiIsImZyZWVmb3JtQWRkcmVzcyI6IjIzMCBRdWVlbiBFbGl6YWJldGggV2F5LCBJcWFsdWl0IE5VIFgwQSIsImxvY2FsTmFtZSI6IklxYWx1aXQifSwicG9zaXRpb24iOnsibGF0Ijo2My43NDUyMzMsImxvbiI6LTY4LjUwNzY2M30sInZpZXdwb3J0Ijp7InRvcExlZnRQb2ludCI6eyJsYXQiOjYzLjc0NjEzLCJsb24iOi02OC41MDk3fSwiYnRtUmlnaHRQb2ludCI6eyJsYXQiOjYzLjc0NDMzLCJsb24iOi02OC41MDU2M319LCJlbnRyeVBvaW50cyI6W3sidHlwZSI6Im1haW4iLCJwb3NpdGlvbiI6eyJsYXQiOjYzLjc0NTE1LCJsb24iOi02OC41MDc1OX19XX1dfQ==
-  recorded_at: Wed, 30 Aug 2023 22:58:58 GMT
+        eyJzdW1tYXJ5Ijp7InF1ZXJ5IjoiYXV0b21hdGljX3RlbGxlcl9tYWNoaW5lIiwicXVlcnlUeXBlIjoiTk9OX05FQVIiLCJxdWVyeVRpbWUiOjE5NSwibnVtUmVzdWx0cyI6MTAsIm9mZnNldCI6MCwidG90YWxSZXN1bHRzIjoxMCwiZnV6enlMZXZlbCI6MSwiZ2VvQmlhcyI6eyJsYXQiOi01Ni42Mjc0ODUyMzY3NjQ4NCwibG9uIjo2NS42NzIwNTY5NjcxOTgyMn0sImdlb2JpYXNDb3VudHJ5IjoiWloifSwicmVzdWx0cyI6W3sidHlwZSI6IlBPSSIsImlkIjoiVWkzM3VHRE9VcWFxY0d6RjhqY0JoUSIsInNjb3JlIjoyLjE0NTQzOTg2MzIsImRpc3QiOjEyNTQxODc2LjE3OTE5NCwiaW5mbyI6InNlYXJjaDp0YTowMjAwMDkwMDAwMDA5NDQtQUQiLCJwb2kiOnsibmFtZSI6IkJhbmNTYWJhZGVsbCBkJ0FuZG9ycmEiLCJicmFuZHMiOlt7Im5hbWUiOiJCYW5jIFNhYmFkZWxsIGQnQW5kb3JyYSJ9XSwiY2F0ZWdvcnlTZXQiOlt7ImlkIjo3Mzk3fV0sImNhdGVnb3JpZXMiOlsiY2FzaCBkaXNwZW5zZXIiXSwiY2xhc3NpZmljYXRpb25zIjpbeyJjb2RlIjoiQ0FTSF9ESVNQRU5TRVIiLCJuYW1lcyI6W3sibmFtZUxvY2FsZSI6ImVuLVVTIiwibmFtZSI6ImNhc2ggZGlzcGVuc2VyIn1dfV19LCJhZGRyZXNzIjp7InN0cmVldE51bWJlciI6IjciLCJzdHJlZXROYW1lIjoiQXZpbmd1ZGEgZGVsIEZlbmVyIiwibXVuaWNpcGFsaXR5IjoiRXNjYWxkZXMtRW5nb3JkYW55IiwicG9zdGFsQ29kZSI6IkFENTAwIiwiY291bnRyeUNvZGUiOiJBRCIsImNvdW50cnkiOiJBbmRvcnJhIiwiY291bnRyeUNvZGVJU08zIjoiQU5EIiwiZnJlZWZvcm1BZGRyZXNzIjoiQXZpbmd1ZGEgZGVsIEZlbmVyIDcsIEVzY2FsZGVzLUVuZ29yZGFueSwgQUQ1MDAiLCJsb2NhbE5hbWUiOiJFc2NhbGRlcy1FbmdvcmRhbnkifSwicG9zaXRpb24iOnsibGF0Ijo0Mi41MDcxNSwibG9uIjoxLjUzNDI0NX0sInZpZXdwb3J0Ijp7InRvcExlZnRQb2ludCI6eyJsYXQiOjQyLjUwODA1LCJsb24iOjEuNTMzMDN9LCJidG1SaWdodFBvaW50Ijp7ImxhdCI6NDIuNTA2MjUsImxvbiI6MS41MzU0Nn19LCJlbnRyeVBvaW50cyI6W3sidHlwZSI6Im1haW4iLCJwb3NpdGlvbiI6eyJsYXQiOjQyLjUwNzE1LCJsb24iOjEuNTM0MjV9fV19LHsidHlwZSI6IlBPSSIsImlkIjoidnRBUUE3LUF3RDhnRHZXd3Z1dzhGUSIsInNjb3JlIjoyLjE0NTQzOTg2MzIsImRpc3QiOjEyNTQ2NTc1LjM5OTgyOCwiaW5mbyI6InNlYXJjaDp0YTowMjAwMDkwMDAwMDA3NjgtQUQiLCJwb2kiOnsibmFtZSI6IkNyw6hkaXQgQW5kb3Jyw6AiLCJicmFuZHMiOlt7Im5hbWUiOiJDcsOoZGl0IEFuZG9ycsOgIn1dLCJjYXRlZ29yeVNldCI6W3siaWQiOjczOTd9XSwiY2F0ZWdvcmllcyI6WyJjYXNoIGRpc3BlbnNlciJdLCJjbGFzc2lmaWNhdGlvbnMiOlt7ImNvZGUiOiJDQVNIX0RJU1BFTlNFUiIsIm5hbWVzIjpbeyJuYW1lTG9jYWxlIjoiZW4tVVMiLCJuYW1lIjoiY2FzaCBkaXNwZW5zZXIifV19XX0sImFkZHJlc3MiOnsic3RyZWV0TmFtZSI6IkNhcnJlciBNYWpvciIsIm11bmljaXBhbGl0eSI6Ik9yZGlubyIsInBvc3RhbENvZGUiOiJBRDMwMCIsImNvdW50cnlDb2RlIjoiQUQiLCJjb3VudHJ5IjoiQW5kb3JyYSIsImNvdW50cnlDb2RlSVNPMyI6IkFORCIsImZyZWVmb3JtQWRkcmVzcyI6IkNhcnJlciBNYWpvciwgT3JkaW5vLCBBRDMwMCIsImxvY2FsTmFtZSI6Ik9yZGlubyJ9LCJwb3NpdGlvbiI6eyJsYXQiOjQyLjU1Njg3OCwibG9uIjoxLjUzMzQ1OH0sInZpZXdwb3J0Ijp7InRvcExlZnRQb2ludCI6eyJsYXQiOjQyLjU1Nzc4LCJsb24iOjEuNTMyMjR9LCJidG1SaWdodFBvaW50Ijp7ImxhdCI6NDIuNTU1OTgsImxvbiI6MS41MzQ2OH19LCJlbnRyeVBvaW50cyI6W3sidHlwZSI6Im1haW4iLCJwb3NpdGlvbiI6eyJsYXQiOjQyLjU1Njc0LCJsb24iOjEuNTMzNTR9fV19LHsidHlwZSI6IlBPSSIsImlkIjoicFpUU0p0UUxWZmRPRVpnTm43OVNBQSIsInNjb3JlIjoyLjE0NTQzOTg2MzIsImRpc3QiOjEyNTQ3ODk5LjI1NSwiaW5mbyI6InNlYXJjaDp0YTowMjAwMDkwMDAwMjE3NDMtQUQiLCJwb2kiOnsibmFtZSI6IkNyw6hkaXQgQW5kb3Jyw6AiLCJicmFuZHMiOlt7Im5hbWUiOiJDcsOoZGl0IEFuZG9ycsOgIn1dLCJjYXRlZ29yeVNldCI6W3siaWQiOjczOTd9XSwiY2F0ZWdvcmllcyI6WyJjYXNoIGRpc3BlbnNlciJdLCJjbGFzc2lmaWNhdGlvbnMiOlt7ImNvZGUiOiJDQVNIX0RJU1BFTlNFUiIsIm5hbWVzIjpbeyJuYW1lTG9jYWxlIjoiZW4tVVMiLCJuYW1lIjoiY2FzaCBkaXNwZW5zZXIifV19XX0sImFkZHJlc3MiOnsic3RyZWV0TmFtZSI6IlVyYmFuaXR6YWNpw7MgU3VwZXIgUGFsIiwibXVuaWNpcGFsaXR5U3ViZGl2aXNpb24iOiJQYWwiLCJtdW5pY2lwYWxpdHkiOiJMYSBNYXNzYW5hIiwicG9zdGFsQ29kZSI6IkFENDAwIiwiY291bnRyeUNvZGUiOiJBRCIsImNvdW50cnkiOiJBbmRvcnJhIiwiY291bnRyeUNvZGVJU08zIjoiQU5EIiwiZnJlZWZvcm1BZGRyZXNzIjoiVXJiYW5pdHphY2nDsyBTdXBlciBQYWwsIExhIE1hc3NhbmEsIEFENDAwIiwibG9jYWxOYW1lIjoiTGEgTWFzc2FuYSJ9LCJwb3NpdGlvbiI6eyJsYXQiOjQyLjU0MzU1NiwibG9uIjoxLjQ3NDk4Nn0sInZpZXdwb3J0Ijp7InRvcExlZnRQb2ludCI6eyJsYXQiOjQyLjU0NDQ2LCJsb24iOjEuNDczNzd9LCJidG1SaWdodFBvaW50Ijp7ImxhdCI6NDIuNTQyNjYsImxvbiI6MS40NzYyMX19LCJlbnRyeVBvaW50cyI6W3sidHlwZSI6Im1haW4iLCJwb3NpdGlvbiI6eyJsYXQiOjQyLjU0MzQ3LCJsb24iOjEuNDc1MDF9fV19LHsidHlwZSI6IlBPSSIsImlkIjoiZm5KSWR6Zkx4SUdBenlWZmxLeUtmQSIsInNjb3JlIjoyLjE0NTQzOTg2MzIsImRpc3QiOjEyNTQyNDY2LjkwMjU1OSwiaW5mbyI6InNlYXJjaDp0YTowMjAwMDkwMDAwMjIyNTEtQUQiLCJwb2kiOnsibmFtZSI6IkFOREJBTksiLCJicmFuZHMiOlt7Im5hbWUiOiJBTkRCQU5LIn1dLCJjYXRlZ29yeVNldCI6W3siaWQiOjczOTd9XSwiY2F0ZWdvcmllcyI6WyJjYXNoIGRpc3BlbnNlciJdLCJjbGFzc2lmaWNhdGlvbnMiOlt7ImNvZGUiOiJDQVNIX0RJU1BFTlNFUiIsIm5hbWVzIjpbeyJuYW1lTG9jYWxlIjoiZW4tVVMiLCJuYW1lIjoiY2FzaCBkaXNwZW5zZXIifV19XX0sImFkZHJlc3MiOnsic3RyZWV0TnVtYmVyIjoiNiIsInN0cmVldE5hbWUiOiJBdmluZ3VkYSBkZSBKb2FuIE1hcnTDrSIsIm11bmljaXBhbGl0eSI6IkVuY2FtcCIsInBvc3RhbENvZGUiOiJBRDIwMCIsImNvdW50cnlDb2RlIjoiQUQiLCJjb3VudHJ5IjoiQW5kb3JyYSIsImNvdW50cnlDb2RlSVNPMyI6IkFORCIsImZyZWVmb3JtQWRkcmVzcyI6IkF2aW5ndWRhIGRlIEpvYW4gTWFydMOtIDYsIEVuY2FtcCwgQUQyMDAiLCJsb2NhbE5hbWUiOiJFbmNhbXAifSwicG9zaXRpb24iOnsibGF0Ijo0Mi41MzU2NzgsImxvbiI6MS41ODE2NTN9LCJ2aWV3cG9ydCI6eyJ0b3BMZWZ0UG9pbnQiOnsibGF0Ijo0Mi41MzY1OCwibG9uIjoxLjU4MDQzfSwiYnRtUmlnaHRQb2ludCI6eyJsYXQiOjQyLjUzNDc4LCJsb24iOjEuNTgyODd9fSwiZW50cnlQb2ludHMiOlt7InR5cGUiOiJtYWluIiwicG9zaXRpb24iOnsibGF0Ijo0Mi41MzU2MywibG9uIjoxLjU4MTc1fX1dfSx7InR5cGUiOiJQT0kiLCJpZCI6InU1QUx3SHl2elpsSnJTdVFaMno3V0EiLCJzY29yZSI6Mi4xNDU0Mzk4NjMyLCJkaXN0IjoxMjU0NDcyNC4zNDc5MDEsImluZm8iOiJzZWFyY2g6dGE6MDIwMDA5MDAwMDQ5OTY2LUFEIiwicG9pIjp7Im5hbWUiOiJBdi4gU2FudCBKb2FuIiwiYnJhbmRzIjpbeyJuYW1lIjoiQmFuYyBTYWJhZGVsbCBkJ0FuZG9ycmEifV0sImNhdGVnb3J5U2V0IjpbeyJpZCI6NzM5N31dLCJjYXRlZ29yaWVzIjpbImNhc2ggZGlzcGVuc2VyIl0sImNsYXNzaWZpY2F0aW9ucyI6W3siY29kZSI6IkNBU0hfRElTUEVOU0VSIiwibmFtZXMiOlt7Im5hbWVMb2NhbGUiOiJlbi1VUyIsIm5hbWUiOiJjYXNoIGRpc3BlbnNlciJ9XX1dfSwiYWRkcmVzcyI6eyJzdHJlZXROdW1iZXIiOiIyIiwic3RyZWV0TmFtZSI6IkNhcnJldGVyYSBHZW5lcmFsIDItVHJhbSBTYW50IEpvYW4gZGUgQ2FzZWxsZXMiLCJtdW5pY2lwYWxpdHkiOiJDYW5pbGxvIiwicG9zdGFsQ29kZSI6IkFEMTAwIiwiY291bnRyeUNvZGUiOiJBRCIsImNvdW50cnkiOiJBbmRvcnJhIiwiY291bnRyeUNvZGVJU08zIjoiQU5EIiwiZnJlZWZvcm1BZGRyZXNzIjoiQ2FycmV0ZXJhIEdlbmVyYWwgMi1UcmFtIFNhbnQgSm9hbiBkZSBDYXNlbGxlcyAyLCBDYW5pbGxvLCBBRDEwMCIsImxvY2FsTmFtZSI6IkNhbmlsbG8ifSwicG9zaXRpb24iOnsibGF0Ijo0Mi41NjYwNiwibG9uIjoxLjU5NTE0MX0sInZpZXdwb3J0Ijp7InRvcExlZnRQb2ludCI6eyJsYXQiOjQyLjU2NzU2LCJsb24iOjEuNTkzMX0sImJ0bVJpZ2h0UG9pbnQiOnsibGF0Ijo0Mi41NjQ1NiwibG9uIjoxLjU5NzE4fX0sImVudHJ5UG9pbnRzIjpbeyJ0eXBlIjoibWFpbiIsInBvc2l0aW9uIjp7ImxhdCI6NDIuNTY1MzUsImxvbiI6MS41OTMzNH19XX0seyJ0eXBlIjoiUE9JIiwiaWQiOiI1NkYydHRHVmd3blU4djlMZkd4VGNBIiwic2NvcmUiOjIuMTQ1NDM5ODYzMiwiZGlzdCI6MTI1Mzk5MDMuODQ3NDUyLCJpbmZvIjoic2VhcmNoOnRhOjAyMDAwOTAwMDAyMTg2NS1BRCIsInBvaSI6eyJuYW1lIjoiTU9SQUJBTkMiLCJicmFuZHMiOlt7Im5hbWUiOiJNb3JhYmFuYyJ9XSwiY2F0ZWdvcnlTZXQiOlt7ImlkIjo3Mzk3fV0sImNhdGVnb3JpZXMiOlsiY2FzaCBkaXNwZW5zZXIiXSwiY2xhc3NpZmljYXRpb25zIjpbeyJjb2RlIjoiQ0FTSF9ESVNQRU5TRVIiLCJuYW1lcyI6W3sibmFtZUxvY2FsZSI6ImVuLVVTIiwibmFtZSI6ImNhc2ggZGlzcGVuc2VyIn1dfV19LCJhZGRyZXNzIjp7InN0cmVldE51bWJlciI6IjIiLCJzdHJlZXROYW1lIjoiQ2FycmV0ZXJhIGRlIGxhIFJhYmFzc2EiLCJtdW5pY2lwYWxpdHkiOiJTYW50IEp1bGnDoCBkZSBMw7JyaWEiLCJwb3N0YWxDb2RlIjoiQUQ2MDAiLCJjb3VudHJ5Q29kZSI6IkFEIiwiY291bnRyeSI6IkFuZG9ycmEiLCJjb3VudHJ5Q29kZUlTTzMiOiJBTkQiLCJmcmVlZm9ybUFkZHJlc3MiOiJDYXJyZXRlcmEgZGUgbGEgUmFiYXNzYSAyLCBTYW50IEp1bGnDoCBkZSBMw7JyaWEsIEFENjAwIiwibG9jYWxOYW1lIjoiU2FudCBKdWxpw6AgZGUgTMOycmlhIn0sInBvc2l0aW9uIjp7ImxhdCI6NDIuNDY2NDg4LCJsb24iOjEuNDkyNDEyfSwidmlld3BvcnQiOnsidG9wTGVmdFBvaW50Ijp7ImxhdCI6NDIuNDY3MzksImxvbiI6MS40OTExOX0sImJ0bVJpZ2h0UG9pbnQiOnsibGF0Ijo0Mi40NjU1OSwibG9uIjoxLjQ5MzYzfX0sImVudHJ5UG9pbnRzIjpbeyJ0eXBlIjoibWFpbiIsInBvc2l0aW9uIjp7ImxhdCI6NDIuNDY2NTEsImxvbiI6MS40OTI1MX19XX0seyJ0eXBlIjoiUE9JIiwiaWQiOiI5MEx5ajJlVFdZUFpNMkJkOXFhcVVnIiwic2NvcmUiOjIuMTQ1NDM5ODYzMiwiZGlzdCI6MTI1NDYwMDAuMjY1NDQ0LCJpbmZvIjoic2VhcmNoOnRhOjAyMDAwOTAwMDA5MzM0MC1BRCIsInBvaSI6eyJuYW1lIjoiQmFuY1NhYmFkZWxsIGQnQW5kb3JyYSIsImJyYW5kcyI6W3sibmFtZSI6IkJhbmMgU2FiYWRlbGwgZCdBbmRvcnJhIn1dLCJjYXRlZ29yeVNldCI6W3siaWQiOjczOTd9XSwiY2F0ZWdvcmllcyI6WyJjYXNoIGRpc3BlbnNlciJdLCJjbGFzc2lmaWNhdGlvbnMiOlt7ImNvZGUiOiJDQVNIX0RJU1BFTlNFUiIsIm5hbWVzIjpbeyJuYW1lTG9jYWxlIjoiZW4tVVMiLCJuYW1lIjoiY2FzaCBkaXNwZW5zZXIifV19XX0sImFkZHJlc3MiOnsic3RyZWV0TmFtZSI6IkF2aW5ndWRhIGRlIFNhbnQgQW50b25pIiwibXVuaWNpcGFsaXR5IjoiTGEgTWFzc2FuYSIsInBvc3RhbENvZGUiOiJBRDQwMCIsImNvdW50cnlDb2RlIjoiQUQiLCJjb3VudHJ5IjoiQW5kb3JyYSIsImNvdW50cnlDb2RlSVNPMyI6IkFORCIsImZyZWVmb3JtQWRkcmVzcyI6IkF2aW5ndWRhIGRlIFNhbnQgQW50b25pLCBMYSBNYXNzYW5hLCBBRDQwMCIsImxvY2FsTmFtZSI6IkxhIE1hc3NhbmEifSwicG9zaXRpb24iOnsibGF0Ijo0Mi41NDMwOTQsImxvbiI6MS41MTcxNDZ9LCJ2aWV3cG9ydCI6eyJ0b3BMZWZ0UG9pbnQiOnsibGF0Ijo0Mi41NDM5OSwibG9uIjoxLjUxNTkzfSwiYnRtUmlnaHRQb2ludCI6eyJsYXQiOjQyLjU0MjE5LCJsb24iOjEuNTE4Mzd9fSwiZW50cnlQb2ludHMiOlt7InR5cGUiOiJtYWluIiwicG9zaXRpb24iOnsibGF0Ijo0Mi41NDMwMiwibG9uIjoxLjUxNzEyfX1dfSx7InR5cGUiOiJQT0kiLCJpZCI6IlhrTDdQUWxJOFhkUGQzS3o4Y2k3WnciLCJzY29yZSI6Mi4xNDU0Mzk4NjMyLCJkaXN0IjoxMjU0Mzg2NC45NDU0MjIsImluZm8iOiJzZWFyY2g6dGE6MDIwMDA5MDAwMDIwMDU0LUFEIiwicG9pIjp7Im5hbWUiOiJDcsOoZGl0IEFuZG9ycsOgIiwiYnJhbmRzIjpbeyJuYW1lIjoiQ3LDqGRpdCBBbmRvcnLDoCJ9XSwiY2F0ZWdvcnlTZXQiOlt7ImlkIjo3Mzk3fV0sImNhdGVnb3JpZXMiOlsiY2FzaCBkaXNwZW5zZXIiXSwiY2xhc3NpZmljYXRpb25zIjpbeyJjb2RlIjoiQ0FTSF9ESVNQRU5TRVIiLCJuYW1lcyI6W3sibmFtZUxvY2FsZSI6ImVuLVVTIiwibmFtZSI6ImNhc2ggZGlzcGVuc2VyIn1dfV19LCJhZGRyZXNzIjp7InN0cmVldE5hbWUiOiJDYXJyZXRlcmEgR2VuZXJhbCIsIm11bmljaXBhbGl0eSI6IkNhbmlsbG8iLCJwb3N0YWxDb2RlIjoiQUQxMDAiLCJjb3VudHJ5Q29kZSI6IkFEIiwiY291bnRyeSI6IkFuZG9ycmEiLCJjb3VudHJ5Q29kZUlTTzMiOiJBTkQiLCJmcmVlZm9ybUFkZHJlc3MiOiJDYXJyZXRlcmEgR2VuZXJhbCwgQ2FuaWxsbywgQUQxMDAiLCJsb2NhbE5hbWUiOiJDYW5pbGxvIn0sInBvc2l0aW9uIjp7ImxhdCI6NDIuNTkyMDg5LCJsb24iOjEuNjcwM30sInZpZXdwb3J0Ijp7InRvcExlZnRQb2ludCI6eyJsYXQiOjQyLjU5Mjk5LCJsb24iOjEuNjY5MDh9LCJidG1SaWdodFBvaW50Ijp7ImxhdCI6NDIuNTkxMTksImxvbiI6MS42NzE1Mn19LCJlbnRyeVBvaW50cyI6W3sidHlwZSI6Im1haW4iLCJwb3NpdGlvbiI6eyJsYXQiOjQyLjU5MjE4LCJsb24iOjEuNjcwMjZ9fV19LHsidHlwZSI6IlBPSSIsImlkIjoia0g3TmxCVWRjckk1Q2NZTkZvR20zZyIsInNjb3JlIjoyLjE0NTQzOTg2MzIsImRpc3QiOjEyNTQ2NDkzLjc0NzAwOCwiaW5mbyI6InNlYXJjaDp0YTowMjAwMDkwMDAwMjAxNzgtQUQiLCJwb2kiOnsibmFtZSI6IkFOREJBTksiLCJicmFuZHMiOlt7Im5hbWUiOiJBTkRCQU5LIn1dLCJjYXRlZ29yeVNldCI6W3siaWQiOjczOTd9XSwiY2F0ZWdvcmllcyI6WyJjYXNoIGRpc3BlbnNlciJdLCJjbGFzc2lmaWNhdGlvbnMiOlt7ImNvZGUiOiJDQVNIX0RJU1BFTlNFUiIsIm5hbWVzIjpbeyJuYW1lTG9jYWxlIjoiZW4tVVMiLCJuYW1lIjoiY2FzaCBkaXNwZW5zZXIifV19XX0sImFkZHJlc3MiOnsic3RyZWV0TmFtZSI6IkF2aW5ndWRhIGRlIFNhbnQgQW50b25pIiwibXVuaWNpcGFsaXR5IjoiTGEgTWFzc2FuYSIsInBvc3RhbENvZGUiOiJBRDQwMCIsImNvdW50cnlDb2RlIjoiQUQiLCJjb3VudHJ5IjoiQW5kb3JyYSIsImNvdW50cnlDb2RlSVNPMyI6IkFORCIsImZyZWVmb3JtQWRkcmVzcyI6IkF2aW5ndWRhIGRlIFNhbnQgQW50b25pLCBMYSBNYXNzYW5hLCBBRDQwMCIsImxvY2FsTmFtZSI6IkxhIE1hc3NhbmEifSwicG9zaXRpb24iOnsibGF0Ijo0Mi41NDY3MzUsImxvbiI6MS41MTM2OTJ9LCJ2aWV3cG9ydCI6eyJ0b3BMZWZ0UG9pbnQiOnsibGF0Ijo0Mi41NDc2MywibG9uIjoxLjUxMjQ3fSwiYnRtUmlnaHRQb2ludCI6eyJsYXQiOjQyLjU0NTg0LCJsb24iOjEuNTE0OTF9fSwiZW50cnlQb2ludHMiOlt7InR5cGUiOiJtYWluIiwicG9zaXRpb24iOnsibGF0Ijo0Mi41NDY5MywibG9uIjoxLjUxMzcyfX1dfSx7InR5cGUiOiJQT0kiLCJpZCI6IkFfSTB3X3RzaEwxOWFBZXlsUlA3bEEiLCJzY29yZSI6Mi4xNDU0Mzk4NjMyLCJkaXN0IjoxMjU0MjIxNS4yOTUzMzUsImluZm8iOiJzZWFyY2g6dGE6MDIwMDA5MDAwMDAwOTUxLUFEIiwicG9pIjp7Im5hbWUiOiJDcsOoZGl0IEFuZG9ycsOgIiwiYnJhbmRzIjpbeyJuYW1lIjoiQ3LDqGRpdCBBbmRvcnLDoCJ9XSwiY2F0ZWdvcnlTZXQiOlt7ImlkIjo3Mzk3fV0sImNhdGVnb3JpZXMiOlsiY2FzaCBkaXNwZW5zZXIiXSwiY2xhc3NpZmljYXRpb25zIjpbeyJjb2RlIjoiQ0FTSF9ESVNQRU5TRVIiLCJuYW1lcyI6W3sibmFtZUxvY2FsZSI6ImVuLVVTIiwibmFtZSI6ImNhc2ggZGlzcGVuc2VyIn1dfV19LCJhZGRyZXNzIjp7InN0cmVldE51bWJlciI6IjgwIiwic3RyZWV0TmFtZSI6IkF2aW5ndWRhIE1lcml0eGVsbCIsIm11bmljaXBhbGl0eSI6IkFuZG9ycmEgTGEgVmVsbGEiLCJwb3N0YWxDb2RlIjoiQUQ1MDAiLCJjb3VudHJ5Q29kZSI6IkFEIiwiY291bnRyeSI6IkFuZG9ycmEiLCJjb3VudHJ5Q29kZUlTTzMiOiJBTkQiLCJmcmVlZm9ybUFkZHJlc3MiOiJBdmluZ3VkYSBNZXJpdHhlbGwgODAsIEFuZG9ycmEgTGEgVmVsbGEsIEFENTAwIiwibG9jYWxOYW1lIjoiQW5kb3JyYSBMYSBWZWxsYSJ9LCJwb3NpdGlvbiI6eyJsYXQiOjQyLjUwODU3OCwibG9uIjoxLjUyOTU4M30sInZpZXdwb3J0Ijp7InRvcExlZnRQb2ludCI6eyJsYXQiOjQyLjUwOTQ4LCJsb24iOjEuNTI4MzZ9LCJidG1SaWdodFBvaW50Ijp7ImxhdCI6NDIuNTA3NjgsImxvbiI6MS41MzA4fX0sImVudHJ5UG9pbnRzIjpbeyJ0eXBlIjoibWFpbiIsInBvc2l0aW9uIjp7ImxhdCI6NDIuNTA4NzMsImxvbiI6MS41Mjk0Mn19XX1dfQ==
+  recorded_at: Wed, 30 Aug 2023 22:27:52 GMT
+- request:
+    method: get
+    uri: https://api.tomtom.com/search/2/categorySearch/automatic_teller_machine.json?key=<key>&lat=-47.50271201904077&lon=33.6291134696763
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 30 Aug 2023 22:30:14 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Tracking-Id:
+      - 1db91207-25f6-48bb-829a-e3e28bc16c41
+      Access-Control-Expose-Headers:
+      - Tracking-ID
+      X-Apigee.target-Latency:
+      - '370'
+      X-Envoy-Upstream-Service-Time:
+      - '378'
+      Server:
+      - tomtom
+      X-Tomtom-Processed-By:
+      - westus2
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"summary":{"query":"automatic_teller_machine","queryType":"NON_NEAR","queryTime":367,"numResults":10,"offset":0,"totalResults":10,"fuzzyLevel":1,"geoBias":{"lat":-47.50271201904077,"lon":33.6291134696763},"geobiasCountry":"ZZ"},"results":[{"type":"POI","id":"QSRDgfk4eZPfX5gZCLqIng","score":2.1454405785,"dist":1648383.568691,"info":"search:ta:710007000077415-ZA","poi":{"name":"Standard
+        Bank Stanley Street Branch","phone":"+27 860 123 000","brands":[{"name":"Standard
+        Bank"}],"categorySet":[{"id":7397}],"url":"www.standardbank.co.za/","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"14","streetName":"Stanley Street","municipality":"Gqeberha","countrySecondarySubdivision":"Nelson
+        Mandela Bay","countrySubdivision":"Eastern Cape","postalCode":"6001","countryCode":"ZA","country":"South
+        Africa","countryCodeISO3":"ZAF","freeformAddress":"14 Stanley Street, Gqeberha,
+        6001","localName":"Gqeberha"},"position":{"lat":-33.95906,"lon":25.61187},"viewport":{"topLeftPoint":{"lat":-33.95816,"lon":25.61079},"btmRightPoint":{"lat":-33.95996,"lon":25.61295}},"entryPoints":[{"type":"main","position":{"lat":-33.95899,"lon":25.61156}}]},{"type":"POI","id":"5qmEtbZ15JCVmglKo-uzXA","score":2.1454405785,"dist":1662213.209141,"info":"search:ta:710009004112800-ZA","poi":{"name":"FNB
+        Desais Superstore","brands":[{"name":"FNB"}],"categorySet":[{"id":7397}],"url":"www.fnb.co.za/","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"municipalitySubdivision":"Bethelsdorp Suburbs","municipality":"Bethelsdorp","countrySecondarySubdivision":"Nelson
+        Mandela Bay","countrySubdivision":"Eastern Cape","postalCode":"6059","countryCode":"ZA","country":"South
+        Africa","countryCodeISO3":"ZAF","freeformAddress":"Bethelsdorp Suburbs, Bethelsdorp,
+        6059","localName":"Bethelsdorp"},"position":{"lat":-33.861429,"lon":25.502089},"viewport":{"topLeftPoint":{"lat":-33.86053,"lon":25.50101},"btmRightPoint":{"lat":-33.86233,"lon":25.50317}},"entryPoints":[{"type":"main","position":{"lat":-33.86136,"lon":25.50212}}]},{"type":"POI","id":"Ptdy7ZcQsRMMKWwSZl9sbA","score":2.1454405785,"dist":1648014.842443,"info":"search:ta:710009004180956-ZA","poi":{"name":"Standard
+        Bank Autobank ATM, Walmer Park","phone":"+27 860 123 000","brands":[{"name":"Standard
+        Bank"}],"categorySet":[{"id":7397}],"url":"www.standardbank.co.za/","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetName":"Main Road","municipalitySubdivision":"Walmer","municipality":"Gqeberha","countrySecondarySubdivision":"Nelson
+        Mandela Bay","countrySubdivision":"Eastern Cape","postalCode":"6070","countryCode":"ZA","country":"South
+        Africa","countryCodeISO3":"ZAF","freeformAddress":"Main Road, Walmer, Gqeberha,
+        6070 (M7)","localName":"Gqeberha"},"position":{"lat":-33.98028,"lon":25.558348},"viewport":{"topLeftPoint":{"lat":-33.97899,"lon":25.55679},"btmRightPoint":{"lat":-33.98157,"lon":25.55991}},"entryPoints":[{"type":"main","position":{"lat":-33.98157,"lon":25.55823}}]},{"type":"POI","id":"vh20G7Fh1dS67ad9sLSKcg","score":2.1454405785,"dist":1654919.866031,"info":"search:ta:710009004122863-ZA","poi":{"name":"Standard
+        Bank, Gelvandale Shopping Village","phone":"+27 860 123 000","brands":[{"name":"Standard
+        Bank"}],"categorySet":[{"id":7397}],"url":"www.standardbank.co.za/","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetName":"Stanford Road","municipalitySubdivision":"Jarman","municipality":"Gqeberha","countrySecondarySubdivision":"Nelson
+        Mandela Bay","countrySubdivision":"Eastern Cape","postalCode":"6020","countryCode":"ZA","country":"South
+        Africa","countryCodeISO3":"ZAF","freeformAddress":"Stanford Road, Jarman,
+        Gqeberha, 6020","localName":"Gqeberha"},"position":{"lat":-33.912863,"lon":25.56009},"viewport":{"topLeftPoint":{"lat":-33.91196,"lon":25.55901},"btmRightPoint":{"lat":-33.91376,"lon":25.56117}},"entryPoints":[{"type":"main","position":{"lat":-33.91267,"lon":25.56035}}]},{"type":"POI","id":"dYcNe614iJAuHhCpWV36Aw","score":2.1454405785,"dist":1683971.246194,"info":"search:ta:710009004110866-ZA","poi":{"name":"Standard
+        Bank Spar Supermarket","phone":"+27 860 123 000","brands":[{"name":"Standard
+        Bank"}],"categorySet":[{"id":7397}],"url":"www.standardbank.co.za/","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetName":"Beach Road","municipalitySubdivision":"Bonnie
+        Doon","municipality":"East London","countrySecondarySubdivision":"Buffalo
+        City","countrySubdivision":"Eastern Cape","postalCode":"5241","countryCode":"ZA","country":"South
+        Africa","countryCodeISO3":"ZAF","freeformAddress":"Beach Road, Bonnie Doon,
+        East London, 5241","localName":"East London"},"position":{"lat":-32.985732,"lon":27.928458},"viewport":{"topLeftPoint":{"lat":-32.98483,"lon":27.92739},"btmRightPoint":{"lat":-32.98663,"lon":27.92953}},"entryPoints":[{"type":"main","position":{"lat":-32.98603,"lon":27.9283}}]},{"type":"POI","id":"Q9h6B2ECtU8IIsKyltzK_A","score":2.1454405785,"dist":1682444.032831,"info":"search:ta:710009004105664-ZA","poi":{"name":"FNB
+        Bank Atm Engen Youngs Service Station","brands":[{"name":"FNB"}],"categorySet":[{"id":7397}],"url":"www.fnb.co.za/ways-to-bank/atm.html","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"302","streetName":"Douglas Smit
+        Highway","municipalitySubdivision":"Buffalo Flats","municipality":"East London","countrySecondarySubdivision":"Buffalo
+        City","countrySubdivision":"Eastern Cape","postalCode":"5209","countryCode":"ZA","country":"South
+        Africa","countryCodeISO3":"ZAF","freeformAddress":"302 Douglas Smit Highway,
+        Buffalo Flats, East London, 5209","localName":"East London"},"position":{"lat":-33.0171,"lon":27.8521},"viewport":{"topLeftPoint":{"lat":-33.0162,"lon":27.85103},"btmRightPoint":{"lat":-33.018,"lon":27.85317}},"entryPoints":[{"type":"main","position":{"lat":-33.01686,"lon":27.85194}}]},{"type":"POI","id":"kCeD9ImIwEMtISLzb1gB0A","score":2.1454405785,"dist":1647345.90296,"info":"search:ta:710007000002201-ZA","poi":{"name":"Capitec
+        Bank Starite Komga","brands":[{"name":"Capitec Bank"}],"categorySet":[{"id":7397}],"url":"www.capitecbank.co.za/","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetName":"Main Road","municipalitySubdivision":"Walmer","municipality":"Gqeberha","countrySecondarySubdivision":"Nelson
+        Mandela Bay","countrySubdivision":"Eastern Cape","postalCode":"6070","countryCode":"ZA","country":"South
+        Africa","countryCodeISO3":"ZAF","freeformAddress":"Main Road, Walmer, Gqeberha,
+        6070","localName":"Gqeberha"},"position":{"lat":-33.973886,"lon":25.59732},"viewport":{"topLeftPoint":{"lat":-33.97299,"lon":25.59624},"btmRightPoint":{"lat":-33.97479,"lon":25.5984}},"entryPoints":[{"type":"main","position":{"lat":-33.9738,"lon":25.59727}}]},{"type":"POI","id":"5l5oRPdYnDeZCRbWe3ZBQg","score":2.1454405785,"dist":1652106.710153,"info":"search:ta:710007000004408-ZA","poi":{"name":"Capitec
+        Bank Klinicare Bellmore Pharmacy","brands":[{"name":"Capitec Bank"}],"categorySet":[{"id":7397}],"url":"www.capitecbank.co.za/","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetName":"Cape Road","municipalitySubdivision":"Cotswold","municipality":"Gqeberha","countrySecondarySubdivision":"Nelson
+        Mandela Bay","countrySubdivision":"Eastern Cape","postalCode":"6045","countryCode":"ZA","country":"South
+        Africa","countryCodeISO3":"ZAF","freeformAddress":"Cape Road, Cotswold, Gqeberha,
+        6045","localName":"Gqeberha"},"position":{"lat":-33.945561,"lon":25.543539},"viewport":{"topLeftPoint":{"lat":-33.94466,"lon":25.54245},"btmRightPoint":{"lat":-33.94646,"lon":25.54462}},"entryPoints":[{"type":"main","position":{"lat":-33.94574,"lon":25.54351}}]},{"type":"POI","id":"aanfK66qZ9lebqMVnG2JkA","score":2.1454405785,"dist":1652031.427187,"info":"search:ta:710009004119707-ZA","poi":{"name":"Standard
+        Bank Engen Perl","brands":[{"name":"Standard Bank"}],"categorySet":[{"id":7397}],"url":"https://www.standardbank.co.za/","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"349","streetName":"Kempston Road","municipalitySubdivision":"Korsten
+        Dry Lake","municipality":"Gqeberha","countrySecondarySubdivision":"Nelson
+        Mandela Bay","countrySubdivision":"Eastern Cape","postalCode":"6020","countryCode":"ZA","country":"South
+        Africa","countryCodeISO3":"ZAF","freeformAddress":"349 Kempston Road, Korsten
+        Dry Lake, Gqeberha, 6020","localName":"Gqeberha"},"position":{"lat":-33.931773,"lon":25.587531},"viewport":{"topLeftPoint":{"lat":-33.93087,"lon":25.58645},"btmRightPoint":{"lat":-33.93267,"lon":25.58861}},"entryPoints":[{"type":"main","position":{"lat":-33.93177,"lon":25.58767}}]},{"type":"POI","id":"InFcLheK7IMpcNSPrlsK5Q","score":2.1454405785,"dist":1685218.384924,"info":"search:ta:710009004147194-ZA","poi":{"name":"Nedbank
+        Balfour Park SC East London","brands":[{"name":"Nedbank"}],"categorySet":[{"id":7397}],"url":"www.nedbank.co.za/content/nedbank/desktop/gt/en/personal.html","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetName":"Balfour Road","municipalitySubdivision":"Vincent
+        North East","municipality":"East London","countrySecondarySubdivision":"Buffalo
+        City","countrySubdivision":"Eastern Cape","postalCode":"5247","countryCode":"ZA","country":"South
+        Africa","countryCodeISO3":"ZAF","freeformAddress":"Balfour Road, Vincent North
+        East, East London, 5247","localName":"East London"},"position":{"lat":-32.980228,"lon":27.901143},"viewport":{"topLeftPoint":{"lat":-32.97933,"lon":27.90007},"btmRightPoint":{"lat":-32.98113,"lon":27.90222}},"entryPoints":[{"type":"main","position":{"lat":-32.98024,"lon":27.90155}}]}]}'
+  recorded_at: Wed, 30 Aug 2023 22:30:13 GMT
+- request:
+    method: get
+    uri: https://api.tomtom.com/search/2/categorySearch/automatic_teller_machine.json?key=<key>&lat=-23.196229996813173&lon=35.35575465909295
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 30 Aug 2023 22:36:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Tracking-Id:
+      - 48ea387a-e3e8-4e6a-a54b-aa83be750034
+      Access-Control-Expose-Headers:
+      - Tracking-ID
+      X-Apigee.target-Latency:
+      - '190'
+      X-Envoy-Upstream-Service-Time:
+      - '201'
+      Server:
+      - tomtom
+      X-Tomtom-Processed-By:
+      - westus2
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"summary":{"query":"automatic_teller_machine","queryType":"NON_NEAR","queryTime":187,"numResults":10,"offset":0,"totalResults":10,"fuzzyLevel":1,"geoBias":{"lat":-23.196229996813173,"lon":35.35575465909295},"geobiasCountry":"MZ"},"results":[{"type":"POI","id":"npLBIJ-gJrFXqFalkWaZhA","score":2.7603669526,"dist":14787.042903,"info":"search:ta:508009000164964-MZ","poi":{"name":"BCI","brands":[{"name":"BCI"}],"categorySet":[{"id":7397}],"categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetName":"EN1","municipality":"Massinga","countrySecondarySubdivision":"Massinga","countrySubdivision":"Inhambane","postalCode":"1303","countryCode":"MZ","country":"Mozambique","countryCodeISO3":"MOZ","freeformAddress":"EN1,
+        Massinga, Inhambane, 1303","localName":"Massinga"},"position":{"lat":-23.327087,"lon":35.381531},"viewport":{"topLeftPoint":{"lat":-23.32619,"lon":35.38055},"btmRightPoint":{"lat":-23.32799,"lon":35.38251}},"entryPoints":[{"type":"main","position":{"lat":-23.3272,"lon":35.38141}}]},{"type":"POI","id":"yiX3GaXjDZ5IBsnTEfYN6g","score":2.7596808793,"dist":14863.883185,"info":"search:ta:508009000147609-MZ","poi":{"name":"Barclays
+        Bank","brands":[{"name":"Barclays Bank"}],"categorySet":[{"id":7397}],"categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetName":"EN1","municipality":"Massinga","countrySecondarySubdivision":"Massinga","countrySubdivision":"Inhambane","postalCode":"1303","countryCode":"MZ","country":"Mozambique","countryCodeISO3":"MOZ","freeformAddress":"EN1,
+        Massinga, Inhambane, 1303","localName":"Massinga"},"position":{"lat":-23.327698,"lon":35.38208},"viewport":{"topLeftPoint":{"lat":-23.3268,"lon":35.3811},"btmRightPoint":{"lat":-23.3286,"lon":35.38306}},"entryPoints":[{"type":"main","position":{"lat":-23.32777,"lon":35.382}}]},{"type":"POI","id":"OlCb3Ng1oTD-QtgILN06_Q","score":2.7590907933,"dist":14929.804243,"info":"search:ta:508009000156350-MZ","poi":{"name":"Millennium
+        Bim ATM","brands":[{"name":"Millennium Bim ATM"}],"categorySet":[{"id":7397}],"categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetName":"EN1","municipality":"Massinga","countrySecondarySubdivision":"Massinga","countrySubdivision":"Inhambane","postalCode":"1303","countryCode":"MZ","country":"Mozambique","countryCodeISO3":"MOZ","freeformAddress":"EN1,
+        Massinga, Inhambane, 1303","localName":"Massinga"},"position":{"lat":-23.328491,"lon":35.38092},"viewport":{"topLeftPoint":{"lat":-23.32759,"lon":35.37994},"btmRightPoint":{"lat":-23.32939,"lon":35.3819}},"entryPoints":[{"type":"main","position":{"lat":-23.32765,"lon":35.38188}}]},{"type":"POI","id":"ncNPOfSH7k1c78wu3Bs8ng","score":2.3890675347,"dist":73477.67725,"info":"search:ta:508009000158479-MZ","poi":{"name":"Barclays
+        Bank","brands":[{"name":"Barclays Bank"}],"categorySet":[{"id":7397}],"categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"municipality":"Maxixe","countrySecondarySubdivision":"Maxixe","countrySubdivision":"Inhambane","postalCode":"1300","countryCode":"MZ","country":"Mozambique","countryCodeISO3":"MOZ","freeformAddress":"Maxixe,
+        Inhambane, 1300","localName":"Maxixe"},"position":{"lat":-23.856995,"lon":35.348328},"viewport":{"topLeftPoint":{"lat":-23.8561,"lon":35.34734},"btmRightPoint":{"lat":-23.85789,"lon":35.34931}},"entryPoints":[{"type":"main","position":{"lat":-23.8569,"lon":35.34843}}]},{"type":"POI","id":"ET95Fh-maiu5STk061ZZfQ","score":2.3890279334,"dist":73683.195002,"info":"search:ta:508009000159924-MZ","poi":{"name":"Standard
+        Bank AutoCash","brands":[{"name":"Standard Bank"}],"categorySet":[{"id":7397}],"categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetName":"Avenida 7 de Setembro","municipality":"Maxixe","countrySecondarySubdivision":"Maxixe","countrySubdivision":"Inhambane","postalCode":"1301","countryCode":"MZ","country":"Mozambique","countryCodeISO3":"MOZ","freeformAddress":"Avenida
+        7 de Setembro, Maxixe, Inhambane, 1301","localName":"Maxixe"},"position":{"lat":-23.858826,"lon":35.34668},"viewport":{"topLeftPoint":{"lat":-23.85793,"lon":35.3457},"btmRightPoint":{"lat":-23.85973,"lon":35.34766}},"entryPoints":[{"type":"main","position":{"lat":-23.85868,"lon":35.34666}}]},{"type":"POI","id":"4ACtf_vBVCBHSF_D8HUulg","score":2.3890163939,"dist":73742.60915,"info":"search:ta:508009000172290-MZ","poi":{"name":"Socremo","brands":[{"name":"Socremo"}],"categorySet":[{"id":7397}],"categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"municipality":"Maxixe","countrySecondarySubdivision":"Maxixe","countrySubdivision":"Inhambane","postalCode":"1300","countryCode":"MZ","country":"Mozambique","countryCodeISO3":"MOZ","freeformAddress":"Maxixe,
+        Inhambane, 1300","localName":"Maxixe"},"position":{"lat":-23.859375,"lon":35.348083},"viewport":{"topLeftPoint":{"lat":-23.85848,"lon":35.3471},"btmRightPoint":{"lat":-23.86027,"lon":35.34907}},"entryPoints":[{"type":"main","position":{"lat":-23.8595,"lon":35.3481}}]},{"type":"POI","id":"tt7OCEHThuJAuo_VDjwJQg","score":2.3889964621,"dist":73847.901741,"info":"search:ta:508009000177459-MZ","poi":{"name":"Millennium
+        Bim ATM","brands":[{"name":"Millennium Bim ATM"}],"categorySet":[{"id":7397}],"categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"municipality":"Maxixe","countrySecondarySubdivision":"Maxixe","countrySubdivision":"Inhambane","postalCode":"1300","countryCode":"MZ","country":"Mozambique","countryCodeISO3":"MOZ","freeformAddress":"Maxixe,
+        Inhambane, 1300","localName":"Maxixe"},"position":{"lat":-23.860327,"lon":35.348668},"viewport":{"topLeftPoint":{"lat":-23.85943,"lon":35.34768},"btmRightPoint":{"lat":-23.86123,"lon":35.34965}},"entryPoints":[{"type":"main","position":{"lat":-23.86042,"lon":35.34869}}]},{"type":"POI","id":"PVJ8_nYbe_km1jfqGvbyUQ","score":2.3889867585,"dist":73898.696125,"info":"search:ta:508009000175419-MZ","poi":{"name":"FNB","brands":[{"name":"FNB"}],"categorySet":[{"id":7397}],"categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetName":"Avenida 7 de Abril","municipality":"Maxixe","countrySecondarySubdivision":"Maxixe","countrySubdivision":"Inhambane","postalCode":"1300","countryCode":"MZ","country":"Mozambique","countryCodeISO3":"MOZ","freeformAddress":"Avenida
+        7 de Abril, Maxixe, Inhambane, 1300","localName":"Maxixe"},"position":{"lat":-23.860779,"lon":35.348083},"viewport":{"topLeftPoint":{"lat":-23.85988,"lon":35.3471},"btmRightPoint":{"lat":-23.86168,"lon":35.34907}},"entryPoints":[{"type":"main","position":{"lat":-23.86081,"lon":35.34788}}]},{"type":"POI","id":"aFsWX1il2gZgbvhvB2ypnw","score":2.3889815133,"dist":73925.028284,"info":"search:ta:508009000157134-MZ","poi":{"name":"BCI
+        - Maxixe","brands":[{"name":"BCI"}],"categorySet":[{"id":7397}],"url":"www.bci.co.mz","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"municipality":"Maxixe","countrySecondarySubdivision":"Maxixe","countrySubdivision":"Inhambane","postalCode":"1300","countryCode":"MZ","country":"Mozambique","countryCodeISO3":"MOZ","freeformAddress":"Maxixe,
+        Inhambane, 1300","localName":"Maxixe"},"position":{"lat":-23.861023,"lon":35.348877},"viewport":{"topLeftPoint":{"lat":-23.86012,"lon":35.34789},"btmRightPoint":{"lat":-23.86192,"lon":35.34986}},"entryPoints":[{"type":"main","position":{"lat":-23.86101,"lon":35.34897}}]},{"type":"POI","id":"XypWug_jV-RKTSS2looRrQ","score":2.3889676135,"dist":73999.680226,"info":"search:ta:508009000161957-MZ","poi":{"name":"Millennium
+        Bim ATM","brands":[{"name":"Millennium Bim ATM"}],"categorySet":[{"id":7397}],"categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"municipality":"Maxixe","countrySecondarySubdivision":"Maxixe","countrySubdivision":"Inhambane","postalCode":"1300","countryCode":"MZ","country":"Mozambique","countryCodeISO3":"MOZ","freeformAddress":"Maxixe,
+        Inhambane, 1300","localName":"Maxixe"},"position":{"lat":-23.861694,"lon":35.348877},"viewport":{"topLeftPoint":{"lat":-23.86079,"lon":35.34789},"btmRightPoint":{"lat":-23.86259,"lon":35.34986}},"entryPoints":[{"type":"main","position":{"lat":-23.8618,"lon":35.34889}}]}]}'
+  recorded_at: Wed, 30 Aug 2023 22:36:11 GMT
+- request:
+    method: get
+    uri: https://api.tomtom.com/search/2/categorySearch/automatic_teller_machine.json?key=<key>&lat=-37.51389175452272&lon=10.847660086327409
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 30 Aug 2023 23:28:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Tracking-Id:
+      - 2f58fa12-a230-4344-be64-0779a934e37a
+      Access-Control-Expose-Headers:
+      - Tracking-ID
+      X-Apigee.target-Latency:
+      - '367'
+      X-Envoy-Upstream-Service-Time:
+      - '380'
+      Server:
+      - tomtom
+      X-Tomtom-Processed-By:
+      - westus2
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"summary":{"query":"automatic_teller_machine","queryType":"NON_NEAR","queryTime":364,"numResults":10,"offset":0,"totalResults":10,"fuzzyLevel":1,"geoBias":{"lat":-37.51389175452272,"lon":10.847660086327409},"geobiasCountry":"ZZ"},"results":[{"type":"POI","id":"gj4QlIsNLwJ72_FWatOuqw","score":2.1457064152,"dist":771039.129909,"info":"search:ta:710007000364175-ZA","poi":{"name":"Laurenson
+        D B","categorySet":[{"id":7397}],"categories":["cash dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"municipalitySubdivision":"Kommetjie","municipality":"Cape
+        Town","countrySecondarySubdivision":"City of Cape Town","countrySubdivision":"Western
+        Cape","postalCode":"7975","countryCode":"ZA","country":"South Africa","countryCodeISO3":"ZAF","freeformAddress":"Kommetjie,
+        Cape Town, 7975","localName":"Cape Town"},"position":{"lat":-34.1416,"lon":18.3251},"viewport":{"topLeftPoint":{"lat":-34.1407,"lon":18.32401},"btmRightPoint":{"lat":-34.1425,"lon":18.32619}},"entryPoints":[{"type":"main","position":{"lat":-34.14151,"lon":18.325}}]},{"type":"POI","id":"ByzMBXgD0hRAepdPy1p78Q","score":2.1457059383,"dist":771389.877603,"info":"search:ta:710009004149446-ZA","poi":{"name":"Kommetjie
+        Motors Shell Garage","categorySet":[{"id":7397}],"url":"find.shell.com/za/fuel/10043120-kommetjie-motors","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetName":"Kirsten Avenue","municipalitySubdivision":"Kommetjie","municipality":"Cape
+        Town","countrySecondarySubdivision":"City of Cape Town","countrySubdivision":"Western
+        Cape","postalCode":"7975","countryCode":"ZA","country":"South Africa","countryCodeISO3":"ZAF","freeformAddress":"Kirsten
+        Avenue, Kommetjie, Cape Town, 7975","localName":"Cape Town"},"position":{"lat":-34.140946,"lon":18.329078},"viewport":{"topLeftPoint":{"lat":-34.14005,"lon":18.32799},"btmRightPoint":{"lat":-34.14185,"lon":18.33016}},"entryPoints":[{"type":"main","position":{"lat":-34.14095,"lon":18.32921}}]},{"type":"POI","id":"StMLB4FWgrnh_N0G3nXQ5A","score":2.1457035542,"dist":772770.243305,"info":"search:ta:710007000150172-ZA","poi":{"name":"ABSA
+        Ocean View Ct, Ocean View","brands":[{"name":"ABSA"}],"categorySet":[{"id":7397}],"url":"www.absa.co.za/personal/","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"2","streetName":"Gemini Way","municipalitySubdivision":"Ocean
+        View","municipality":"Cape Town","countrySecondarySubdivision":"City of Cape
+        Town","countrySubdivision":"Western Cape","postalCode":"7975","countryCode":"ZA","country":"South
+        Africa","countryCodeISO3":"ZAF","freeformAddress":"2 Gemini Way, Ocean View,
+        Cape Town, 7975","localName":"Cape Town"},"position":{"lat":-34.146351,"lon":18.350562},"viewport":{"topLeftPoint":{"lat":-34.14545,"lon":18.34948},"btmRightPoint":{"lat":-34.14725,"lon":18.35165}},"entryPoints":[{"type":"main","position":{"lat":-34.14648,"lon":18.35073}}]},{"type":"POI","id":"nD_YawzvlaapfEb2yPHc8A","score":2.1456975937,"dist":776125.117746,"info":"search:ta:710009004111985-ZA","poi":{"name":"ABSA
+        Sasol Kommetjie, Sunnydale","brands":[{"name":"ABSA"}],"categorySet":[{"id":7397}],"url":"www.absa.co.za/personal/","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetName":"Lekkerwater Road","municipalitySubdivision":"Fairie
+        Knowe","municipality":"Fish Hoek","countrySecondarySubdivision":"City of Cape
+        Town","countrySubdivision":"Western Cape","postalCode":"7975","countryCode":"ZA","country":"South
+        Africa","countryCodeISO3":"ZAF","freeformAddress":"Lekkerwater Road, Fairie
+        Knowe, Fish Hoek, 7975","localName":"Fish Hoek"},"position":{"lat":-34.132164,"lon":18.382795},"viewport":{"topLeftPoint":{"lat":-34.13126,"lon":18.38171},"btmRightPoint":{"lat":-34.13306,"lon":18.38388}},"entryPoints":[{"type":"main","position":{"lat":-34.13223,"lon":18.38252}}]},{"type":"POI","id":"xgPM-UzLlfaxcdMV8zEBLw","score":2.1456973553,"dist":776232.793542,"info":"search:ta:710009002098136-ZA","poi":{"name":"Capitec
+        Bank Foodzone Kommetjie","brands":[{"name":"Capitec Bank"}],"categorySet":[{"id":7397}],"url":"www.capitecbank.co.za/","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetName":"Kommetjie Road","municipalitySubdivision":"Fairie
+        Knowe","municipality":"Fish Hoek","countrySecondarySubdivision":"City of Cape
+        Town","countrySubdivision":"Western Cape","postalCode":"7975","countryCode":"ZA","country":"South
+        Africa","countryCodeISO3":"ZAF","freeformAddress":"Kommetjie Road, Fairie
+        Knowe, Fish Hoek, 7975","localName":"Fish Hoek"},"position":{"lat":-34.131779,"lon":18.383881},"viewport":{"topLeftPoint":{"lat":-34.13088,"lon":18.38279},"btmRightPoint":{"lat":-34.13268,"lon":18.38497}},"entryPoints":[{"type":"main","position":{"lat":-34.13219,"lon":18.38405}}]},{"type":"POI","id":"k0MO2PvHN2gUfcDH894iug","score":2.1456973553,"dist":776213.060937,"info":"search:ta:710009004147657-ZA","poi":{"name":"ABSA
+        Atm Sunny Acres","brands":[{"name":"ABSA"}],"categorySet":[{"id":7397}],"url":"www.absa.co.za/self-service/tools-to-do-your-banking/atm/","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"municipalitySubdivision":"Fairie Knowe","municipality":"Fish
+        Hoek","countrySecondarySubdivision":"City of Cape Town","countrySubdivision":"Western
+        Cape","postalCode":"7975","countryCode":"ZA","country":"South Africa","countryCodeISO3":"ZAF","freeformAddress":"Fairie
+        Knowe, Fish Hoek, 7975","localName":"Fish Hoek"},"position":{"lat":-34.131821,"lon":18.383661},"viewport":{"topLeftPoint":{"lat":-34.13092,"lon":18.38257},"btmRightPoint":{"lat":-34.13272,"lon":18.38475}},"entryPoints":[{"type":"main","position":{"lat":-34.13169,"lon":18.38364}}]},{"type":"POI","id":"Eh8a7P3RIF8JUszSlwRwtQ","score":2.1456973553,"dist":776232.997528,"info":"search:ta:710007000339376-ZA","poi":{"name":"FNB
+        Bank Atm Sunny Acres Foodzone","brands":[{"name":"FNB"}],"categorySet":[{"id":7397}],"url":"www.fnb.co.za/ways-to-bank/atm.html","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"municipalitySubdivision":"Fairie Knowe","municipality":"Fish
+        Hoek","countrySecondarySubdivision":"City of Cape Town","countrySubdivision":"Western
+        Cape","postalCode":"7975","countryCode":"ZA","country":"South Africa","countryCodeISO3":"ZAF","freeformAddress":"Fairie
+        Knowe, Fish Hoek, 7975","localName":"Fish Hoek"},"position":{"lat":-34.13191,"lon":18.383979},"viewport":{"topLeftPoint":{"lat":-34.13101,"lon":18.38289},"btmRightPoint":{"lat":-34.13281,"lon":18.38507}},"entryPoints":[{"type":"main","position":{"lat":-34.13188,"lon":18.38397}}]},{"type":"POI","id":"VlWW_3kanBfQIEOVLC9OBw","score":2.1456973553,"dist":776265.269532,"info":"search:ta:710009004192629-ZA","poi":{"name":"Shell","phone":"+27
+        21 786 1478","categorySet":[{"id":7397}],"url":"find.shell.com/za/fuel/10043197-simonstown-service-station","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetNumber":"52","streetName":"Saint Georges
+        Street","municipality":"Simon''s Town","countrySecondarySubdivision":"City
+        of Cape Town","countrySubdivision":"Western Cape","postalCode":"7975","countryCode":"ZA","country":"South
+        Africa","countryCodeISO3":"ZAF","freeformAddress":"52 Saint Georges Street,
+        Simon''s Town, 7975","localName":"Simon''s Town"},"position":{"lat":-34.192729,"lon":18.428299},"viewport":{"topLeftPoint":{"lat":-34.19183,"lon":18.42721},"btmRightPoint":{"lat":-34.19363,"lon":18.42939}},"entryPoints":[{"type":"main","position":{"lat":-34.1926,"lon":18.42842}}]},{"type":"POI","id":"Bv-JbLaJFTHPCuP2-ts9XQ","score":2.1456971169,"dist":776385.779749,"info":"search:ta:710009004170453-ZA","poi":{"name":"Nedbank
+        Simon''s Town","brands":[{"name":"Nedbank"}],"categorySet":[{"id":7397}],"url":"www.nedbank.co.za/","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetName":"Saint Georges Street","municipality":"Simon''s
+        Town","countrySecondarySubdivision":"City of Cape Town","countrySubdivision":"Western
+        Cape","postalCode":"7975","countryCode":"ZA","country":"South Africa","countryCodeISO3":"ZAF","freeformAddress":"Saint
+        Georges Street, Simon''s Town, 7975","localName":"Simon''s Town"},"position":{"lat":-34.1934,"lon":18.4303},"viewport":{"topLeftPoint":{"lat":-34.1925,"lon":18.42921},"btmRightPoint":{"lat":-34.1943,"lon":18.43139}},"entryPoints":[{"type":"main","position":{"lat":-34.19311,"lon":18.43029}}]},{"type":"POI","id":"EH-X1guYnnTRoK0U5u3Ixw","score":2.1456971169,"dist":776483.081831,"info":"search:ta:710009004145402-ZA","poi":{"name":"ABSA
+        Atm Simonstown","brands":[{"name":"ABSA"}],"categorySet":[{"id":7397}],"url":"www.absa.co.za/self-service/tools-to-do-your-banking/atm/","categories":["cash
+        dispenser"],"classifications":[{"code":"CASH_DISPENSER","names":[{"nameLocale":"en-US","name":"cash
+        dispenser"}]}]},"address":{"streetName":"Saint Georges Street","municipality":"Simon''s
+        Town","countrySecondarySubdivision":"City of Cape Town","countrySubdivision":"Western
+        Cape","postalCode":"7975","countryCode":"ZA","country":"South Africa","countryCodeISO3":"ZAF","freeformAddress":"Saint
+        Georges Street, Simon''s Town, 7975","localName":"Simon''s Town"},"position":{"lat":-34.1935,"lon":18.4316},"viewport":{"topLeftPoint":{"lat":-34.1926,"lon":18.43051},"btmRightPoint":{"lat":-34.1944,"lon":18.43269}},"entryPoints":[{"type":"main","position":{"lat":-34.19321,"lon":18.43168}}]}]}'
+  recorded_at: Wed, 30 Aug 2023 23:28:41 GMT
 recorded_with: VCR 6.2.0

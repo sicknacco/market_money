@@ -38,5 +38,21 @@ RSpec.describe 'Atms API', type: :request do
         expect(atm[:attributes][:distance]).to be_a(Float)
       end
     end
+
+    it 'returns an error if market does not exist', :vcr do
+      headers = {
+        CONTENT_TYPE: "application/json",
+        ACCEPT: "application/json"
+      }
+    
+      get "/api/v0/markets/000000/nearest_atms", headers: headers
+    
+      atm_error = JSON.parse(response.body, symbolize_names: true)
+    
+      expect(response).to_not be_successful
+      expect(response.status).to eq(404)
+    
+      expect(atm_error[:errors][0][:detail]).to eq("Couldn't find Market with 'id'=000000")
+    end
   end
 end
