@@ -8,10 +8,10 @@ class Atm
 
   def initialize(atm_params)
     @id = nil
-    @name = atm_params[:name]
-    @address = atm_params[:address]
-    @lat = atm_params[:lat]
-    @lon = atm_params[:lon]
-    @distance = atm_params[:distance]
+    @name = 'ATM'
+    @address = atm_params[:address][:freeformAddress]
+    @lat = atm_params[:position][:lat]
+    @lon = atm_params[:position][:lon]
+    @distance = atm_params[:dist]
   end
 end
