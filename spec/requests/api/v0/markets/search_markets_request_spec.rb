@@ -138,9 +138,13 @@ RSpec.describe 'Search Markets', type: :request do
 
       expect(response).to_not be_successful
       expect(response).to have_http_status(422)
+
+      error_data = JSON.parse(response.body, symbolize_names: true)
+
+      expect(error_data[:errors][0][:detail]).to eq("Invalid set of parameters. Please provide a valid set of parameters to perform a search with this endpoint.")
     end
 
-    xit 'returns an error if trying to search by city and name' do
+    it 'returns an error if trying to search by city and name' do
       headers = {
         CONTENT_TYPE: "application/json",
         ACCEPT: "application/json"
@@ -154,6 +158,10 @@ RSpec.describe 'Search Markets', type: :request do
 
       expect(response).to_not be_successful
       expect(response).to have_http_status(422)
+
+      error_data = JSON.parse(response.body, symbolize_names: true)
+
+      expect(error_data[:errors][0][:detail]).to eq("Invalid set of parameters. Please provide a valid set of parameters to perform a search with this endpoint.")
     end
   end
 end
