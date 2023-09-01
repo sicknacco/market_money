@@ -8,4 +8,8 @@ class Vendor < ApplicationRecord
             :contact_phone,
             presence: true
   validates :credit_accepted, inclusion: [true, false]
+
+  def states_sold_in
+    markets.distinct.pluck(:state)
+  end
 end

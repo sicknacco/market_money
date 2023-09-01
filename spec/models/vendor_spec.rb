@@ -15,4 +15,31 @@ RSpec.describe Vendor, type: :model do
     it { should allow_value(false).for(:credit_accepted) }
     it { should_not allow_value(nil).for(:credit_accepted) }
   end
+
+  describe 'instance methods' do
+    describe '#states_sold_in' do
+      it 'returns an array of states when markets are associated with the vendor' do
+        vendor = create(:vendor)
+        market_1 = create(:market, state: 'Colorado')
+        market_2 = create(:market, state: 'New York')
+        MarketVendor.create!(market_id: market_1.id, vendor_id: vendor.id)
+        MarketVendor.create!(market_id: market_2.id, vendor_id: vendor.id)
+        
+        expect(vendor.states_sold_in).to eq(['Colorado', 'New York'])
+      end
+      
+      it 'returns an array when a vendor is associated with a single state' do
+        vendor = create(:vendor)
+        market_1 = create(:market, state: 'Colorado')
+        MarketVendor.create!(market_id: market_1.id, vendor_id: vendor.id)
+        
+        expect(vendor.states_sold_in).to eq(['Colorado'])
+      end
+
+      it 'returns an empty array when no markets are associated with the vendor' do
+        vendor = create(:vendor)
+        expect(vendor.states_sold_in).to eq([])
+      end
+    end
+  end
 end
